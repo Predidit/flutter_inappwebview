@@ -16,22 +16,19 @@ class ProxyRelayHop_ {
   ///A URL or host endpoint identifying the relay server accessible using HTTP/3.
   @SupportedPlatforms(platforms: [
     IOSPlatform(),
-    MacOSPlatform(),
-  ])
+    MacOSPlatform()])
   String? http3RelayEndpoint;
 
   ///A URL or host endpoint identifying the relay server accessible using HTTP/2.
   @SupportedPlatforms(platforms: [
     IOSPlatform(),
-    MacOSPlatform(),
-  ])
+    MacOSPlatform()])
   String? http2RelayEndpoint;
 
   ///A dictionary of additional HTTP headers to send as part of CONNECT requests to the relay.
   @SupportedPlatforms(platforms: [
     IOSPlatform(),
-    MacOSPlatform(),
-  ])
+    MacOSPlatform()])
   Map<String, String>? additionalHTTPHeaders;
 
   @ExchangeableObjectConstructor()

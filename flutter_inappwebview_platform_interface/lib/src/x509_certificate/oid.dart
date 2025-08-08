@@ -104,8 +104,7 @@ class OID {
     OID.sha2Family,
     OID.sha3_244,
     OID.sha3_256,
-    OID.sha3_384,
-  ].toSet();
+    OID.sha3_384].toSet();
 
   static OID? fromValue(String? value) {
     if (value != null) {

@@ -59,8 +59,7 @@ class URLRequestCachePolicy {
     URLRequestCachePolicy.RELOAD_REVALIDATING_CACHE_DATA,
     URLRequestCachePolicy.RETURN_CACHE_DATA_DONT_LOAD,
     URLRequestCachePolicy.RETURN_CACHE_DATA_ELSE_LOAD,
-    URLRequestCachePolicy.USE_PROTOCOL_CACHE_POLICY,
-  ].toSet();
+    URLRequestCachePolicy.USE_PROTOCOL_CACHE_POLICY].toSet();
 
   ///Gets a possible [URLRequestCachePolicy] instance from [int] value.
   static URLRequestCachePolicy? fromValue(int? value) {
@@ -210,8 +209,7 @@ class IOSURLRequestCachePolicy {
     IOSURLRequestCachePolicy.RELOAD_REVALIDATING_CACHE_DATA,
     IOSURLRequestCachePolicy.RETURN_CACHE_DATA_DONT_LOAD,
     IOSURLRequestCachePolicy.RETURN_CACHE_DATA_ELSE_LOAD,
-    IOSURLRequestCachePolicy.USE_PROTOCOL_CACHE_POLICY,
-  ].toSet();
+    IOSURLRequestCachePolicy.USE_PROTOCOL_CACHE_POLICY].toSet();
 
   ///Gets a possible [IOSURLRequestCachePolicy] instance from [int] value.
   static IOSURLRequestCachePolicy? fromValue(int? value) {

@@ -33,8 +33,7 @@ class ActionModeMenuItem {
     ActionModeMenuItem.MENU_ITEM_NONE,
     ActionModeMenuItem.MENU_ITEM_PROCESS_TEXT,
     ActionModeMenuItem.MENU_ITEM_SHARE,
-    ActionModeMenuItem.MENU_ITEM_WEB_SEARCH,
-  ].toSet();
+    ActionModeMenuItem.MENU_ITEM_WEB_SEARCH].toSet();
 
   ///Gets a possible [ActionModeMenuItem] instance from [int] value.
   static ActionModeMenuItem? fromValue(int? value) {
@@ -161,8 +160,7 @@ class AndroidActionModeMenuItem {
     AndroidActionModeMenuItem.MENU_ITEM_NONE,
     AndroidActionModeMenuItem.MENU_ITEM_PROCESS_TEXT,
     AndroidActionModeMenuItem.MENU_ITEM_SHARE,
-    AndroidActionModeMenuItem.MENU_ITEM_WEB_SEARCH,
-  ].toSet();
+    AndroidActionModeMenuItem.MENU_ITEM_WEB_SEARCH].toSet();
 
   ///Gets a possible [AndroidActionModeMenuItem] instance from [int] value.
   static AndroidActionModeMenuItem? fromValue(int? value) {

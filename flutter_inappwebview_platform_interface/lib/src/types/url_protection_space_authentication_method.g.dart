@@ -48,8 +48,7 @@ class URLProtectionSpaceAuthenticationMethod {
         .NSURL_AUTHENTICATION_METHOD_NEGOTIATE,
     URLProtectionSpaceAuthenticationMethod.NSURL_AUTHENTICATION_METHOD_NTLM,
     URLProtectionSpaceAuthenticationMethod
-        .NSURL_AUTHENTICATION_METHOD_SERVER_TRUST,
-  ].toSet();
+        .NSURL_AUTHENTICATION_METHOD_SERVER_TRUST].toSet();
 
   ///Gets a possible [URLProtectionSpaceAuthenticationMethod] instance from [String] value.
   static URLProtectionSpaceAuthenticationMethod? fromValue(String? value) {
@@ -188,8 +187,7 @@ class IOSNSURLProtectionSpaceAuthenticationMethod {
     IOSNSURLProtectionSpaceAuthenticationMethod
         .NSURL_AUTHENTICATION_METHOD_NTLM,
     IOSNSURLProtectionSpaceAuthenticationMethod
-        .NSURL_AUTHENTICATION_METHOD_SERVER_TRUST,
-  ].toSet();
+        .NSURL_AUTHENTICATION_METHOD_SERVER_TRUST].toSet();
 
   ///Gets a possible [IOSNSURLProtectionSpaceAuthenticationMethod] instance from [String] value.
   static IOSNSURLProtectionSpaceAuthenticationMethod? fromValue(String? value) {

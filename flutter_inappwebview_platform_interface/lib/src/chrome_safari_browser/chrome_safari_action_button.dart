@@ -10,9 +10,7 @@ import '../types/enum_method.dart';
 part 'chrome_safari_action_button.g.dart';
 
 ///Class that represents a custom action button for a [PlatformChromeSafariBrowser] instance.
-@SupportedPlatforms(platforms: [
-  AndroidPlatform(note: 'Not available in an Android Trusted Web Activity.'),
-])
+
 @ExchangeableObject()
 class ChromeSafariBrowserActionButton_ {
   ///The action button id. It should be different from the [ChromeSafariBrowserMenuItem.id].

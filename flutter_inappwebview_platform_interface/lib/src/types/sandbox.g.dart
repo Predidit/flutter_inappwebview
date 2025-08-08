@@ -85,8 +85,7 @@ class Sandbox {
     Sandbox.ALLOW_SAME_ORIGIN,
     Sandbox.ALLOW_SCRIPTS,
     Sandbox.ALLOW_TOP_NAVIGATION,
-    Sandbox.ALLOW_TOP_NAVIGATION_BY_USER_ACTIVATION,
-  ].toSet();
+    Sandbox.ALLOW_TOP_NAVIGATION_BY_USER_ACTIVATION].toSet();
 
   /// Gets a possible [Sandbox] instance value with name [name].
   ///

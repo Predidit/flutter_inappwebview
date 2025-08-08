@@ -163,8 +163,7 @@ class PrintJobState {
     PrintJobState.CREATED,
     PrintJobState.FAILED,
     PrintJobState.QUEUED,
-    PrintJobState.STARTED,
-  ].toSet();
+    PrintJobState.STARTED].toSet();
 
   ///Gets a possible [PrintJobState] instance from [int] value.
   static PrintJobState? fromValue(int? value) {

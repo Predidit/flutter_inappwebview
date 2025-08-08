@@ -25,8 +25,7 @@ class PullToRefreshSize {
   ///Set of all values of [PullToRefreshSize].
   static final Set<PullToRefreshSize> values = [
     PullToRefreshSize.DEFAULT,
-    PullToRefreshSize.LARGE,
-  ].toSet();
+    PullToRefreshSize.LARGE].toSet();
 
   ///Gets a possible [PullToRefreshSize] instance from [int] value.
   static PullToRefreshSize? fromValue(int? value) {
@@ -134,8 +133,7 @@ class AndroidPullToRefreshSize {
   ///Set of all values of [AndroidPullToRefreshSize].
   static final Set<AndroidPullToRefreshSize> values = [
     AndroidPullToRefreshSize.DEFAULT,
-    AndroidPullToRefreshSize.LARGE,
-  ].toSet();
+    AndroidPullToRefreshSize.LARGE].toSet();
 
   ///Gets a possible [AndroidPullToRefreshSize] instance from [int] value.
   static AndroidPullToRefreshSize? fromValue(int? value) {

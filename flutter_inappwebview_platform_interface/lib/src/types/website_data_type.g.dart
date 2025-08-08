@@ -88,8 +88,7 @@ class WebsiteDataType {
     WebsiteDataType.WKWebsiteDataTypeOfflineWebApplicationCache,
     WebsiteDataType.WKWebsiteDataTypeServiceWorkerRegistrations,
     WebsiteDataType.WKWebsiteDataTypeSessionStorage,
-    WebsiteDataType.WKWebsiteDataTypeWebSQLDatabases,
-  ].toSet();
+    WebsiteDataType.WKWebsiteDataTypeWebSQLDatabases].toSet();
 
   ///Gets a possible [WebsiteDataType] instance from [String] value.
   static WebsiteDataType? fromValue(String? value) {
@@ -283,8 +282,7 @@ class IOSWKWebsiteDataType {
     IOSWKWebsiteDataType.WKWebsiteDataTypeOfflineWebApplicationCache,
     IOSWKWebsiteDataType.WKWebsiteDataTypeServiceWorkerRegistrations,
     IOSWKWebsiteDataType.WKWebsiteDataTypeSessionStorage,
-    IOSWKWebsiteDataType.WKWebsiteDataTypeWebSQLDatabases,
-  ].toSet();
+    IOSWKWebsiteDataType.WKWebsiteDataTypeWebSQLDatabases].toSet();
 
   ///Gets a possible [IOSWKWebsiteDataType] instance from [String] value.
   static IOSWKWebsiteDataType? fromValue(String? value) {

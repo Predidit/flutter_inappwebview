@@ -26,8 +26,7 @@ class WebArchiveFormat {
   ///Set of all values of [WebArchiveFormat].
   static final Set<WebArchiveFormat> values = [
     WebArchiveFormat.MHT,
-    WebArchiveFormat.WEBARCHIVE,
-  ].toSet();
+    WebArchiveFormat.WEBARCHIVE].toSet();
 
   ///Gets a possible [WebArchiveFormat] instance from [String] value.
   static WebArchiveFormat? fromValue(String? value) {

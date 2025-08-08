@@ -25,7 +25,7 @@ class InAppWebViewInitialData_ {
   Uri? androidHistoryUrl;
 
   ///The URL to use as the history entry. If `null` defaults to `about:blank`. If non-null, this must be a valid URL.
-  @SupportedPlatforms(platforms: [AndroidPlatform()])
+  
   WebUri? historyUrl;
 
   InAppWebViewInitialData_(

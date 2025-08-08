@@ -25,8 +25,7 @@ class FetchRequestAction {
   ///Set of all values of [FetchRequestAction].
   static final Set<FetchRequestAction> values = [
     FetchRequestAction.ABORT,
-    FetchRequestAction.PROCEED,
-  ].toSet();
+    FetchRequestAction.PROCEED].toSet();
 
   ///Gets a possible [FetchRequestAction] instance from [int] value.
   static FetchRequestAction? fromValue(int? value) {

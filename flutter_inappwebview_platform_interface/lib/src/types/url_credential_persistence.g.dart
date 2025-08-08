@@ -34,8 +34,7 @@ class URLCredentialPersistence {
     URLCredentialPersistence.FOR_SESSION,
     URLCredentialPersistence.NONE,
     URLCredentialPersistence.PERMANENT,
-    URLCredentialPersistence.SYNCHRONIZABLE,
-  ].toSet();
+    URLCredentialPersistence.SYNCHRONIZABLE].toSet();
 
   ///Gets a possible [URLCredentialPersistence] instance from [int] value.
   static URLCredentialPersistence? fromValue(int? value) {
@@ -156,8 +155,7 @@ class IOSURLCredentialPersistence {
     IOSURLCredentialPersistence.FOR_SESSION,
     IOSURLCredentialPersistence.NONE,
     IOSURLCredentialPersistence.PERMANENT,
-    IOSURLCredentialPersistence.SYNCHRONIZABLE,
-  ].toSet();
+    IOSURLCredentialPersistence.SYNCHRONIZABLE].toSet();
 
   ///Gets a possible [IOSURLCredentialPersistence] instance from [int] value.
   static IOSURLCredentialPersistence? fromValue(int? value) {

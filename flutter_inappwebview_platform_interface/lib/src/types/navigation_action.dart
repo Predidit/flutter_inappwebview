@@ -33,16 +33,8 @@ class NavigationAction_ {
   ///the sequence of events which caused the request to be created was initiated by a user
   ///gesture.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        available: "21",
-        apiName: "WebResourceRequest.hasGesture",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebResourceRequest#hasGesture()",
-        note: "On Android < 21, this is always `false`"),
-    WindowsPlatform(
-        note:
-            "Available only if the request is associated to the [PlatformWebViewCreationParams.onCreateWindow] event")
-  ])
+    ",
+        note: "On Android < 21, this is always `false`")])
   bool? hasGesture;
 
   ///Use [isRedirect] instead.
@@ -54,13 +46,7 @@ class NavigationAction_ {
   ///**NOTE**: If the request is associated to the [PlatformWebViewCreationParams.onCreateWindow] event, this is always `false`.
   ///Also, on Android < 21, this is always `false`.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        available: "21",
-        apiName: "WebResourceRequest.isRedirect",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebResourceRequest#isRedirect()"),
-    WindowsPlatform()
-  ])
+    ")])
   bool? isRedirect;
 
   ///Use [navigationType] instead.
@@ -76,9 +62,7 @@ class NavigationAction_ {
     MacOSPlatform(
         apiName: "WKNavigationAction.navigationType",
         apiUrl:
-            "https://developer.apple.com/documentation/webkit/wknavigationaction/1401914-navigationtype"),
-    WindowsPlatform()
-  ])
+            "https://developer.apple.com/documentation/webkit/wknavigationaction/1401914-navigationtype")])
   NavigationType_? navigationType;
 
   ///Use [sourceFrame] instead.

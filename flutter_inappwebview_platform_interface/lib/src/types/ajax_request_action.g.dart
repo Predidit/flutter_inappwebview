@@ -25,8 +25,7 @@ class AjaxRequestAction {
   ///Set of all values of [AjaxRequestAction].
   static final Set<AjaxRequestAction> values = [
     AjaxRequestAction.ABORT,
-    AjaxRequestAction.PROCEED,
-  ].toSet();
+    AjaxRequestAction.PROCEED].toSet();
 
   ///Gets a possible [AjaxRequestAction] instance from [int] value.
   static AjaxRequestAction? fromValue(int? value) {

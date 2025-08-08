@@ -21,7 +21,7 @@ class CreateWindowAction_ extends NavigationAction_ {
   bool? androidIsDialog;
 
   ///Indicates if the new window should be a dialog, rather than a full-size window.
-  @SupportedPlatforms(platforms: [AndroidPlatform()])
+  
   bool? isDialog;
 
   ///Use [windowFeatures] instead.
@@ -37,12 +37,7 @@ class CreateWindowAction_ extends NavigationAction_ {
     MacOSPlatform(
         apiName: "WKWindowFeatures",
         apiUrl:
-            "https://developer.apple.com/documentation/webkit/wkwindowfeatures"),
-    WindowsPlatform(
-        apiName: "ICoreWebView2WindowFeatures",
-        apiUrl:
-            "https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2windowfeatures?view=webview2-1.0.2210.55")
-  ])
+            "https://developer.apple.com/documentation/webkit/wkwindowfeatures")])
   WindowFeatures_? windowFeatures;
 
   CreateWindowAction_(

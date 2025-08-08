@@ -53,8 +53,7 @@ class UnderlineStyle {
     UnderlineStyle.PATTERN_DOT,
     UnderlineStyle.SINGLE,
     UnderlineStyle.STYLE_NONE,
-    UnderlineStyle.THICK,
-  ].toSet();
+    UnderlineStyle.THICK].toSet();
 
   ///Gets a possible [UnderlineStyle] instance from [int] value.
   static UnderlineStyle? fromValue(int? value) {
@@ -203,8 +202,7 @@ class IOSNSUnderlineStyle {
     IOSNSUnderlineStyle.PATTERN_DOT,
     IOSNSUnderlineStyle.SINGLE,
     IOSNSUnderlineStyle.STYLE_NONE,
-    IOSNSUnderlineStyle.THICK,
-  ].toSet();
+    IOSNSUnderlineStyle.THICK].toSet();
 
   ///Gets a possible [IOSNSUnderlineStyle] instance from [int] value.
   static IOSNSUnderlineStyle? fromValue(int? value) {

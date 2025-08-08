@@ -47,8 +47,7 @@ class HttpAuthResponseAction {
   static final Set<HttpAuthResponseAction> values = [
     HttpAuthResponseAction.CANCEL,
     HttpAuthResponseAction.PROCEED,
-    HttpAuthResponseAction.USE_SAVED_HTTP_AUTH_CREDENTIALS,
-  ].toSet();
+    HttpAuthResponseAction.USE_SAVED_HTTP_AUTH_CREDENTIALS].toSet();
 
   ///Gets a possible [HttpAuthResponseAction] instance from [int] value.
   static HttpAuthResponseAction? fromValue(int? value) {

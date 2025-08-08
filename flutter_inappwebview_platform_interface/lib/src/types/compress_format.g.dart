@@ -71,8 +71,7 @@ class CompressFormat {
     CompressFormat.PNG,
     CompressFormat.WEBP,
     CompressFormat.WEBP_LOSSLESS,
-    CompressFormat.WEBP_LOSSY,
-  ].toSet();
+    CompressFormat.WEBP_LOSSY].toSet();
 
   ///Gets a possible [CompressFormat] instance from [String] value.
   static CompressFormat? fromValue(String? value) {

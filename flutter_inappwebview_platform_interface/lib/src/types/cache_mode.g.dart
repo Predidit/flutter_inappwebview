@@ -33,8 +33,7 @@ class CacheMode {
     CacheMode.LOAD_CACHE_ELSE_NETWORK,
     CacheMode.LOAD_CACHE_ONLY,
     CacheMode.LOAD_DEFAULT,
-    CacheMode.LOAD_NO_CACHE,
-  ].toSet();
+    CacheMode.LOAD_NO_CACHE].toSet();
 
   ///Gets a possible [CacheMode] instance from [int] value.
   static CacheMode? fromValue(int? value) {
@@ -153,8 +152,7 @@ class AndroidCacheMode {
     AndroidCacheMode.LOAD_CACHE_ELSE_NETWORK,
     AndroidCacheMode.LOAD_CACHE_ONLY,
     AndroidCacheMode.LOAD_DEFAULT,
-    AndroidCacheMode.LOAD_NO_CACHE,
-  ].toSet();
+    AndroidCacheMode.LOAD_NO_CACHE].toSet();
 
   ///Gets a possible [AndroidCacheMode] instance from [int] value.
   static AndroidCacheMode? fromValue(int? value) {

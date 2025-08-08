@@ -29,8 +29,7 @@ class CustomTabsShareState {
   static final Set<CustomTabsShareState> values = [
     CustomTabsShareState.SHARE_STATE_DEFAULT,
     CustomTabsShareState.SHARE_STATE_OFF,
-    CustomTabsShareState.SHARE_STATE_ON,
-  ].toSet();
+    CustomTabsShareState.SHARE_STATE_ON].toSet();
 
   ///Gets a possible [CustomTabsShareState] instance from [int] value.
   static CustomTabsShareState? fromValue(int? value) {

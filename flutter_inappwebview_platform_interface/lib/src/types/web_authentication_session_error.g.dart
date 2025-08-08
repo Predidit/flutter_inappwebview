@@ -31,8 +31,7 @@ class WebAuthenticationSessionError {
   static final Set<WebAuthenticationSessionError> values = [
     WebAuthenticationSessionError.CANCELED_LOGIN,
     WebAuthenticationSessionError.PRESENTATION_CONTEXT_INVALID,
-    WebAuthenticationSessionError.PRESENTATION_CONTEXT_NOT_PROVIDED,
-  ].toSet();
+    WebAuthenticationSessionError.PRESENTATION_CONTEXT_NOT_PROVIDED].toSet();
 
   ///Gets a possible [WebAuthenticationSessionError] instance from [int] value.
   static WebAuthenticationSessionError? fromValue(int? value) {

@@ -30,8 +30,7 @@ class RendererPriority {
   static final Set<RendererPriority> values = [
     RendererPriority.RENDERER_PRIORITY_BOUND,
     RendererPriority.RENDERER_PRIORITY_IMPORTANT,
-    RendererPriority.RENDERER_PRIORITY_WAIVED,
-  ].toSet();
+    RendererPriority.RENDERER_PRIORITY_WAIVED].toSet();
 
   ///Gets a possible [RendererPriority] instance from [int] value.
   static RendererPriority? fromValue(int? value) {

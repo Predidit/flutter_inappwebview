@@ -21,12 +21,11 @@ part 'print_job_attributes.g.dart';
 @ExchangeableObject()
 class PrintJobAttributes_ {
   ///The color mode.
-  @SupportedPlatforms(platforms: [AndroidPlatform(), MacOSPlatform()])
+  @SupportedPlatforms(platforms: [MacOSPlatform()])
   PrintJobColorMode_? colorMode;
 
   ///The duplex mode to use for the print job.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(available: "23"),
     IOSPlatform(),
     MacOSPlatform()
   ])
@@ -34,18 +33,16 @@ class PrintJobAttributes_ {
 
   ///The orientation of the printed content, portrait or landscape.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(),
-  ])
+    MacOSPlatform()])
   PrintJobOrientation_? orientation;
 
   ///The media size.
-  @SupportedPlatforms(platforms: [AndroidPlatform()])
+  
   PrintJobMediaSize_? mediaSize;
 
   ///The supported resolution in DPI (dots per inch).
-  @SupportedPlatforms(platforms: [AndroidPlatform()])
+  
   PrintJobResolution_? resolution;
 
   ///The margins for each printed page.

@@ -283,8 +283,7 @@ class WebViewFeature {
     WebViewFeature.WEB_RESOURCE_ERROR_GET_DESCRIPTION,
     WebViewFeature.WEB_RESOURCE_REQUEST_IS_REDIRECT,
     WebViewFeature.WEB_VIEW_RENDERER_CLIENT_BASIC_USAGE,
-    WebViewFeature.WEB_VIEW_RENDERER_TERMINATE,
-  ].toSet();
+    WebViewFeature.WEB_VIEW_RENDERER_TERMINATE].toSet();
 
   ///Gets a possible [WebViewFeature] instance from [String] value.
   static WebViewFeature? fromValue(String? value) {
@@ -734,8 +733,7 @@ class AndroidWebViewFeature {
     AndroidWebViewFeature.WEB_RESOURCE_ERROR_GET_DESCRIPTION,
     AndroidWebViewFeature.WEB_RESOURCE_REQUEST_IS_REDIRECT,
     AndroidWebViewFeature.WEB_VIEW_RENDERER_CLIENT_BASIC_USAGE,
-    AndroidWebViewFeature.WEB_VIEW_RENDERER_TERMINATE,
-  ].toSet();
+    AndroidWebViewFeature.WEB_VIEW_RENDERER_TERMINATE].toSet();
 
   ///Gets a possible [AndroidWebViewFeature] instance from [String] value.
   static AndroidWebViewFeature? fromValue(String? value) {

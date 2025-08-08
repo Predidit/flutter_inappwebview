@@ -37,8 +37,7 @@ class ScrollViewContentInsetAdjustmentBehavior {
     ScrollViewContentInsetAdjustmentBehavior.ALWAYS,
     ScrollViewContentInsetAdjustmentBehavior.AUTOMATIC,
     ScrollViewContentInsetAdjustmentBehavior.NEVER,
-    ScrollViewContentInsetAdjustmentBehavior.SCROLLABLE_AXES,
-  ].toSet();
+    ScrollViewContentInsetAdjustmentBehavior.SCROLLABLE_AXES].toSet();
 
   ///Gets a possible [ScrollViewContentInsetAdjustmentBehavior] instance from [int] value.
   static ScrollViewContentInsetAdjustmentBehavior? fromValue(int? value) {
@@ -168,8 +167,7 @@ class IOSUIScrollViewContentInsetAdjustmentBehavior {
     IOSUIScrollViewContentInsetAdjustmentBehavior.ALWAYS,
     IOSUIScrollViewContentInsetAdjustmentBehavior.AUTOMATIC,
     IOSUIScrollViewContentInsetAdjustmentBehavior.NEVER,
-    IOSUIScrollViewContentInsetAdjustmentBehavior.SCROLLABLE_AXES,
-  ].toSet();
+    IOSUIScrollViewContentInsetAdjustmentBehavior.SCROLLABLE_AXES].toSet();
 
   ///Gets a possible [IOSUIScrollViewContentInsetAdjustmentBehavior] instance from [int] value.
   static IOSUIScrollViewContentInsetAdjustmentBehavior? fromValue(int? value) {

@@ -81,7 +81,6 @@ extension UtilColor on Color {
       /**
           This part of the code is generated using the JavaScript code below on this link: https://drafts.csswg.org/css-color/#typedef-color
 
-
           let code = 'switch(colorValue) {\n';
           const table = document.querySelector('.named-color-table');
           const colorNameCells = table.querySelectorAll('tr > th dfn');

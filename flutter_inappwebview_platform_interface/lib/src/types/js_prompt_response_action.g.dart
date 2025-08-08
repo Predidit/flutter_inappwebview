@@ -25,8 +25,7 @@ class JsPromptResponseAction {
   ///Set of all values of [JsPromptResponseAction].
   static final Set<JsPromptResponseAction> values = [
     JsPromptResponseAction.CANCEL,
-    JsPromptResponseAction.CONFIRM,
-  ].toSet();
+    JsPromptResponseAction.CONFIRM].toSet();
 
   ///Gets a possible [JsPromptResponseAction] instance from [int] value.
   static JsPromptResponseAction? fromValue(int? value) {

@@ -34,8 +34,7 @@ class LayoutAlgorithm {
   static final Set<LayoutAlgorithm> values = [
     LayoutAlgorithm.NARROW_COLUMNS,
     LayoutAlgorithm.NORMAL,
-    LayoutAlgorithm.TEXT_AUTOSIZING,
-  ].toSet();
+    LayoutAlgorithm.TEXT_AUTOSIZING].toSet();
 
   ///Gets a possible [LayoutAlgorithm] instance from [String] value.
   static LayoutAlgorithm? fromValue(String? value) {
@@ -153,8 +152,7 @@ class AndroidLayoutAlgorithm {
   static final Set<AndroidLayoutAlgorithm> values = [
     AndroidLayoutAlgorithm.NARROW_COLUMNS,
     AndroidLayoutAlgorithm.NORMAL,
-    AndroidLayoutAlgorithm.TEXT_AUTOSIZING,
-  ].toSet();
+    AndroidLayoutAlgorithm.TEXT_AUTOSIZING].toSet();
 
   ///Gets a possible [AndroidLayoutAlgorithm] instance from [String] value.
   static AndroidLayoutAlgorithm? fromValue(String? value) {

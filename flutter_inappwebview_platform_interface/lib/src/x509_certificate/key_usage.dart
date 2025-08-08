@@ -12,8 +12,7 @@ class KeyUsage {
     KeyUsage.keyCertSign,
     KeyUsage.cRLSign,
     KeyUsage.encipherOnly,
-    KeyUsage.decipherOnly,
-  ].toSet();
+    KeyUsage.decipherOnly].toSet();
 
   static KeyUsage? fromIndex(int? value) {
     if (value != null) {

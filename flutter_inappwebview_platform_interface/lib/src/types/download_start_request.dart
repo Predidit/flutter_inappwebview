@@ -11,53 +11,39 @@ part 'download_start_request.g.dart';
 class DownloadStartRequest_ {
   ///The full url to the content that should be downloaded.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(),
-    WindowsPlatform()
-  ])
+    MacOSPlatform()])
   WebUri url;
 
   ///the user agent to be used for the download.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
-  ])
+  
   String? userAgent;
 
   ///Content-disposition http header, if present.
-  @SupportedPlatforms(platforms: [AndroidPlatform(), WindowsPlatform()])
+  
   String? contentDisposition;
 
   ///The mimetype of the content reported by the server.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(),
-    WindowsPlatform()
-  ])
+    MacOSPlatform()])
   String? mimeType;
 
   ///The file size reported by the server.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(),
-    WindowsPlatform()
-  ])
+    MacOSPlatform()])
   int contentLength;
 
   ///A suggested filename to use if saving the resource to disk.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(),
-    WindowsPlatform()
-  ])
+    MacOSPlatform()])
   String? suggestedFilename;
 
   ///The name of the text encoding of the receiver, or `null` if no text encoding was specified.
   @SupportedPlatforms(
-      platforms: [AndroidPlatform(), IOSPlatform(), MacOSPlatform()])
+      platforms: [IOSPlatform(), MacOSPlatform()])
   String? textEncodingName;
 
   DownloadStartRequest_(

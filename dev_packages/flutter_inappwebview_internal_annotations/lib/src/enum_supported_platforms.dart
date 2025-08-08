@@ -14,19 +14,7 @@ abstract class EnumPlatform implements Platform {
   final targetPlatformName = "";
 }
 
-class EnumAndroidPlatform implements EnumPlatform, AndroidPlatform {
-  final String? available;
-  final String? apiName;
-  final String? apiUrl;
-  final String? note;
-  final dynamic value;
 
-  const EnumAndroidPlatform(
-      {this.available, this.apiName, this.apiUrl, this.note, this.value});
-
-  final name = "Android native WebView";
-  final targetPlatformName = "android";
-}
 
 class EnumIOSPlatform implements EnumPlatform, IOSPlatform {
   final String? available;
@@ -56,53 +44,11 @@ class EnumMacOSPlatform implements EnumPlatform, MacOSPlatform {
   final targetPlatformName = "macOS";
 }
 
-class EnumWindowsPlatform implements EnumPlatform, WindowsPlatform {
-  final String? available;
-  final String? apiName;
-  final String? apiUrl;
-  final String? note;
-  final dynamic value;
 
-  const EnumWindowsPlatform(
-      {this.available, this.apiName, this.apiUrl, this.note, this.value});
 
-  final name = "Windows";
-  final targetPlatformName = "windows";
-}
 
-class EnumLinuxPlatform implements EnumPlatform, LinuxPlatform {
-  final String? available;
-  final String? apiName;
-  final String? apiUrl;
-  final String? note;
-  final dynamic value;
 
-  const EnumLinuxPlatform(
-      {this.available, this.apiName, this.apiUrl, this.note, this.value});
 
-  final name = "Linux";
-  final targetPlatformName = "linux";
-}
-
-class EnumWebPlatform implements EnumPlatform, WebPlatform {
-  final String? available;
-  final String? apiName;
-  final String? apiUrl;
-  final String? note;
-  final dynamic value;
-  final bool requiresSameOrigin;
-
-  const EnumWebPlatform(
-      {this.available,
-        this.apiName,
-        this.apiUrl,
-        this.note,
-        this.value,
-        this.requiresSameOrigin = true});
-
-  final name = "Web";
-  final targetPlatformName = "web";
-}
 
 class EnumSupportedPlatforms {
   final List<EnumPlatform> platforms;

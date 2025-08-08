@@ -94,8 +94,7 @@ class EnvironmentReleaseChannels {
     EnvironmentReleaseChannels.CANARY,
     EnvironmentReleaseChannels.DEV,
     EnvironmentReleaseChannels.NONE,
-    EnvironmentReleaseChannels.STABLE,
-  ].toSet();
+    EnvironmentReleaseChannels.STABLE].toSet();
 
   ///Gets a possible [EnvironmentReleaseChannels] instance from [int] value.
   static EnvironmentReleaseChannels? fromValue(int? value) {

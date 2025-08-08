@@ -13,92 +13,54 @@ class Cookie_ {
   ///The cookie name.
   @SupportedPlatforms(platforms: [
     IOSPlatform(),
-    MacOSPlatform(),
-    AndroidPlatform(),
-    WebPlatform(),
-    WindowsPlatform()
-  ])
+    MacOSPlatform()])
   String name;
 
   ///The cookie value.
   @SupportedPlatforms(platforms: [
     IOSPlatform(),
-    MacOSPlatform(),
-    AndroidPlatform(),
-    WebPlatform(),
-    WindowsPlatform()
-  ])
+    MacOSPlatform()])
   dynamic value;
 
   ///The cookie expiration date in milliseconds.
   @SupportedPlatforms(platforms: [
     IOSPlatform(),
-    MacOSPlatform(),
-    AndroidPlatform(
-        note:
-            "available on Android only if [WebViewFeature.GET_COOKIE_INFO] feature is supported."),
-    WindowsPlatform()
-  ])
+    MacOSPlatform()])
   int? expiresDate;
 
   ///Indicates if the cookie is a session only cookie.
   @SupportedPlatforms(
-      platforms: [IOSPlatform(), MacOSPlatform(), WindowsPlatform()])
+      platforms: [IOSPlatform(), MacOSPlatform()])
   bool? isSessionOnly;
 
   ///The cookie domain.
   @SupportedPlatforms(platforms: [
     IOSPlatform(),
-    MacOSPlatform(),
-    AndroidPlatform(
-        note:
-            "available on Android only if [WebViewFeature.GET_COOKIE_INFO] feature is supported."),
-    WindowsPlatform()
-  ])
+    MacOSPlatform()])
   String? domain;
 
   ///The cookie same site policy.
   @SupportedPlatforms(platforms: [
     IOSPlatform(),
-    MacOSPlatform(),
-    AndroidPlatform(
-        note:
-            "available on Android only if [WebViewFeature.GET_COOKIE_INFO] feature is supported."),
-    WindowsPlatform()
-  ])
+    MacOSPlatform()])
   HTTPCookieSameSitePolicy_? sameSite;
 
   ///Indicates if the cookie is secure or not.
   @SupportedPlatforms(platforms: [
     IOSPlatform(),
-    MacOSPlatform(),
-    AndroidPlatform(
-        note:
-            "available on Android only if [WebViewFeature.GET_COOKIE_INFO] feature is supported."),
-    WindowsPlatform()
-  ])
+    MacOSPlatform()])
   bool? isSecure;
 
   ///Indicates if the cookie is a http only cookie.
   @SupportedPlatforms(platforms: [
     IOSPlatform(),
-    MacOSPlatform(),
-    AndroidPlatform(
-        note:
-            "available on Android only if [WebViewFeature.GET_COOKIE_INFO] feature is supported."),
-    WindowsPlatform()
-  ])
+    MacOSPlatform()])
   bool? isHttpOnly;
 
   ///The cookie path.
   @SupportedPlatforms(platforms: [
     IOSPlatform(),
-    MacOSPlatform(),
-    AndroidPlatform(
-        note:
-            "available on Android only if [WebViewFeature.GET_COOKIE_INFO] feature is supported."),
-    WindowsPlatform()
-  ])
+    MacOSPlatform()])
   String? path;
 
   Cookie_(

@@ -50,8 +50,7 @@ class InAppWebViewHitTestResultType {
     InAppWebViewHitTestResultType.PHONE_TYPE,
     InAppWebViewHitTestResultType.SRC_ANCHOR_TYPE,
     InAppWebViewHitTestResultType.SRC_IMAGE_ANCHOR_TYPE,
-    InAppWebViewHitTestResultType.UNKNOWN_TYPE,
-  ].toSet();
+    InAppWebViewHitTestResultType.UNKNOWN_TYPE].toSet();
 
   ///Gets a possible [InAppWebViewHitTestResultType] instance from [int] value.
   static InAppWebViewHitTestResultType? fromValue(int? value) {

@@ -49,8 +49,7 @@ class BrowserProcessExitKind {
   ///Set of all values of [BrowserProcessExitKind].
   static final Set<BrowserProcessExitKind> values = [
     BrowserProcessExitKind.FAILED,
-    BrowserProcessExitKind.NORMAL,
-  ].toSet();
+    BrowserProcessExitKind.NORMAL].toSet();
 
   ///Gets a possible [BrowserProcessExitKind] instance from [int] value.
   static BrowserProcessExitKind? fromValue(int? value) {

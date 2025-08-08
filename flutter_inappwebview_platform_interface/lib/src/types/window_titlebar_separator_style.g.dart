@@ -81,8 +81,7 @@ class WindowTitlebarSeparatorStyle {
     WindowTitlebarSeparatorStyle.AUTOMATIC,
     WindowTitlebarSeparatorStyle.LINE,
     WindowTitlebarSeparatorStyle.NONE,
-    WindowTitlebarSeparatorStyle.SHADOW,
-  ].toSet();
+    WindowTitlebarSeparatorStyle.SHADOW].toSet();
 
   ///Gets a possible [WindowTitlebarSeparatorStyle] instance from [int] value.
   static WindowTitlebarSeparatorStyle? fromValue(int? value) {

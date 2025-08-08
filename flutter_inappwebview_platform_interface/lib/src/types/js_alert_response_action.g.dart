@@ -21,8 +21,7 @@ class JsAlertResponseAction {
 
   ///Set of all values of [JsAlertResponseAction].
   static final Set<JsAlertResponseAction> values = [
-    JsAlertResponseAction.CONFIRM,
-  ].toSet();
+    JsAlertResponseAction.CONFIRM].toSet();
 
   ///Gets a possible [JsAlertResponseAction] instance from [int] value.
   static JsAlertResponseAction? fromValue(int? value) {

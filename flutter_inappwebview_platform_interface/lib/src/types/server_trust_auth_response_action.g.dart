@@ -25,8 +25,7 @@ class ServerTrustAuthResponseAction {
   ///Set of all values of [ServerTrustAuthResponseAction].
   static final Set<ServerTrustAuthResponseAction> values = [
     ServerTrustAuthResponseAction.CANCEL,
-    ServerTrustAuthResponseAction.PROCEED,
-  ].toSet();
+    ServerTrustAuthResponseAction.PROCEED].toSet();
 
   ///Gets a possible [ServerTrustAuthResponseAction] instance from [int] value.
   static ServerTrustAuthResponseAction? fromValue(int? value) {

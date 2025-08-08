@@ -53,8 +53,7 @@ class PrintJobColorMode {
   ///Set of all values of [PrintJobColorMode].
   static final Set<PrintJobColorMode> values = [
     PrintJobColorMode.COLOR,
-    PrintJobColorMode.MONOCHROME,
-  ].toSet();
+    PrintJobColorMode.MONOCHROME].toSet();
 
   ///Gets a possible [PrintJobColorMode] instance from [int] value.
   static PrintJobColorMode? fromValue(int? value) {

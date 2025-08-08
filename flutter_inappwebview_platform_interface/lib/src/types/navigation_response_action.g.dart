@@ -32,8 +32,7 @@ class NavigationResponseAction {
   static final Set<NavigationResponseAction> values = [
     NavigationResponseAction.ALLOW,
     NavigationResponseAction.CANCEL,
-    NavigationResponseAction.DOWNLOAD,
-  ].toSet();
+    NavigationResponseAction.DOWNLOAD].toSet();
 
   ///Gets a possible [NavigationResponseAction] instance from [int] value.
   static NavigationResponseAction? fromValue(int? value) {
@@ -144,8 +143,7 @@ class IOSNavigationResponseAction {
   ///Set of all values of [IOSNavigationResponseAction].
   static final Set<IOSNavigationResponseAction> values = [
     IOSNavigationResponseAction.ALLOW,
-    IOSNavigationResponseAction.CANCEL,
-  ].toSet();
+    IOSNavigationResponseAction.CANCEL].toSet();
 
   ///Gets a possible [IOSNavigationResponseAction] instance from [int] value.
   static IOSNavigationResponseAction? fromValue(int? value) {

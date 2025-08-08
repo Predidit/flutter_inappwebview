@@ -29,8 +29,7 @@ class ClientCertResponseAction {
   static final Set<ClientCertResponseAction> values = [
     ClientCertResponseAction.CANCEL,
     ClientCertResponseAction.IGNORE,
-    ClientCertResponseAction.PROCEED,
-  ].toSet();
+    ClientCertResponseAction.PROCEED].toSet();
 
   ///Gets a possible [ClientCertResponseAction] instance from [int] value.
   static ClientCertResponseAction? fromValue(int? value) {

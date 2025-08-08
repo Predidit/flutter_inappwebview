@@ -123,8 +123,7 @@ class BrowserProcessKind {
     BrowserProcessKind.PPAPI_PLUGIN,
     BrowserProcessKind.RENDERER,
     BrowserProcessKind.SANDBOX_HELPER,
-    BrowserProcessKind.UTILITY,
-  ].toSet();
+    BrowserProcessKind.UTILITY].toSet();
 
   ///Gets a possible [BrowserProcessKind] instance from [int] value.
   static BrowserProcessKind? fromValue(int? value) {

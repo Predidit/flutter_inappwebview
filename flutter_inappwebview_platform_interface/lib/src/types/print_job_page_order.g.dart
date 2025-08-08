@@ -77,8 +77,7 @@ class PrintJobPageOrder {
     PrintJobPageOrder.ASCENDING,
     PrintJobPageOrder.DESCENDING,
     PrintJobPageOrder.SPECIAL,
-    PrintJobPageOrder.UNKNOWN,
-  ].toSet();
+    PrintJobPageOrder.UNKNOWN].toSet();
 
   ///Gets a possible [PrintJobPageOrder] instance from [int] value.
   static PrintJobPageOrder? fromValue(int? value) {

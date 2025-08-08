@@ -59,8 +59,7 @@ class ModalPresentationStyle {
     ModalPresentationStyle.OVER_CURRENT_CONTEXT,
     ModalPresentationStyle.OVER_FULL_SCREEN,
     ModalPresentationStyle.PAGE_SHEET,
-    ModalPresentationStyle.POPOVER,
-  ].toSet();
+    ModalPresentationStyle.POPOVER].toSet();
 
   ///Gets a possible [ModalPresentationStyle] instance from [int] value.
   static ModalPresentationStyle? fromValue(int? value) {
@@ -219,8 +218,7 @@ class IOSUIModalPresentationStyle {
     IOSUIModalPresentationStyle.OVER_CURRENT_CONTEXT,
     IOSUIModalPresentationStyle.OVER_FULL_SCREEN,
     IOSUIModalPresentationStyle.PAGE_SHEET,
-    IOSUIModalPresentationStyle.POPOVER,
-  ].toSet();
+    IOSUIModalPresentationStyle.POPOVER].toSet();
 
   ///Gets a possible [IOSUIModalPresentationStyle] instance from [int] value.
   static IOSUIModalPresentationStyle? fromValue(int? value) {

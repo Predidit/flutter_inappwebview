@@ -102,57 +102,54 @@ class InAppBrowserSettings_
   ///Set to `true` to create the browser and load the page, but not show it. Omit or set to `false` to have the browser open and load normally.
   ///The default value is `false`.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(),
-    WindowsPlatform()
-  ])
+    MacOSPlatform()])
   bool? hidden;
 
   ///Set to `true` to hide the toolbar at the top of the WebView. The default value is `false`.
   @SupportedPlatforms(
-      platforms: [AndroidPlatform(), IOSPlatform(), MacOSPlatform()])
+      platforms: [IOSPlatform(), MacOSPlatform()])
   bool? hideToolbarTop;
 
   ///Set the custom background color of the toolbar at the top.
   @SupportedPlatforms(
-      platforms: [AndroidPlatform(), IOSPlatform(), MacOSPlatform()])
+      platforms: [IOSPlatform(), MacOSPlatform()])
   Color_? toolbarTopBackgroundColor;
 
   ///Set to `true` to hide the url bar on the toolbar at the top. The default value is `false`.
   @SupportedPlatforms(
-      platforms: [AndroidPlatform(), IOSPlatform(), MacOSPlatform()])
+      platforms: [IOSPlatform(), MacOSPlatform()])
   bool? hideUrlBar;
 
   ///Set to `true` to hide the progress bar when the WebView is loading a page. The default value is `false`.
   @SupportedPlatforms(
-      platforms: [AndroidPlatform(), IOSPlatform(), MacOSPlatform()])
+      platforms: [IOSPlatform(), MacOSPlatform()])
   bool? hideProgressBar;
 
   ///Set to `true` to hide the default menu items. The default value is `false`.
   @SupportedPlatforms(
-      platforms: [AndroidPlatform(), IOSPlatform(), MacOSPlatform()])
+      platforms: [IOSPlatform(), MacOSPlatform()])
   bool? hideDefaultMenuItems;
 
   ///Set to `true` if you want the title should be displayed. The default value is `false`.
-  @SupportedPlatforms(platforms: [AndroidPlatform()])
+  
   bool? hideTitleBar;
 
   ///Set the action bar's title.
   @SupportedPlatforms(
-      platforms: [AndroidPlatform(), MacOSPlatform(), WindowsPlatform()])
+      platforms: [MacOSPlatform()])
   String? toolbarTopFixedTitle;
 
   ///Set to `false` to not close the InAppBrowser when the user click on the Android back button and the WebView cannot go back to the history. The default value is `true`.
-  @SupportedPlatforms(platforms: [AndroidPlatform()])
+  
   bool? closeOnCannotGoBack;
 
   ///Set to `false` to block the InAppBrowser WebView going back when the user click on the Android back button. The default value is `true`.
-  @SupportedPlatforms(platforms: [AndroidPlatform()])
+  
   bool? allowGoBackWithBackButton;
 
   ///Set to `true` to close the InAppBrowser when the user click on the Android back button. The default value is `false`.
-  @SupportedPlatforms(platforms: [AndroidPlatform()])
+  
   bool? shouldCloseOnBackButtonPressed;
 
   ///Set to `true` to set the toolbar at the top translucent. The default value is `true`.
@@ -209,12 +206,12 @@ class InAppBrowserSettings_
 
   ///How the browser window should be added to the main window.
   ///The default value is [WindowType.WINDOW].
-  @SupportedPlatforms(platforms: [MacOSPlatform(), WindowsPlatform()])
+  @SupportedPlatforms(platforms: [MacOSPlatform()])
   WindowType_? windowType;
 
   ///The window’s alpha value.
   ///The default value is `1.0`.
-  @SupportedPlatforms(platforms: [MacOSPlatform(), WindowsPlatform()])
+  @SupportedPlatforms(platforms: [MacOSPlatform()])
   double? windowAlphaValue;
 
   ///Flags that describe the window’s current style, such as if it’s resizable or in full-screen mode.
@@ -227,7 +224,7 @@ class InAppBrowserSettings_
 
   ///Sets the origin and size of the window’s frame rectangle according to a given frame rectangle,
   ///thereby setting its position and size onscreen.
-  @SupportedPlatforms(platforms: [MacOSPlatform(), WindowsPlatform()])
+  @SupportedPlatforms(platforms: [MacOSPlatform()])
   InAppWebViewRect_? windowFrame;
 
   InAppBrowserSettings_(

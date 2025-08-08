@@ -31,8 +31,7 @@ class URLRequestAttribution {
   ///Set of all values of [URLRequestAttribution].
   static final Set<URLRequestAttribution> values = [
     URLRequestAttribution.DEVELOPER,
-    URLRequestAttribution.USER,
-  ].toSet();
+    URLRequestAttribution.USER].toSet();
 
   ///Gets a possible [URLRequestAttribution] instance from [int] value.
   static URLRequestAttribution? fromValue(int? value) {

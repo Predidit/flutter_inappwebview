@@ -15,23 +15,13 @@ class WebResourceErrorType_ {
 
   ///User authentication failed on server.
   @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'WebViewClient.ERROR_AUTHENTICATION',
-        apiUrl:
-            'https://developer.android.com/reference/android/webkit/WebViewClient#ERROR_AUTHENTICATION',
-        value: -4)
-  ])
+    Enum])
   static const USER_AUTHENTICATION_FAILED =
       WebResourceErrorType_._internal("USER_AUTHENTICATION_FAILED");
 
   ///A malformed URL prevented a URL request from being initiated.
   @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'WebViewClient.ERROR_BAD_URL',
-        apiUrl:
-            'https://developer.android.com/reference/android/webkit/WebViewClient#ERROR_BAD_URL',
-        value: -12),
-    EnumIOSPlatform(
+    EnumEnumIOSPlatform(
         apiName: 'URLError.badURL',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/2293516-badurl',
@@ -46,12 +36,7 @@ class WebResourceErrorType_ {
 
   ///Failed to connect to the server.
   @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'WebViewClient.ERROR_CONNECT',
-        apiUrl:
-            'https://developer.android.com/reference/android/webkit/WebViewClient#ERROR_CONNECT',
-        value: -6),
-    EnumIOSPlatform(
+    EnumEnumIOSPlatform(
         apiName: 'URLError.cannotConnectToHost',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/code/2883001-cannotconnecttohost',
@@ -60,46 +45,25 @@ class WebResourceErrorType_ {
         apiName: 'URLError.cannotConnectToHost',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/code/2883001-cannotconnecttohost',
-        value: -1004),
-    EnumWindowsPlatform(
-        apiName: 'COREWEBVIEW2_WEB_ERROR_STATUS_CANNOT_CONNECT',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2210.55#corewebview2_web_error_status',
-        value: 12)
-  ])
+        value: -1004)])
   static const CANNOT_CONNECT_TO_HOST =
       WebResourceErrorType_._internal("CANNOT_CONNECT_TO_HOST");
 
   ///Failed to perform SSL handshake.
   @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'WebViewClient.ERROR_FAILED_SSL_HANDSHAKE',
-        apiUrl:
-            'https://developer.android.com/reference/android/webkit/WebViewClient#ERROR_FAILED_SSL_HANDSHAKE',
-        value: -11)
-  ])
+    Enum])
   static const FAILED_SSL_HANDSHAKE =
       WebResourceErrorType_._internal("FAILED_SSL_HANDSHAKE");
 
   ///Generic file error.
   @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'WebViewClient.ERROR_FILE',
-        apiUrl:
-            'https://developer.android.com/reference/android/webkit/WebViewClient#ERROR_FILE',
-        value: -13)
-  ])
+    Enum])
   static const GENERIC_FILE_ERROR =
       WebResourceErrorType_._internal("GENERIC_FILE_ERROR");
 
   ///File not found.
   @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'WebViewClient.ERROR_FILE_NOT_FOUND',
-        apiUrl:
-            'https://developer.android.com/reference/android/webkit/WebViewClient#ERROR_FILE_NOT_FOUND',
-        value: -14),
-    EnumIOSPlatform(
+    EnumEnumIOSPlatform(
         apiName: 'URLError.fileDoesNotExist',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/code/2883074-filedoesnotexist',
@@ -115,12 +79,7 @@ class WebResourceErrorType_ {
 
   ///Server or proxy hostname lookup failed.
   @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'WebViewClient.ERROR_HOST_LOOKUP',
-        apiUrl:
-            'https://developer.android.com/reference/android/webkit/WebViewClient#ERROR_HOST_LOOKUP',
-        value: -2),
-    EnumIOSPlatform(
+    EnumEnumIOSPlatform(
         apiName: 'URLError.cannotFindHost',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/code/2883157-cannotfindhost',
@@ -129,44 +88,23 @@ class WebResourceErrorType_ {
         apiName: 'URLError.cannotFindHost',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/code/2883157-cannotfindhost',
-        value: -1003),
-    EnumWindowsPlatform(
-        apiName: 'COREWEBVIEW2_WEB_ERROR_STATUS_HOST_NAME_NOT_RESOLVED',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2210.55#corewebview2_web_error_status',
-        value: 13)
-  ])
+        value: -1003)])
   static const HOST_LOOKUP = WebResourceErrorType_._internal("HOST_LOOKUP");
 
   ///Failed to read or write to the server.
   @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'WebViewClient.ERROR_IO',
-        apiUrl:
-            'https://developer.android.com/reference/android/webkit/WebViewClient#ERROR_IO',
-        value: -7)
-  ])
+    Enum])
   static const IO = WebResourceErrorType_._internal("IO");
 
   ///User authentication failed on proxy.
   @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'WebViewClient.ERROR_PROXY_AUTHENTICATION',
-        apiUrl:
-            'https://developer.android.com/reference/android/webkit/WebViewClient#ERROR_PROXY_AUTHENTICATION',
-        value: -5)
-  ])
+    Enum])
   static const PROXY_AUTHENTICATION =
       WebResourceErrorType_._internal("PROXY_AUTHENTICATION");
 
   ///A redirect loop has been detected or the threshold for number of allowable redirects has been exceeded (currently `16` on iOS).
   @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'WebViewClient.ERROR_REDIRECT_LOOP',
-        apiUrl:
-            'https://developer.android.com/reference/android/webkit/WebViewClient#ERROR_REDIRECT_LOOP',
-        value: -9),
-    EnumIOSPlatform(
+    EnumEnumIOSPlatform(
         apiName: 'URLError.httpTooManyRedirects',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/code/2883099-httptoomanyredirects',
@@ -182,12 +120,7 @@ class WebResourceErrorType_ {
 
   ///Connection timed out.
   @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'WebViewClient.ERROR_TIMEOUT',
-        apiUrl:
-            'https://developer.android.com/reference/android/webkit/WebViewClient#ERROR_TIMEOUT',
-        value: -8),
-    EnumIOSPlatform(
+    EnumEnumIOSPlatform(
         apiName: 'URLError.timedOut',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/code/2883027-timedout',
@@ -196,34 +129,18 @@ class WebResourceErrorType_ {
         apiName: 'URLError.timedOut',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/code/2883027-timedout',
-        value: -1001),
-    EnumWindowsPlatform(
-        apiName: 'COREWEBVIEW2_WEB_ERROR_STATUS_TIMEOUT',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2210.55#corewebview2_web_error_status',
-        value: 7)
-  ])
+        value: -1001)])
   static const TIMEOUT = WebResourceErrorType_._internal("TIMEOUT");
 
   ///Too many requests during this load.
   @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'WebViewClient.ERROR_TOO_MANY_REQUESTS',
-        apiUrl:
-            'https://developer.android.com/reference/android/webkit/WebViewClient#ERROR_TOO_MANY_REQUESTS',
-        value: -15)
-  ])
+    Enum])
   static const TOO_MANY_REQUESTS =
       WebResourceErrorType_._internal("TOO_MANY_REQUESTS");
 
   ///The URL Loading System encountered an error that it can’t interpret.
   @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'WebViewClient.ERROR_UNKNOWN',
-        apiUrl:
-            'https://developer.android.com/reference/android/webkit/WebViewClient#ERROR_UNKNOWN',
-        value: -1),
-    EnumIOSPlatform(
+    EnumEnumIOSPlatform(
         apiName: 'URLError.unknown',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/2293357-unknown',
@@ -232,46 +149,25 @@ class WebResourceErrorType_ {
         apiName: 'URLError.unknown',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/2293357-unknown',
-        value: -1),
-    EnumWindowsPlatform(
-        apiName: 'COREWEBVIEW2_WEB_ERROR_STATUS_UNKNOWN',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2210.55#corewebview2_web_error_status',
-        value: 0)
-  ])
+        value: -1)])
   static const UNKNOWN = WebResourceErrorType_._internal("UNKNOWN");
 
   ///Resource load was canceled by Safe Browsing.
   @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'WebViewClient.ERROR_UNSAFE_RESOURCE',
-        apiUrl:
-            'https://developer.android.com/reference/android/webkit/WebViewClient#ERROR_UNSAFE_RESOURCE',
-        value: -16)
-  ])
+    Enum])
   static const UNSAFE_RESOURCE =
       WebResourceErrorType_._internal("UNSAFE_RESOURCE");
 
   ///Unsupported authentication scheme (not basic or digest).
   @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'WebViewClient.ERROR_UNSUPPORTED_AUTH_SCHEME',
-        apiUrl:
-            'https://developer.android.com/reference/android/webkit/WebViewClient#ERROR_UNSUPPORTED_AUTH_SCHEME',
-        value: -3)
-  ])
+    Enum])
   static const UNSUPPORTED_AUTH_SCHEME =
       WebResourceErrorType_._internal("UNSUPPORTED_AUTH_SCHEME");
 
   ///Unsupported URI scheme.
   ///Typically this occurs when there is no available protocol handler for the URL.
   @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'WebViewClient.ERROR_UNSUPPORTED_SCHEME',
-        apiUrl:
-            'https://developer.android.com/reference/android/webkit/WebViewClient#ERROR_UNSUPPORTED_SCHEME',
-        value: -10),
-    EnumIOSPlatform(
+    EnumEnumIOSPlatform(
         apiName: 'URLError.unsupportedURL',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/code/2883043-unsupportedurl',
@@ -296,13 +192,7 @@ class WebResourceErrorType_ {
         apiName: 'URLError.cancelled',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/code/2883178-cancelled',
-        value: -999),
-    EnumWindowsPlatform(
-        apiName: 'COREWEBVIEW2_WEB_ERROR_STATUS_OPERATION_CANCELED',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2210.55#corewebview2_web_error_status',
-        value: 14)
-  ])
+        value: -999)])
   static const CANCELLED = WebResourceErrorType_._internal("CANCELLED");
 
   ///A client or server connection was severed in the middle of an in-progress load.
@@ -316,13 +206,7 @@ class WebResourceErrorType_ {
         apiName: 'URLError.networkConnectionLost',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/2293759-networkconnectionlost',
-        value: -1005),
-    EnumWindowsPlatform(
-        apiName: 'COREWEBVIEW2_WEB_ERROR_STATUS_DISCONNECTED',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2210.55#corewebview2_web_error_status',
-        value: 11)
-  ])
+        value: -1005)])
   static const NETWORK_CONNECTION_LOST =
       WebResourceErrorType_._internal("NETWORK_CONNECTION_LOST");
 
@@ -386,14 +270,7 @@ class WebResourceErrorType_ {
         apiName: 'URLError.badServerResponse',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/2293606-badserverresponse',
-        value: -1011),
-    EnumWindowsPlatform(
-        apiName:
-            'COREWEBVIEW2_WEB_ERROR_STATUS_ERROR_HTTP_INVALID_SERVER_RESPONSE',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2210.55#corewebview2_web_error_status',
-        value: 8)
-  ])
+        value: -1011)])
   static const BAD_SERVER_RESPONSE =
       WebResourceErrorType_._internal("BAD_SERVER_RESPONSE");
 
@@ -425,14 +302,7 @@ class WebResourceErrorType_ {
         apiName: 'URLError.userAuthenticationRequired',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/2293560-userauthenticationrequired',
-        value: -1013),
-    EnumWindowsPlatform(
-        apiName:
-            'COREWEBVIEW2_WEB_ERROR_STATUS_VALID_AUTHENTICATION_CREDENTIALS_REQUIRED',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2210.55#corewebview2_web_error_status',
-        value: 17),
-  ])
+        value: -1013)])
   static const USER_AUTHENTICATION_REQUIRED =
       WebResourceErrorType_._internal("USER_AUTHENTICATION_REQUIRED");
 
@@ -936,68 +806,31 @@ class WebResourceErrorType_ {
       WebResourceErrorType_._internal("BACKGROUND_SESSION_WAS_DISCONNECTED");
 
   ///Indicates that the host is unreachable.
-  @EnumSupportedPlatforms(platforms: [
-    EnumWindowsPlatform(
-        apiName: 'COREWEBVIEW2_WEB_ERROR_STATUS_SERVER_UNREACHABLE',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2210.55#corewebview2_web_error_status',
-        value: 6),
-  ])
+  
   static const SERVER_UNREACHABLE =
       WebResourceErrorType_._internal("SERVER_UNREACHABLE");
 
   ///Indicates that the connection was stopped.
-  @EnumSupportedPlatforms(platforms: [
-    EnumWindowsPlatform(
-        apiName: 'COREWEBVIEW2_WEB_ERROR_STATUS_CONNECTION_ABORTED',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2210.55#corewebview2_web_error_status',
-        value: 9)
-  ])
+  
   static const CONNECTION_ABORTED =
       WebResourceErrorType_._internal("CONNECTION_ABORTED");
 
   ///Indicates that the connection was reset.
-  @EnumSupportedPlatforms(platforms: [
-    EnumWindowsPlatform(
-        apiName: 'COREWEBVIEW2_WEB_ERROR_STATUS_CONNECTION_RESET',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2210.55#corewebview2_web_error_status',
-        value: 10),
-  ])
+  
   static const RESET = WebResourceErrorType_._internal("RESET");
 
   ///Indicates that the request redirect failed.
-  @EnumSupportedPlatforms(platforms: [
-    EnumWindowsPlatform(
-        apiName: 'COREWEBVIEW2_WEB_ERROR_STATUS_REDIRECT_FAILED',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2210.55#corewebview2_web_error_status',
-        value: 15),
-  ])
+  
   static const REDIRECT_FAILED =
       WebResourceErrorType_._internal("REDIRECT_FAILED");
 
   ///Indicates that an unexpected error occurred.
-  @EnumSupportedPlatforms(platforms: [
-    EnumWindowsPlatform(
-        apiName: 'COREWEBVIEW2_WEB_ERROR_STATUS_UNEXPECTED_ERROR',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2210.55#corewebview2_web_error_status',
-        value: 16),
-  ])
+  
   static const UNEXPECTED_ERROR =
       WebResourceErrorType_._internal("UNEXPECTED_ERROR");
 
   ///Indicates that user lacks proper authentication credentials for a proxy server.
-  @EnumSupportedPlatforms(platforms: [
-    EnumWindowsPlatform(
-        apiName:
-            'COREWEBVIEW2_WEB_ERROR_STATUS_VALID_PROXY_AUTHENTICATION_REQUIRED',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2210.55#corewebview2_web_error_status',
-        value: 18),
-  ])
+  
   static const VALID_PROXY_AUTHENTICATION_REQUIRED =
       WebResourceErrorType_._internal("VALID_PROXY_AUTHENTICATION_REQUIRED");
 }

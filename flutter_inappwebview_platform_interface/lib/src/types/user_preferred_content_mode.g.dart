@@ -29,8 +29,7 @@ class UserPreferredContentMode {
   static final Set<UserPreferredContentMode> values = [
     UserPreferredContentMode.DESKTOP,
     UserPreferredContentMode.MOBILE,
-    UserPreferredContentMode.RECOMMENDED,
-  ].toSet();
+    UserPreferredContentMode.RECOMMENDED].toSet();
 
   ///Gets a possible [UserPreferredContentMode] instance from [int] value.
   static UserPreferredContentMode? fromValue(int? value) {

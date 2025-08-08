@@ -21,8 +21,7 @@ class UIImage_ {
   ///The name of the system symbol image.
   @SupportedPlatforms(platforms: [
     IOSPlatform(available: "13.0"),
-    MacOSPlatform(available: "11.0"),
-  ])
+    MacOSPlatform(available: "11.0")])
   String? systemName;
 
   ///The data object containing the image data.

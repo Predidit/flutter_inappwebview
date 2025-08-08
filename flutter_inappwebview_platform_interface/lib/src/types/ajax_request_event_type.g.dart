@@ -48,8 +48,7 @@ class AjaxRequestEventType {
     AjaxRequestEventType.LOADEND,
     AjaxRequestEventType.LOADSTART,
     AjaxRequestEventType.PROGRESS,
-    AjaxRequestEventType.TIMEOUT,
-  ].toSet();
+    AjaxRequestEventType.TIMEOUT].toSet();
 
   ///Gets a possible [AjaxRequestEventType] instance from [String] value.
   static AjaxRequestEventType? fromValue(String? value) {

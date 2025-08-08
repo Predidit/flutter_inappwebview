@@ -29,8 +29,7 @@ class UserScriptInjectionTime {
   ///Set of all values of [UserScriptInjectionTime].
   static final Set<UserScriptInjectionTime> values = [
     UserScriptInjectionTime.AT_DOCUMENT_END,
-    UserScriptInjectionTime.AT_DOCUMENT_START,
-  ].toSet();
+    UserScriptInjectionTime.AT_DOCUMENT_START].toSet();
 
   ///Gets a possible [UserScriptInjectionTime] instance from [int] value.
   static UserScriptInjectionTime? fromValue(int? value) {

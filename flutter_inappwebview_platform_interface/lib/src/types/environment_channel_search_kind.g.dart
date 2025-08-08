@@ -50,8 +50,7 @@ class EnvironmentChannelSearchKind {
   ///Set of all values of [EnvironmentChannelSearchKind].
   static final Set<EnvironmentChannelSearchKind> values = [
     EnvironmentChannelSearchKind.LEAST_STABLE,
-    EnvironmentChannelSearchKind.MOST_STABLE,
-  ].toSet();
+    EnvironmentChannelSearchKind.MOST_STABLE].toSet();
 
   ///Gets a possible [EnvironmentChannelSearchKind] instance from [int] value.
   static EnvironmentChannelSearchKind? fromValue(int? value) {

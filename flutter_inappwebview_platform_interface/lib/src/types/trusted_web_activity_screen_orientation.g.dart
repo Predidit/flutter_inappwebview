@@ -75,8 +75,7 @@ class TrustedWebActivityScreenOrientation {
     TrustedWebActivityScreenOrientation.NATURAL,
     TrustedWebActivityScreenOrientation.PORTRAIT,
     TrustedWebActivityScreenOrientation.PORTRAIT_PRIMARY,
-    TrustedWebActivityScreenOrientation.PORTRAIT_SECONDARY,
-  ].toSet();
+    TrustedWebActivityScreenOrientation.PORTRAIT_SECONDARY].toSet();
 
   ///Gets a possible [TrustedWebActivityScreenOrientation] instance from [int] value.
   static TrustedWebActivityScreenOrientation? fromValue(int? value) {

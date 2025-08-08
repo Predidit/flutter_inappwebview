@@ -49,8 +49,7 @@ class CustomTabsRelationType {
   ///Set of all values of [CustomTabsRelationType].
   static final Set<CustomTabsRelationType> values = [
     CustomTabsRelationType.HANDLE_ALL_URLS,
-    CustomTabsRelationType.USE_AS_ORIGIN,
-  ].toSet();
+    CustomTabsRelationType.USE_AS_ORIGIN].toSet();
 
   ///Gets a possible [CustomTabsRelationType] instance from [int] value.
   static CustomTabsRelationType? fromValue(int? value) {

@@ -29,8 +29,7 @@ class SafeBrowsingResponseAction {
   static final Set<SafeBrowsingResponseAction> values = [
     SafeBrowsingResponseAction.BACK_TO_SAFETY,
     SafeBrowsingResponseAction.PROCEED,
-    SafeBrowsingResponseAction.SHOW_INTERSTITIAL,
-  ].toSet();
+    SafeBrowsingResponseAction.SHOW_INTERSTITIAL].toSet();
 
   ///Gets a possible [SafeBrowsingResponseAction] instance from [int] value.
   static SafeBrowsingResponseAction? fromValue(int? value) {

@@ -25,8 +25,7 @@ class FormResubmissionAction {
   ///Set of all values of [FormResubmissionAction].
   static final Set<FormResubmissionAction> values = [
     FormResubmissionAction.DONT_RESEND,
-    FormResubmissionAction.RESEND,
-  ].toSet();
+    FormResubmissionAction.RESEND].toSet();
 
   ///Gets a possible [FormResubmissionAction] instance from [int] value.
   static FormResubmissionAction? fromValue(int? value) {
