@@ -80,9 +80,7 @@ class InAppWebViewSettings_ {
   bool? clearCache;
 
   ///Sets the user-agent for the WebView.
-  @SupportedPlatforms(platforms: [
-    "),
-    IOSPlatform(
+  @SupportedPlatforms(platforms: [IOSPlatform(
         apiName: "WKWebView.customUserAgent",
         apiUrl:
             "https://developer.apple.com/documentation/webkit/wkwebview/1414950-customuseragent"),
@@ -106,9 +104,7 @@ class InAppWebViewSettings_ {
   String? applicationNameForUserAgent;
 
   ///Set to `true` to enable JavaScript. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    "),
-    IOSPlatform(
+  @SupportedPlatforms(platforms: [IOSPlatform(
         apiName: "WKWebpagePreferences.allowsContentJavaScript",
         apiUrl:
             "https://developer.apple.com/documentation/webkit/wkwebpagepreferences/3552422-allowscontentjavascript/"),
@@ -119,9 +115,7 @@ class InAppWebViewSettings_ {
   bool? javaScriptEnabled;
 
   ///Set to `true` to allow JavaScript open windows without user interaction. The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    "),
-    IOSPlatform(
+  @SupportedPlatforms(platforms: [IOSPlatform(
         apiName: "WKPreferences.javaScriptCanOpenWindowsAutomatically",
         apiUrl:
             "https://developer.apple.com/documentation/webkit/wkpreferences/1536573-javascriptcanopenwindowsautomati/"),
@@ -132,9 +126,7 @@ class InAppWebViewSettings_ {
   bool? javaScriptCanOpenWindowsAutomatically;
 
   ///Set to `true` to prevent HTML5 audio or video from autoplaying. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    "),
-    IOSPlatform(
+  @SupportedPlatforms(platforms: [IOSPlatform(
         apiName:
             "WKWebViewConfiguration.mediaTypesRequiringUserActionForPlayback",
         apiUrl:
@@ -149,9 +141,7 @@ class InAppWebViewSettings_ {
   bool? mediaPlaybackRequiresUserGesture;
 
   ///Sets the minimum font size. The default value is `8` for Android, `0` for iOS.
-  @SupportedPlatforms(platforms: [
-    "),
-    IOSPlatform(
+  @SupportedPlatforms(platforms: [IOSPlatform(
         apiName: "WKPreferences.minimumFontSize",
         apiUrl:
             "https://developer.apple.com/documentation/webkit/wkpreferences/1537155-minimumfontsize/"),
@@ -163,18 +153,14 @@ class InAppWebViewSettings_ {
   int? minimumFontSize;
 
   ///Define whether the vertical scrollbar should be drawn or not. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    "),
-    IOSPlatform(
+  @SupportedPlatforms(platforms: [IOSPlatform(
         apiName: "UIScrollView.showsVerticalScrollIndicator",
         apiUrl:
             "https://developer.apple.com/documentation/uikit/uiscrollview/1619405-showsverticalscrollindicator/")])
   bool? verticalScrollBarEnabled;
 
   ///Define whether the horizontal scrollbar should be drawn or not. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    "),
-    IOSPlatform(
+  @SupportedPlatforms(platforms: [IOSPlatform(
         apiName: "UIScrollView.showsHorizontalScrollIndicator",
         apiUrl:
             "https://developer.apple.com/documentation/uikit/uiscrollview/1619380-showshorizontalscrollindicator")])
@@ -307,9 +293,7 @@ class InAppWebViewSettings_ {
   bool? disableContextMenu;
 
   ///Set to `false` if the WebView should not support zooming using its on-screen zoom controls and gestures. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    "),
-    IOSPlatform(),
+  @SupportedPlatforms(platforms: [IOSPlatform(),
     MacOSPlatform()])
   bool? supportZoom;
 
@@ -322,9 +306,7 @@ class InAppWebViewSettings_ {
   ///Note that the value of this setting is ignored if the value of [allowUniversalAccessFromFileURLs] is `true`.
   ///
   ///The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    "),
-    IOSPlatform(),
+  @SupportedPlatforms(platforms: [IOSPlatform(),
     MacOSPlatform()
   ])
   bool? allowFileAccessFromFileURLs;
@@ -338,9 +320,7 @@ class InAppWebViewSettings_ {
   ///either accessing arbitrary local files including WebView cookies, app private data or even credentials used on arbitrary web sites.
   ///
   ///The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    "),
-    IOSPlatform(),
+  @SupportedPlatforms(platforms: [IOSPlatform(),
     MacOSPlatform()
   ])
   bool? allowUniversalAccessFromFileURLs;
@@ -361,9 +341,7 @@ class InAppWebViewSettings_ {
   WebViewAssetLoader_? webViewAssetLoader;
 
   ///Sets the text zoom of the page in percent. The default value is `100`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   int? textZoom;
 
   ///Use [PlatformCookieManager.removeSessionCookies] instead.
@@ -373,62 +351,44 @@ class InAppWebViewSettings_ {
   bool? clearSessionCache;
 
   ///Set to `true` if the WebView should use its built-in zoom mechanisms. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   bool? builtInZoomControls;
 
   ///Set to `true` if the WebView should display on-screen zoom controls when using the built-in zoom mechanisms. The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   bool? displayZoomControls;
 
   ///Set to `true` if you want the database storage API is enabled. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   bool? databaseEnabled;
 
   ///Set to `true` if you want the DOM storage API is enabled. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   bool? domStorageEnabled;
 
   ///Set to `true` if the WebView should enable support for the "viewport" HTML meta tag or should use a wide viewport.
   ///When the value of the setting is false, the layout width is always set to the width of the WebView control in device-independent (CSS) pixels.
   ///When the value is true and the page contains the viewport meta tag, the value of the width specified in the tag is used.
   ///If the page does not contain the tag or does not provide a width, then a wide viewport will be used. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   bool? useWideViewPort;
 
   ///Sets whether Safe Browsing is enabled. Safe Browsing allows WebView to protect against malware and phishing attacks by verifying the links.
   ///Safe Browsing is enabled by default for devices which support it.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   bool? safeBrowsingEnabled;
 
   ///Configures the WebView's behavior when a secure origin attempts to load a resource from an insecure origin.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   MixedContentMode_? mixedContentMode;
 
   ///Enables or disables content URL access within WebView. Content URL access allows WebView to load content from a content provider installed in the system. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   bool? allowContentAccess;
 
   ///Enables or disables file access within WebView. Note that this enables or disables file system access only.
   ///Assets and resources are still accessible using `file:///android_asset` and `file:///android_res`. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   bool? allowFileAccess;
 
   ///Sets the path to the Application Caches files. In order for the Application Caches API to be enabled, this option must be set a path to which the application can write.
@@ -438,64 +398,44 @@ class InAppWebViewSettings_ {
   String? appCachePath;
 
   ///Sets whether the WebView should not load image resources from the network (resources accessed via http and https URI schemes). The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   bool? blockNetworkImage;
 
   ///Sets whether the WebView should not load resources from the network. The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   bool? blockNetworkLoads;
 
   ///Overrides the way the cache is used. The way the cache is used is based on the navigation type. For a normal page load, the cache is checked and content is re-validated as needed.
   ///When navigating back, content is not revalidated, instead the content is just retrieved from the cache. The default value is [CacheMode.LOAD_DEFAULT].
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   CacheMode_? cacheMode;
 
   ///Sets the cursive font family name. The default value is `"cursive"`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   String? cursiveFontFamily;
 
   ///Sets the default fixed font size. The default value is `16`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   int? defaultFixedFontSize;
 
   ///Sets the default font size. The default value is `16`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   int? defaultFontSize;
 
   ///Sets the default text encoding name to use when decoding html pages. The default value is `"UTF-8"`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   String? defaultTextEncodingName;
 
   ///Disables the action mode menu items according to menuItems flag.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   ActionModeMenuItem_? disabledActionModeMenuItems;
 
   ///Sets the fantasy font family name. The default value is `"fantasy"`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   String? fantasyFontFamily;
 
   ///Sets the fixed font family name. The default value is `"monospace"`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   String? fixedFontFamily;
 
   ///Use [algorithmicDarkeningAllowed] instead.
@@ -509,9 +449,7 @@ class InAppWebViewSettings_ {
   ///To customize the behavior, refer to [algorithmicDarkeningAllowed].
   @Deprecated("Use algorithmicDarkeningAllowed instead")
   @ExchangeableObjectProperty(leaveDeprecatedInToMapMethod: true)
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   ForceDark_? forceDark;
 
   ///Use [algorithmicDarkeningAllowed] instead.
@@ -526,49 +464,31 @@ class InAppWebViewSettings_ {
   ///To customize the behavior, refer to [algorithmicDarkeningAllowed].
   @Deprecated("Use algorithmicDarkeningAllowed instead")
   @ExchangeableObjectProperty(leaveDeprecatedInToMapMethod: true)
-  @SupportedPlatforms(platforms: [
-    ",
-        note:
-            "it will take effect only if [WebViewFeature.isFeatureSupported] returns `true` for [WebViewFeature.FORCE_DARK_STRATEGY].")
-  ])
+  
   ForceDarkStrategy_? forceDarkStrategy;
 
   ///Sets whether Geolocation is enabled. The default is `true`.
-  @SupportedPlatforms(platforms: [
-    ",
-        note:
-            """Please note that in order for the Geolocation API to be usable by a page in the WebView, the following requirements must be met:
-- an application must have permission to access the device location, see [Manifest.permission.ACCESS_COARSE_LOCATION](https://developer.android.com/reference/android/Manifest.permission#ACCESS_COARSE_LOCATION), [Manifest.permission.ACCESS_FINE_LOCATION](https://developer.android.com/reference/android/Manifest.permission#ACCESS_FINE_LOCATION);
-- an application must provide an implementation of the [PlatformWebViewCreationParams.onGeolocationPermissionsShowPrompt] callback to receive notifications that a page is requesting access to location via the JavaScript Geolocation API.""")
-  ])
+  
   bool? geolocationEnabled;
 
   ///Sets the underlying layout algorithm. This will cause a re-layout of the WebView.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   LayoutAlgorithm_? layoutAlgorithm;
 
   ///Sets whether the WebView loads pages in overview mode, that is, zooms out the content to fit on screen by width.
   ///This setting is taken into account when the content width is greater than the width of the WebView control, for example, when [useWideViewPort] is enabled.
   ///The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   bool? loadWithOverviewMode;
 
   ///Sets whether the WebView should load image resources. Note that this method controls loading of all images, including those embedded using the data URI scheme.
   ///Note that if the value of this setting is changed from false to true, all images resources referenced by content currently displayed by the WebView are loaded automatically.
   ///The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   bool? loadsImagesAutomatically;
 
   ///Sets the minimum logical font size. The default is `8`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   int? minimumLogicalFontSize;
 
   ///Sets the initial scale for this WebView. 0 means default. The behavior for the default scale depends on the state of [useWideViewPort] and [loadWithOverviewMode].
@@ -577,41 +497,29 @@ class InAppWebViewSettings_ {
   ///If initial scale is greater than 0, WebView starts with this value as initial scale.
   ///Please note that unlike the scale properties in the viewport meta tag, this method doesn't take the screen density into account.
   ///The default is `0`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   int? initialScale;
 
   ///Tells the WebView whether it needs to set a node. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   bool? needInitialFocus;
 
   ///Sets whether this WebView should raster tiles when it is offscreen but attached to a window.
   ///Turning this on can avoid rendering artifacts when animating an offscreen WebView on-screen.
   ///Offscreen WebViews in this mode use more memory. The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   bool? offscreenPreRaster;
 
   ///Sets the sans-serif font family name. The default value is `"sans-serif"`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   String? sansSerifFontFamily;
 
   ///Sets the serif font family name. The default value is `"sans-serif"`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   String? serifFontFamily;
 
   ///Sets the standard font family name. The default value is `"sans-serif"`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   String? standardFontFamily;
 
   ///Sets whether the WebView should save form data. In Android O, the platform has implemented a fully functional Autofill feature to store form data.
@@ -620,31 +528,23 @@ class InAppWebViewSettings_ {
   @Deprecated('')
   @ExchangeableObjectProperty(
       leaveDeprecatedInToMapMethod: true, leaveDeprecatedInFromMapMethod: true)
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   bool? saveFormData;
 
   ///Boolean value to enable third party cookies in the WebView.
   ///Used on Android Lollipop and above only as third party cookies are enabled by default on Android Kitkat and below and on iOS.
   ///The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   bool? thirdPartyCookiesEnabled;
 
   ///Boolean value to enable Hardware Acceleration in the WebView.
   ///The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   bool? hardwareAcceleration;
 
   ///Sets whether the WebView supports multiple windows.
   ///If set to `true`, [PlatformWebViewCreationParams.onCreateWindow] event must be implemented by the host application. The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   bool? supportMultipleWindows;
 
   ///Regular expression used on native side by the [PlatformWebViewCreationParams.shouldOverrideUrlLoading]
@@ -686,16 +586,12 @@ class InAppWebViewSettings_ {
   ///Sets the WebView's over-scroll mode.
   ///Setting the over-scroll mode of a WebView will have an effect only if the WebView is capable of scrolling.
   ///The default value is [OverScrollMode.IF_CONTENT_SCROLLS].
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   OverScrollMode_? overScrollMode;
 
   ///Informs WebView of the network state.
   ///This is used to set the JavaScript property `window.navigator.isOnline` and generates the online/offline event as specified in HTML5, sec. 5.7.7.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   bool? networkAvailable;
 
   ///Specifies the style of the scrollbars. The scrollbars can be overlaid or inset.
@@ -704,41 +600,29 @@ class InAppWebViewSettings_ {
   ///you can use SCROLLBARS_INSIDE_OVERLAY or SCROLLBARS_INSIDE_INSET. If you want them to appear at the edge of the view, ignoring the padding,
   ///then you can use SCROLLBARS_OUTSIDE_OVERLAY or SCROLLBARS_OUTSIDE_INSET.
   ///The default value is [ScrollBarStyle.SCROLLBARS_INSIDE_OVERLAY].
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   ScrollBarStyle_? scrollBarStyle;
 
   ///Sets the position of the vertical scroll bar.
   ///The default value is [VerticalScrollbarPosition.SCROLLBAR_POSITION_DEFAULT].
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   VerticalScrollbarPosition_? verticalScrollbarPosition;
 
   ///Defines the delay in milliseconds that a scrollbar waits before fade out.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   int? scrollBarDefaultDelayBeforeFade;
 
   ///Defines whether scrollbars will fade when the view is not scrolling.
   ///The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   bool? scrollbarFadingEnabled;
 
   ///Defines the scrollbar fade duration in milliseconds.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   int? scrollBarFadeDuration;
 
   ///Sets the renderer priority policy for this WebView.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   RendererPriorityPolicy_? rendererPriorityPolicy;
 
   ///Sets whether the default Android WebView’s internal error page should be suppressed or displayed for bad navigations.
@@ -747,27 +631,19 @@ class InAppWebViewSettings_ {
   bool? disableDefaultErrorPage;
 
   ///Sets the vertical scrollbar thumb color.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   Color_? verticalScrollbarThumbColor;
 
   ///Sets the vertical scrollbar track color.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   Color_? verticalScrollbarTrackColor;
 
   ///Sets the horizontal scrollbar thumb color.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   Color_? horizontalScrollbarThumbColor;
 
   ///Sets the horizontal scrollbar track color.
-  @SupportedPlatforms(platforms: [
-    ")
-  ])
+  
   Color_? horizontalScrollbarTrackColor;
 
   ///Control whether algorithmic darkening is allowed.
@@ -781,11 +657,7 @@ class InAppWebViewSettings_ {
   ///If the app's theme is dark and it allows algorithmic darkening,
   ///WebView will attempt to darken web content using an algorithm,
   ///if the content doesn't define its own dark styles and doesn't explicitly disable darkening.
-  @SupportedPlatforms(platforms: [
-    ",
-        note:
-            "available on Android only if [WebViewFeature.ALGORITHMIC_DARKENING] feature is supported.")
-  ])
+  
   bool? algorithmicDarkeningAllowed;
 
   ///Sets whether EnterpriseAuthenticationAppLinkPolicy if set by admin is allowed to have any
@@ -813,11 +685,7 @@ class InAppWebViewSettings_ {
   ///Apps can use this method to restore the legacy behavior for servers that still rely on the deprecated header, but it should not be used to identify the webview to first-party servers under the control of the app developer.
   ///
   ///The format of the strings in the allow-list follows the origin rules of [PlatformInAppWebViewController.addWebMessageListener].
-  @SupportedPlatforms(platforms: [
-    ",
-        note:
-            "available on Android only if [WebViewFeature.REQUESTED_WITH_HEADER_ALLOW_LIST] feature is supported.")
-  ])
+  
   Set<String>? requestedWithHeaderOriginAllowList;
 
   ///Set to `true` to disable the bouncing of the WebView when the scrolling has reached an edge of the content. The default value is `false`.
@@ -1645,7 +1513,6 @@ class InAppWebViewSettings_ {
   ///The view’s alpha value. The value of this property is a floating-point number
   ///in the range 0.0 to 1.0, where 0.0 represents totally transparent and 1.0 represents totally opaque.
   @SupportedPlatforms(platforms: [
-    '),
     IOSPlatform(
         apiName: "UIView.alpha",
         apiUrl:

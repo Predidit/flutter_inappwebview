@@ -17,10 +17,6 @@ class ClientCertChallenge_ extends URLAuthenticationChallenge_ {
   List<String>? androidPrincipals;
 
   ///The acceptable certificate issuers for the certificate matching the private key.
-  @SupportedPlatforms(platforms: [
-    ",
-        available: "21")
-  ])
   List<String>? principals;
 
   ///Use [keyTypes] instead.
@@ -28,23 +24,16 @@ class ClientCertChallenge_ extends URLAuthenticationChallenge_ {
   List<String>? androidKeyTypes;
 
   ///Returns the acceptable types of asymmetric keys.
-  @SupportedPlatforms(platforms: [
-    ",
-        available: "21")
-  ])
   List<String>? keyTypes;
 
   ///The collection contains Base64 encoding of DER encoded distinguished names
   ///of certificate authorities allowed by the server.
-  
   List<String>? allowedCertificateAuthorities;
 
   ///If the server that issued this request is an http proxy.
-  
   bool? isProxy;
 
   ///The collection contains mutually trusted CA certificates.
-  
   List<SslCertificate_>? mutuallyTrustedCertificates;
 
   ClientCertChallenge_({

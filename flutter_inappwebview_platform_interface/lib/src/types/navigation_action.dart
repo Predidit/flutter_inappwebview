@@ -32,9 +32,6 @@ class NavigationAction_ {
   ///For security reasons in certain situations this method may return `false` even though
   ///the sequence of events which caused the request to be created was initiated by a user
   ///gesture.
-  @SupportedPlatforms(platforms: [
-    ",
-        note: "On Android < 21, this is always `false`")])
   bool? hasGesture;
 
   ///Use [isRedirect] instead.
@@ -45,8 +42,6 @@ class NavigationAction_ {
   ///
   ///**NOTE**: If the request is associated to the [PlatformWebViewCreationParams.onCreateWindow] event, this is always `false`.
   ///Also, on Android < 21, this is always `false`.
-  @SupportedPlatforms(platforms: [
-    ")])
   bool? isRedirect;
 
   ///Use [navigationType] instead.
