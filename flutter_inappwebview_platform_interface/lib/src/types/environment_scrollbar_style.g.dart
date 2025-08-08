@@ -50,8 +50,7 @@ class EnvironmentScrollbarStyle {
   ///Set of all values of [EnvironmentScrollbarStyle].
   static final Set<EnvironmentScrollbarStyle> values = [
     EnvironmentScrollbarStyle.DEFAULT,
-    EnvironmentScrollbarStyle.FLUENT_OVERLAY,
-  ].toSet();
+    EnvironmentScrollbarStyle.FLUENT_OVERLAY].toSet();
 
   ///Gets a possible [EnvironmentScrollbarStyle] instance from [int] value.
   static EnvironmentScrollbarStyle? fromValue(int? value) {

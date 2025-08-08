@@ -113,8 +113,7 @@ class CustomTabsNavigationEventType {
     CustomTabsNavigationEventType.FINISHED,
     CustomTabsNavigationEventType.STARTED,
     CustomTabsNavigationEventType.TAB_HIDDEN,
-    CustomTabsNavigationEventType.TAB_SHOWN,
-  ].toSet();
+    CustomTabsNavigationEventType.TAB_SHOWN].toSet();
 
   ///Gets a possible [CustomTabsNavigationEventType] instance from [int] value.
   static CustomTabsNavigationEventType? fromValue(int? value) {

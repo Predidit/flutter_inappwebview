@@ -55,8 +55,7 @@ class PrintJobRenderingQuality {
   ///Set of all values of [PrintJobRenderingQuality].
   static final Set<PrintJobRenderingQuality> values = [
     PrintJobRenderingQuality.BEST,
-    PrintJobRenderingQuality.RESPONSIVE,
-  ].toSet();
+    PrintJobRenderingQuality.RESPONSIVE].toSet();
 
   ///Gets a possible [PrintJobRenderingQuality] instance from [int] value.
   static PrintJobRenderingQuality? fromValue(int? value) {

@@ -37,8 +37,7 @@ class ConsoleMessageLevel {
     ConsoleMessageLevel.ERROR,
     ConsoleMessageLevel.LOG,
     ConsoleMessageLevel.TIP,
-    ConsoleMessageLevel.WARNING,
-  ].toSet();
+    ConsoleMessageLevel.WARNING].toSet();
 
   ///Gets a possible [ConsoleMessageLevel] instance from [int] value.
   static ConsoleMessageLevel? fromValue(int? value) {

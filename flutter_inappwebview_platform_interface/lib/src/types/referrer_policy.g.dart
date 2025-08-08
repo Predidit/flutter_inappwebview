@@ -62,8 +62,7 @@ class ReferrerPolicy {
     ReferrerPolicy.SAME_ORIGIN,
     ReferrerPolicy.STRICT_ORIGIN,
     ReferrerPolicy.STRICT_ORIGIN_WHEN_CROSS_ORIGIN,
-    ReferrerPolicy.UNSAFE_URL,
-  ].toSet();
+    ReferrerPolicy.UNSAFE_URL].toSet();
 
   ///Gets a possible [ReferrerPolicy] instance from [String] value.
   static ReferrerPolicy? fromValue(String? value) {

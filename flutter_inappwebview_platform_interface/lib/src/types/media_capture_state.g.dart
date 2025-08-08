@@ -29,8 +29,7 @@ class MediaCaptureState {
   static final Set<MediaCaptureState> values = [
     MediaCaptureState.ACTIVE,
     MediaCaptureState.MUTED,
-    MediaCaptureState.NONE,
-  ].toSet();
+    MediaCaptureState.NONE].toSet();
 
   ///Gets a possible [MediaCaptureState] instance from [int] value.
   static MediaCaptureState? fromValue(int? value) {

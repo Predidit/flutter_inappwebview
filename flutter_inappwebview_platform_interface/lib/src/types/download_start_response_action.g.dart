@@ -33,8 +33,7 @@ class DownloadStartResponseAction {
 
   ///Set of all values of [DownloadStartResponseAction].
   static final Set<DownloadStartResponseAction> values = [
-    DownloadStartResponseAction.CANCEL,
-  ].toSet();
+    DownloadStartResponseAction.CANCEL].toSet();
 
   ///Gets a possible [DownloadStartResponseAction] instance from [int] value.
   static DownloadStartResponseAction? fromValue(int? value) {

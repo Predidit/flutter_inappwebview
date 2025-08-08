@@ -45,8 +45,7 @@ class SafeBrowsingThreat {
     SafeBrowsingThreat.SAFE_BROWSING_THREAT_MALWARE,
     SafeBrowsingThreat.SAFE_BROWSING_THREAT_PHISHING,
     SafeBrowsingThreat.SAFE_BROWSING_THREAT_UNKNOWN,
-    SafeBrowsingThreat.SAFE_BROWSING_THREAT_UNWANTED_SOFTWARE,
-  ].toSet();
+    SafeBrowsingThreat.SAFE_BROWSING_THREAT_UNWANTED_SOFTWARE].toSet();
 
   ///Gets a possible [SafeBrowsingThreat] instance from [int] value.
   static SafeBrowsingThreat? fromValue(int? value) {

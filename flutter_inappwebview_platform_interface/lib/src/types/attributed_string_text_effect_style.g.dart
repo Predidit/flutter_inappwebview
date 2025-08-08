@@ -23,8 +23,7 @@ class AttributedStringTextEffectStyle {
 
   ///Set of all values of [AttributedStringTextEffectStyle].
   static final Set<AttributedStringTextEffectStyle> values = [
-    AttributedStringTextEffectStyle.LETTERPRESS_STYLE,
-  ].toSet();
+    AttributedStringTextEffectStyle.LETTERPRESS_STYLE].toSet();
 
   ///Gets a possible [AttributedStringTextEffectStyle] instance from [String] value.
   static AttributedStringTextEffectStyle? fromValue(String? value) {
@@ -130,8 +129,7 @@ class IOSNSAttributedStringTextEffectStyle {
 
   ///Set of all values of [IOSNSAttributedStringTextEffectStyle].
   static final Set<IOSNSAttributedStringTextEffectStyle> values = [
-    IOSNSAttributedStringTextEffectStyle.LETTERPRESS_STYLE,
-  ].toSet();
+    IOSNSAttributedStringTextEffectStyle.LETTERPRESS_STYLE].toSet();
 
   ///Gets a possible [IOSNSAttributedStringTextEffectStyle] instance from [String] value.
   static IOSNSAttributedStringTextEffectStyle? fromValue(String? value) {

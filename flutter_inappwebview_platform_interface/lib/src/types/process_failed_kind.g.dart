@@ -209,8 +209,7 @@ class ProcessFailedKind {
     ProcessFailedKind.RENDER_PROCESS_UNRESPONSIVE,
     ProcessFailedKind.SANDBOX_HELPER_PROCESS_EXITED,
     ProcessFailedKind.UNKNOWN_PROCESS_EXITED,
-    ProcessFailedKind.UTILITY_PROCESS_EXITED,
-  ].toSet();
+    ProcessFailedKind.UTILITY_PROCESS_EXITED].toSet();
 
   ///Gets a possible [ProcessFailedKind] instance from [String] value.
   static ProcessFailedKind? fromValue(String? value) {

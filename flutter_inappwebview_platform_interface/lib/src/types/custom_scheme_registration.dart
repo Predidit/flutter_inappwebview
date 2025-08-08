@@ -6,7 +6,7 @@ import 'enum_method.dart';
 part 'custom_scheme_registration.g.dart';
 
 ///Class that represents the registration of a custom scheme for [WebViewEnvironmentSettings] method.
-@SupportedPlatforms(platforms: [WindowsPlatform()])
+
 @ExchangeableObject()
 class CustomSchemeRegistration_ {
   ///The name of the custom scheme to register.

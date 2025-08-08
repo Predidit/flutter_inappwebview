@@ -7,8 +7,7 @@ class ASN1IdentifierClass {
     ASN1IdentifierClass.UNIVERSAL,
     ASN1IdentifierClass.APPLICATION,
     ASN1IdentifierClass.CONTEXT_SPECIFIC,
-    ASN1IdentifierClass.PRIVATE,
-  ].toSet();
+    ASN1IdentifierClass.PRIVATE].toSet();
 
   static ASN1IdentifierClass? fromValue(int? value) {
     if (value != null) {
@@ -84,8 +83,7 @@ class ASN1IdentifierTagNumber {
     ASN1IdentifierTagNumber.GENERAL_STRING,
     ASN1IdentifierTagNumber.UNIVERSAL_STRING,
     ASN1IdentifierTagNumber.CHARACTER_STRING,
-    ASN1IdentifierTagNumber.BMP_STRING,
-  ].toSet();
+    ASN1IdentifierTagNumber.BMP_STRING].toSet();
 
   static ASN1IdentifierTagNumber? fromValue(int? value) {
     if (value != null) {

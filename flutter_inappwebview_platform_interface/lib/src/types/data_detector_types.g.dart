@@ -63,8 +63,7 @@ class DataDetectorTypes {
     DataDetectorTypes.NONE,
     DataDetectorTypes.PHONE_NUMBER,
     DataDetectorTypes.SPOTLIGHT_SUGGESTION,
-    DataDetectorTypes.TRACKING_NUMBER,
-  ].toSet();
+    DataDetectorTypes.TRACKING_NUMBER].toSet();
 
   ///Gets a possible [DataDetectorTypes] instance from [String] value.
   static DataDetectorTypes? fromValue(String? value) {
@@ -229,8 +228,7 @@ class IOSWKDataDetectorTypes {
     IOSWKDataDetectorTypes.NONE,
     IOSWKDataDetectorTypes.PHONE_NUMBER,
     IOSWKDataDetectorTypes.SPOTLIGHT_SUGGESTION,
-    IOSWKDataDetectorTypes.TRACKING_NUMBER,
-  ].toSet();
+    IOSWKDataDetectorTypes.TRACKING_NUMBER].toSet();
 
   ///Gets a possible [IOSWKDataDetectorTypes] instance from [String] value.
   static IOSWKDataDetectorTypes? fromValue(String? value) {

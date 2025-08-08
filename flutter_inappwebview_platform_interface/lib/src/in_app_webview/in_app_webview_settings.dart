@@ -50,11 +50,8 @@ class InAppWebViewSettings_ {
   ///it will be automatically inferred as `true`, otherwise, the default value is `false`.
   ///This logic will not be applied for [PlatformInAppBrowser], where you must set the value manually.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(),
-    WindowsPlatform()
-  ])
+    MacOSPlatform()])
   bool? useShouldOverrideUrlLoading;
 
   ///Set to `true` to be able to listen at the [PlatformWebViewCreationParams.onLoadResource] event.
@@ -63,7 +60,7 @@ class InAppWebViewSettings_ {
   ///it will be automatically inferred as `true`, otherwise, the default value is `false`.
   ///This logic will not be applied for [PlatformInAppBrowser], where you must set the value manually.
   @SupportedPlatforms(
-      platforms: [AndroidPlatform(), IOSPlatform(), MacOSPlatform()])
+      platforms: [IOSPlatform(), MacOSPlatform()])
   bool? useOnLoadResource;
 
   ///Set to `true` to be able to listen at the [PlatformWebViewCreationParams.onDownloadStartRequest] event.
@@ -72,40 +69,29 @@ class InAppWebViewSettings_ {
   ///it will be automatically inferred as `true`, otherwise, the default value is `false`.
   ///This logic will not be applied for [PlatformInAppBrowser], where you must set the value manually.
   @SupportedPlatforms(
-      platforms: [AndroidPlatform(), IOSPlatform(), MacOSPlatform()])
+      platforms: [IOSPlatform(), MacOSPlatform()])
   bool? useOnDownloadStart;
 
   ///Use [PlatformInAppWebViewController.clearAllCache] instead.
   @Deprecated("Use InAppWebViewController.clearAllCache instead")
   @ExchangeableObjectProperty(leaveDeprecatedInToMapMethod: true)
   @SupportedPlatforms(
-      platforms: [AndroidPlatform(), IOSPlatform(), MacOSPlatform()])
+      platforms: [IOSPlatform(), MacOSPlatform()])
   bool? clearCache;
 
   ///Sets the user-agent for the WebView.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setUserAgentString",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setUserAgentString(java.lang.String)"),
-    IOSPlatform(
+  @SupportedPlatforms(platforms: [IOSPlatform(
         apiName: "WKWebView.customUserAgent",
         apiUrl:
             "https://developer.apple.com/documentation/webkit/wkwebview/1414950-customuseragent"),
     MacOSPlatform(
         apiName: "WKWebView.customUserAgent",
         apiUrl:
-            "https://developer.apple.com/documentation/webkit/wkwebview/1414950-customuseragent"),
-    WindowsPlatform(
-        apiName: 'ICoreWebView2Settings2.put_UserAgent',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings2?view=webview2-1.0.2210.55#put_useragent')
-  ])
+            "https://developer.apple.com/documentation/webkit/wkwebview/1414950-customuseragent")])
   String? userAgent;
 
   ///Append to the existing user-agent. Setting userAgent will override this.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(
         apiName: "WKWebViewConfiguration.applicationNameForUserAgent",
         apiUrl:
@@ -118,52 +104,29 @@ class InAppWebViewSettings_ {
   String? applicationNameForUserAgent;
 
   ///Set to `true` to enable JavaScript. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setJavaScriptEnabled",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setJavaScriptEnabled(boolean)"),
-    IOSPlatform(
+  @SupportedPlatforms(platforms: [IOSPlatform(
         apiName: "WKWebpagePreferences.allowsContentJavaScript",
         apiUrl:
             "https://developer.apple.com/documentation/webkit/wkwebpagepreferences/3552422-allowscontentjavascript/"),
     MacOSPlatform(
         apiName: "WKWebpagePreferences.allowsContentJavaScript",
         apiUrl:
-            "https://developer.apple.com/documentation/webkit/wkwebpagepreferences/3552422-allowscontentjavascript/"),
-    WebPlatform(requiresSameOrigin: false),
-    WindowsPlatform(
-        apiName: "ICoreWebView2Settings.put_IsScriptEnabled",
-        apiUrl:
-            "https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-1.0.2210.55#put_isscriptenabled")
-  ])
+            "https://developer.apple.com/documentation/webkit/wkwebpagepreferences/3552422-allowscontentjavascript/")])
   bool? javaScriptEnabled;
 
   ///Set to `true` to allow JavaScript open windows without user interaction. The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setJavaScriptCanOpenWindowsAutomatically",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setJavaScriptCanOpenWindowsAutomatically(boolean)"),
-    IOSPlatform(
+  @SupportedPlatforms(platforms: [IOSPlatform(
         apiName: "WKPreferences.javaScriptCanOpenWindowsAutomatically",
         apiUrl:
             "https://developer.apple.com/documentation/webkit/wkpreferences/1536573-javascriptcanopenwindowsautomati/"),
     MacOSPlatform(
         apiName: "WKPreferences.javaScriptCanOpenWindowsAutomatically",
         apiUrl:
-            "https://developer.apple.com/documentation/webkit/wkpreferences/1536573-javascriptcanopenwindowsautomati/"),
-    WebPlatform()
-  ])
+            "https://developer.apple.com/documentation/webkit/wkpreferences/1536573-javascriptcanopenwindowsautomati/")])
   bool? javaScriptCanOpenWindowsAutomatically;
 
   ///Set to `true` to prevent HTML5 audio or video from autoplaying. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setMediaPlaybackRequiresUserGesture",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setMediaPlaybackRequiresUserGesture(boolean)"),
-    IOSPlatform(
+  @SupportedPlatforms(platforms: [IOSPlatform(
         apiName:
             "WKWebViewConfiguration.mediaTypesRequiringUserActionForPlayback",
         apiUrl:
@@ -178,12 +141,7 @@ class InAppWebViewSettings_ {
   bool? mediaPlaybackRequiresUserGesture;
 
   ///Sets the minimum font size. The default value is `8` for Android, `0` for iOS.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setMinimumFontSize",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setMinimumFontSize(int)"),
-    IOSPlatform(
+  @SupportedPlatforms(platforms: [IOSPlatform(
         apiName: "WKPreferences.minimumFontSize",
         apiUrl:
             "https://developer.apple.com/documentation/webkit/wkpreferences/1537155-minimumfontsize/"),
@@ -195,40 +153,21 @@ class InAppWebViewSettings_ {
   int? minimumFontSize;
 
   ///Define whether the vertical scrollbar should be drawn or not. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "View.setVerticalScrollBarEnabled",
-        apiUrl:
-            "https://developer.android.com/reference/android/view/View#setVerticalScrollBarEnabled(boolean)"),
-    IOSPlatform(
+  @SupportedPlatforms(platforms: [IOSPlatform(
         apiName: "UIScrollView.showsVerticalScrollIndicator",
         apiUrl:
-            "https://developer.apple.com/documentation/uikit/uiscrollview/1619405-showsverticalscrollindicator/"),
-    WebPlatform(
-        note:
-            "It must have the same value of [horizontalScrollBarEnabled] to take effect.")
-  ])
+            "https://developer.apple.com/documentation/uikit/uiscrollview/1619405-showsverticalscrollindicator/")])
   bool? verticalScrollBarEnabled;
 
   ///Define whether the horizontal scrollbar should be drawn or not. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "View.setHorizontalScrollBarEnabled",
-        apiUrl:
-            "https://developer.android.com/reference/android/view/View#setHorizontalScrollBarEnabled(boolean)"),
-    IOSPlatform(
+  @SupportedPlatforms(platforms: [IOSPlatform(
         apiName: "UIScrollView.showsHorizontalScrollIndicator",
         apiUrl:
-            "https://developer.apple.com/documentation/uikit/uiscrollview/1619380-showshorizontalscrollindicator"),
-    WebPlatform(
-        note:
-            "It must have the same value of [verticalScrollBarEnabled] to take effect.")
-  ])
+            "https://developer.apple.com/documentation/uikit/uiscrollview/1619380-showshorizontalscrollindicator")])
   bool? horizontalScrollBarEnabled;
 
   ///List of custom schemes that the WebView must handle. Use the [PlatformWebViewCreationParams.onLoadResourceWithCustomScheme] event to intercept resource requests with custom scheme.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(available: "11.0"),
     MacOSPlatform(available: "10.13")
   ])
@@ -236,7 +175,6 @@ class InAppWebViewSettings_ {
 
   ///List of [ContentBlocker] that are a set of rules used to block content in the browser window.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(available: "11.0"),
     MacOSPlatform(available: "10.13")
   ])
@@ -245,7 +183,6 @@ class InAppWebViewSettings_ {
 
   ///Sets the content mode that the WebView needs to use when loading and rendering a webpage. The default value is [UserPreferredContentMode.RECOMMENDED].
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(
         available: "13.0",
         apiName: "WKWebpagePreferences.preferredContentMode",
@@ -271,7 +208,7 @@ class InAppWebViewSettings_ {
   ///it will be automatically inferred as `true`, otherwise, the default value is `false`.
   ///This logic will not be applied for [PlatformInAppBrowser], where you must set the value manually.
   @SupportedPlatforms(
-      platforms: [AndroidPlatform(), IOSPlatform(), MacOSPlatform()])
+      platforms: [IOSPlatform(), MacOSPlatform()])
   bool? useShouldInterceptAjaxRequest;
 
   ///Set to `true` to be able to listen at the [PlatformWebViewCreationParams.onAjaxReadyStateChange] event.
@@ -286,7 +223,7 @@ class InAppWebViewSettings_ {
   ///it will be automatically inferred as `true`, otherwise, the default value is `false`.
   ///This logic will not be applied for [PlatformInAppBrowser], where you must set the value manually.
   @SupportedPlatforms(
-      platforms: [AndroidPlatform(), IOSPlatform(), MacOSPlatform()])
+      platforms: [IOSPlatform(), MacOSPlatform()])
   bool? useOnAjaxReadyStateChange;
 
   ///Set to `true` to be able to listen at the [PlatformWebViewCreationParams.onAjaxProgress] event.
@@ -301,7 +238,7 @@ class InAppWebViewSettings_ {
   ///it will be automatically inferred as `true`, otherwise, the default value is `false`.
   ///This logic will not be applied for [PlatformInAppBrowser], where you must set the value manually.
   @SupportedPlatforms(
-      platforms: [AndroidPlatform(), IOSPlatform(), MacOSPlatform()])
+      platforms: [IOSPlatform(), MacOSPlatform()])
   bool? useOnAjaxProgress;
 
   ///Set to `false` to be able to listen to also sync `XMLHttpRequest`s at the
@@ -311,7 +248,7 @@ class InAppWebViewSettings_ {
   ///requests to not wait on the JavaScript code the response synchronously,
   ///as if it was an async `XMLHttpRequest`.
   @SupportedPlatforms(
-      platforms: [AndroidPlatform(), IOSPlatform(), MacOSPlatform()])
+      platforms: [IOSPlatform(), MacOSPlatform()])
   bool? interceptOnlyAsyncAjaxRequests;
 
   ///Set to `true` to be able to listen at the [PlatformWebViewCreationParams.shouldInterceptFetchRequest] event.
@@ -320,77 +257,44 @@ class InAppWebViewSettings_ {
   ///it will be automatically inferred as `true`, otherwise, the default value is `false`.
   ///This logic will not be applied for [PlatformInAppBrowser], where you must set the value manually.
   @SupportedPlatforms(
-      platforms: [AndroidPlatform(), IOSPlatform(), MacOSPlatform()])
+      platforms: [IOSPlatform(), MacOSPlatform()])
   bool? useShouldInterceptFetchRequest;
 
   ///Set to `true` to open a browser window with incognito mode. The default value is `false`.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        note:
-            """setting this to `true`, it will clear all the cookies of all WebView instances, 
-because there isn't any way to make the website data store non-persistent for the specific WebView instance such as on iOS."""),
     IOSPlatform(),
-    MacOSPlatform(),
-    WindowsPlatform(
-        apiName: "ICoreWebView2ControllerOptions.put_IsInPrivateModeEnabled",
-        apiUrl:
-            "https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions?view=webview2-1.0.2792.45#put_isinprivatemodeenabled")
-  ])
+    MacOSPlatform()])
   bool? incognito;
 
   ///Sets whether WebView should use browser caching. The default value is `true`.
   @SupportedPlatforms(
-      platforms: [AndroidPlatform(), IOSPlatform(), MacOSPlatform()])
+      platforms: [IOSPlatform(), MacOSPlatform()])
   bool? cacheEnabled;
 
   ///Set to `true` to make the background of the WebView transparent. If your app has a dark theme, this can prevent a white flash on initialization. The default value is `false`.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(available: "12.0"),
-    WindowsPlatform(
-        available: '1.0.774.44',
-        apiName: 'ICoreWebView2Controller2.put_DefaultBackgroundColor',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller2?view=webview2-1.0.2210.55#put_defaultbackgroundcolor')
-  ])
+    MacOSPlatform(available: "12.0")])
   bool? transparentBackground;
 
   ///Set to `true` to disable vertical scroll. The default value is `false`.
   @SupportedPlatforms(
-      platforms: [AndroidPlatform(), IOSPlatform(), WebPlatform()])
+      platforms: [IOSPlatform()])
   bool? disableVerticalScroll;
 
   ///Set to `true` to disable horizontal scroll. The default value is `false`.
   @SupportedPlatforms(
-      platforms: [AndroidPlatform(), IOSPlatform(), WebPlatform()])
+      platforms: [IOSPlatform()])
   bool? disableHorizontalScroll;
 
   ///Set to `true` to disable context menu. The default value is `false`.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
-    IOSPlatform(),
-    WebPlatform(),
-    WindowsPlatform(
-        apiName: "ICoreWebView2Settings.put_AreDefaultContextMenusEnabled",
-        apiUrl:
-            "https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-1.0.2210.55#put_aredefaultcontextmenusenabled")
-  ])
+    IOSPlatform()])
   bool? disableContextMenu;
 
   ///Set to `false` if the WebView should not support zooming using its on-screen zoom controls and gestures. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setSupportZoom",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setSupportZoom(boolean)"),
-    IOSPlatform(),
-    MacOSPlatform(),
-    WindowsPlatform(
-        apiName: "ICoreWebView2Settings.put_IsZoomControlEnabled",
-        apiUrl:
-            "https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-1.0.2210.55#put_iszoomcontrolenabled")
-  ])
+  @SupportedPlatforms(platforms: [IOSPlatform(),
+    MacOSPlatform()])
   bool? supportZoom;
 
   ///Sets whether cross-origin requests in the context of a file scheme URL should be allowed to access content from other file scheme URLs.
@@ -402,12 +306,7 @@ because there isn't any way to make the website data store non-persistent for th
   ///Note that the value of this setting is ignored if the value of [allowUniversalAccessFromFileURLs] is `true`.
   ///
   ///The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setAllowFileAccessFromFileURLs",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setAllowFileAccessFromFileURLs(boolean)"),
-    IOSPlatform(),
+  @SupportedPlatforms(platforms: [IOSPlatform(),
     MacOSPlatform()
   ])
   bool? allowFileAccessFromFileURLs;
@@ -421,12 +320,7 @@ because there isn't any way to make the website data store non-persistent for th
   ///either accessing arbitrary local files including WebView cookies, app private data or even credentials used on arbitrary web sites.
   ///
   ///The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setAllowUniversalAccessFromFileURLs",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setAllowUniversalAccessFromFileURLs(boolean)"),
-    IOSPlatform(),
+  @SupportedPlatforms(platforms: [IOSPlatform(),
     MacOSPlatform()
   ])
   bool? allowUniversalAccessFromFileURLs;
@@ -438,213 +332,108 @@ because there isn't any way to make the website data store non-persistent for th
   ///
   ///**IMPORTANT NOTE**: if you use this setting, your app could be rejected by the Google Play Store.
   ///For example, if you allow background playing of YouTube videos, which is a violation of the YouTube API Terms of Service.
-  @SupportedPlatforms(platforms: [AndroidPlatform()])
+  
   bool? allowBackgroundAudioPlaying;
 
   ///Use a [WebViewAssetLoader] instance to load local files including application's static assets and resources using http(s):// URLs.
   ///Loading local files using web-like URLs instead of `file://` is desirable as it is compatible with the Same-Origin policy.
-  @SupportedPlatforms(platforms: [AndroidPlatform()])
+  
   WebViewAssetLoader_? webViewAssetLoader;
 
   ///Sets the text zoom of the page in percent. The default value is `100`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setTextZoom",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setTextZoom(int)")
-  ])
+  
   int? textZoom;
 
   ///Use [PlatformCookieManager.removeSessionCookies] instead.
   @Deprecated("Use CookieManager.removeSessionCookies instead")
   @ExchangeableObjectProperty(leaveDeprecatedInToMapMethod: true)
-  @SupportedPlatforms(platforms: [AndroidPlatform()])
+  
   bool? clearSessionCache;
 
   ///Set to `true` if the WebView should use its built-in zoom mechanisms. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setBuiltInZoomControls",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setBuiltInZoomControls(boolean)")
-  ])
+  
   bool? builtInZoomControls;
 
   ///Set to `true` if the WebView should display on-screen zoom controls when using the built-in zoom mechanisms. The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setDisplayZoomControls",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setDisplayZoomControls(boolean)")
-  ])
+  
   bool? displayZoomControls;
 
   ///Set to `true` if you want the database storage API is enabled. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setDatabaseEnabled",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setDatabaseEnabled(boolean)")
-  ])
+  
   bool? databaseEnabled;
 
   ///Set to `true` if you want the DOM storage API is enabled. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setDomStorageEnabled",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setDomStorageEnabled(boolean)")
-  ])
+  
   bool? domStorageEnabled;
 
   ///Set to `true` if the WebView should enable support for the "viewport" HTML meta tag or should use a wide viewport.
   ///When the value of the setting is false, the layout width is always set to the width of the WebView control in device-independent (CSS) pixels.
   ///When the value is true and the page contains the viewport meta tag, the value of the width specified in the tag is used.
   ///If the page does not contain the tag or does not provide a width, then a wide viewport will be used. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setUseWideViewPort",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setUseWideViewPort(boolean)")
-  ])
+  
   bool? useWideViewPort;
 
   ///Sets whether Safe Browsing is enabled. Safe Browsing allows WebView to protect against malware and phishing attacks by verifying the links.
   ///Safe Browsing is enabled by default for devices which support it.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        available: "26",
-        apiName: "WebSettings.setSafeBrowsingEnabled",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setSafeBrowsingEnabled(boolean)")
-  ])
+  
   bool? safeBrowsingEnabled;
 
   ///Configures the WebView's behavior when a secure origin attempts to load a resource from an insecure origin.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        available: "21",
-        apiName: "WebSettings.setMixedContentMode",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setMixedContentMode(int)")
-  ])
+  
   MixedContentMode_? mixedContentMode;
 
   ///Enables or disables content URL access within WebView. Content URL access allows WebView to load content from a content provider installed in the system. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setAllowContentAccess",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setAllowContentAccess(boolean)")
-  ])
+  
   bool? allowContentAccess;
 
   ///Enables or disables file access within WebView. Note that this enables or disables file system access only.
   ///Assets and resources are still accessible using `file:///android_asset` and `file:///android_res`. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setAllowFileAccess",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setAllowFileAccess(boolean)")
-  ])
+  
   bool? allowFileAccess;
 
   ///Sets the path to the Application Caches files. In order for the Application Caches API to be enabled, this option must be set a path to which the application can write.
   ///This option is used one time: repeated calls are ignored.
-  @SupportedPlatforms(
-      platforms: [AndroidPlatform(apiName: "WebSettings.setAppCachePath")])
   String? appCachePath;
 
   ///Sets whether the WebView should not load image resources from the network (resources accessed via http and https URI schemes). The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setBlockNetworkImage",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings#setBlockNetworkImage(boolean)")
-  ])
+  
   bool? blockNetworkImage;
 
   ///Sets whether the WebView should not load resources from the network. The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setBlockNetworkLoads",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings#setBlockNetworkLoads(boolean)")
-  ])
+  
   bool? blockNetworkLoads;
 
   ///Overrides the way the cache is used. The way the cache is used is based on the navigation type. For a normal page load, the cache is checked and content is re-validated as needed.
   ///When navigating back, content is not revalidated, instead the content is just retrieved from the cache. The default value is [CacheMode.LOAD_DEFAULT].
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setCacheMode",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings#setCacheMode(int)")
-  ])
+  
   CacheMode_? cacheMode;
 
   ///Sets the cursive font family name. The default value is `"cursive"`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setCursiveFontFamily",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings#setCursiveFontFamily(java.lang.String)")
-  ])
+  
   String? cursiveFontFamily;
 
   ///Sets the default fixed font size. The default value is `16`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setDefaultFixedFontSize",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings#setDefaultFixedFontSize(int)")
-  ])
+  
   int? defaultFixedFontSize;
 
   ///Sets the default font size. The default value is `16`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setDefaultFontSize",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings#setDefaultFontSize(int)")
-  ])
+  
   int? defaultFontSize;
 
   ///Sets the default text encoding name to use when decoding html pages. The default value is `"UTF-8"`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setDefaultTextEncodingName",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings#setDefaultTextEncodingName(java.lang.String)")
-  ])
+  
   String? defaultTextEncodingName;
 
   ///Disables the action mode menu items according to menuItems flag.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        available: "24",
-        apiName: "WebSettings.setDisabledActionModeMenuItems",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings#setDisabledActionModeMenuItems(int)")
-  ])
+  
   ActionModeMenuItem_? disabledActionModeMenuItems;
 
   ///Sets the fantasy font family name. The default value is `"fantasy"`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setFantasyFontFamily",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings#setFantasyFontFamily(java.lang.String)")
-  ])
+  
   String? fantasyFontFamily;
 
   ///Sets the fixed font family name. The default value is `"monospace"`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setFixedFontFamily",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings#setFixedFontFamily(java.lang.String)")
-  ])
+  
   String? fixedFontFamily;
 
   ///Use [algorithmicDarkeningAllowed] instead.
@@ -658,13 +447,7 @@ because there isn't any way to make the website data store non-persistent for th
   ///To customize the behavior, refer to [algorithmicDarkeningAllowed].
   @Deprecated("Use algorithmicDarkeningAllowed instead")
   @ExchangeableObjectProperty(leaveDeprecatedInToMapMethod: true)
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        available: "29",
-        apiName: "WebSettings.setForceDark",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings#setForceDark(int)")
-  ])
+  
   ForceDark_? forceDark;
 
   ///Use [algorithmicDarkeningAllowed] instead.
@@ -679,67 +462,31 @@ because there isn't any way to make the website data store non-persistent for th
   ///To customize the behavior, refer to [algorithmicDarkeningAllowed].
   @Deprecated("Use algorithmicDarkeningAllowed instead")
   @ExchangeableObjectProperty(leaveDeprecatedInToMapMethod: true)
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettingsCompat.setForceDarkStrategy",
-        apiUrl:
-            "https://developer.android.com/reference/androidx/webkit/WebSettingsCompat#setForceDarkStrategy(android.webkit.WebSettings,int)",
-        note:
-            "it will take effect only if [WebViewFeature.isFeatureSupported] returns `true` for [WebViewFeature.FORCE_DARK_STRATEGY].")
-  ])
+  
   ForceDarkStrategy_? forceDarkStrategy;
 
   ///Sets whether Geolocation is enabled. The default is `true`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setGeolocationEnabled",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setGeolocationEnabled(boolean)",
-        note:
-            """Please note that in order for the Geolocation API to be usable by a page in the WebView, the following requirements must be met:
-- an application must have permission to access the device location, see [Manifest.permission.ACCESS_COARSE_LOCATION](https://developer.android.com/reference/android/Manifest.permission#ACCESS_COARSE_LOCATION), [Manifest.permission.ACCESS_FINE_LOCATION](https://developer.android.com/reference/android/Manifest.permission#ACCESS_FINE_LOCATION);
-- an application must provide an implementation of the [PlatformWebViewCreationParams.onGeolocationPermissionsShowPrompt] callback to receive notifications that a page is requesting access to location via the JavaScript Geolocation API.""")
-  ])
+  
   bool? geolocationEnabled;
 
   ///Sets the underlying layout algorithm. This will cause a re-layout of the WebView.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setLayoutAlgorithm",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setLayoutAlgorithm(android.webkit.WebSettings.LayoutAlgorithm)")
-  ])
+  
   LayoutAlgorithm_? layoutAlgorithm;
 
   ///Sets whether the WebView loads pages in overview mode, that is, zooms out the content to fit on screen by width.
   ///This setting is taken into account when the content width is greater than the width of the WebView control, for example, when [useWideViewPort] is enabled.
   ///The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setLoadWithOverviewMode",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setLoadWithOverviewMode(boolean)")
-  ])
+  
   bool? loadWithOverviewMode;
 
   ///Sets whether the WebView should load image resources. Note that this method controls loading of all images, including those embedded using the data URI scheme.
   ///Note that if the value of this setting is changed from false to true, all images resources referenced by content currently displayed by the WebView are loaded automatically.
   ///The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setLoadsImagesAutomatically",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setLoadsImagesAutomatically(boolean)")
-  ])
+  
   bool? loadsImagesAutomatically;
 
   ///Sets the minimum logical font size. The default is `8`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setMinimumLogicalFontSize",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setMinimumLogicalFontSize(int)")
-  ])
+  
   int? minimumLogicalFontSize;
 
   ///Sets the initial scale for this WebView. 0 means default. The behavior for the default scale depends on the state of [useWideViewPort] and [loadWithOverviewMode].
@@ -748,60 +495,29 @@ because there isn't any way to make the website data store non-persistent for th
   ///If initial scale is greater than 0, WebView starts with this value as initial scale.
   ///Please note that unlike the scale properties in the viewport meta tag, this method doesn't take the screen density into account.
   ///The default is `0`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebView.setInitialScale",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebView#setInitialScale(int)")
-  ])
+  
   int? initialScale;
 
   ///Tells the WebView whether it needs to set a node. The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setNeedInitialFocus",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setNeedInitialFocus(boolean)")
-  ])
+  
   bool? needInitialFocus;
 
   ///Sets whether this WebView should raster tiles when it is offscreen but attached to a window.
   ///Turning this on can avoid rendering artifacts when animating an offscreen WebView on-screen.
   ///Offscreen WebViews in this mode use more memory. The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        available: "23",
-        apiName: "WebSettings.setOffscreenPreRaster",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setOffscreenPreRaster(boolean)")
-  ])
+  
   bool? offscreenPreRaster;
 
   ///Sets the sans-serif font family name. The default value is `"sans-serif"`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setSansSerifFontFamily",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setSansSerifFontFamily(java.lang.String)")
-  ])
+  
   String? sansSerifFontFamily;
 
   ///Sets the serif font family name. The default value is `"sans-serif"`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setSerifFontFamily",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setSerifFontFamily(java.lang.String)")
-  ])
+  
   String? serifFontFamily;
 
   ///Sets the standard font family name. The default value is `"sans-serif"`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setStandardFontFamily",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setStandardFontFamily(java.lang.String)")
-  ])
+  
   String? standardFontFamily;
 
   ///Sets whether the WebView should save form data. In Android O, the platform has implemented a fully functional Autofill feature to store form data.
@@ -810,67 +526,40 @@ because there isn't any way to make the website data store non-persistent for th
   @Deprecated('')
   @ExchangeableObjectProperty(
       leaveDeprecatedInToMapMethod: true, leaveDeprecatedInFromMapMethod: true)
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setSaveFormData",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setSaveFormData(boolean)")
-  ])
+  
   bool? saveFormData;
 
   ///Boolean value to enable third party cookies in the WebView.
   ///Used on Android Lollipop and above only as third party cookies are enabled by default on Android Kitkat and below and on iOS.
   ///The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        available: "21",
-        apiName: "CookieManager.setAcceptThirdPartyCookies",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/CookieManager#setAcceptThirdPartyCookies(android.webkit.WebView,%20boolean)")
-  ])
+  
   bool? thirdPartyCookiesEnabled;
 
   ///Boolean value to enable Hardware Acceleration in the WebView.
   ///The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebView.setLayerType",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebView#setLayerType(int,%20android.graphics.Paint)")
-  ])
+  
   bool? hardwareAcceleration;
 
   ///Sets whether the WebView supports multiple windows.
   ///If set to `true`, [PlatformWebViewCreationParams.onCreateWindow] event must be implemented by the host application. The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettings.setSupportMultipleWindows",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebSettings?hl=en#setSupportMultipleWindows(boolean)")
-  ])
+  
   bool? supportMultipleWindows;
 
   ///Regular expression used on native side by the [PlatformWebViewCreationParams.shouldOverrideUrlLoading]
   ///event to cancel navigation requests for frames that are not the main frame.
   ///If the url request of a sub-frame matches the regular expression, then the request of that sub-frame is canceled.
-  @SupportedPlatforms(platforms: [AndroidPlatform()])
+  
   String? regexToCancelSubFramesLoading;
 
   ///Regular expression used on native side by the [PlatformWebViewCreationParams.shouldOverrideUrlLoading]
   ///event to allow navigation requests synchronously.
   ///If the url request match the regular expression, then the request is allowed automatically,
   ///and the [PlatformWebViewCreationParams.shouldOverrideUrlLoading] event will not be fired.
-  @SupportedPlatforms(platforms: [AndroidPlatform()])
+  
   String? regexToAllowSyncUrlLoading;
 
   ///Set to `false` to disable Flutter Hybrid Composition. The default value is `true`.
   ///Hybrid Composition is supported starting with Flutter v1.20+.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        note:
-            """It is recommended to use Hybrid Composition only on Android 10+ for a release app,
-as it can cause framerate drops on animations in Android 9 and lower (see [Hybrid-Composition#performance](https://github.com/flutter/flutter/wiki/Hybrid-Composition#performance)).""")
-  ])
   bool? useHybridComposition;
 
   ///Set to `true` to be able to listen at the [PlatformWebViewCreationParams.shouldInterceptRequest] event.
@@ -878,7 +567,7 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///If the [PlatformWebViewCreationParams.shouldInterceptRequest] event is implemented and this value is `null`,
   ///it will be automatically inferred as `true`, otherwise, the default value is `false`.
   ///This logic will not be applied for [PlatformInAppBrowser], where you must set the value manually.
-  @SupportedPlatforms(platforms: [AndroidPlatform()])
+  
   bool? useShouldInterceptRequest;
 
   ///Set to `true` to be able to listen at the [PlatformWebViewCreationParams.onRenderProcessGone] event.
@@ -886,28 +575,18 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///If the [PlatformWebViewCreationParams.onRenderProcessGone] event is implemented and this value is `null`,
   ///it will be automatically inferred as `true`, otherwise, the default value is `false`.
   ///This logic will not be applied for [PlatformInAppBrowser], where you must set the value manually.
-  @SupportedPlatforms(platforms: [AndroidPlatform()])
+  
   bool? useOnRenderProcessGone;
 
   ///Sets the WebView's over-scroll mode.
   ///Setting the over-scroll mode of a WebView will have an effect only if the WebView is capable of scrolling.
   ///The default value is [OverScrollMode.IF_CONTENT_SCROLLS].
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "View.setOverScrollMode",
-        apiUrl:
-            "https://developer.android.com/reference/android/view/View#setOverScrollMode(int)")
-  ])
+  
   OverScrollMode_? overScrollMode;
 
   ///Informs WebView of the network state.
   ///This is used to set the JavaScript property `window.navigator.isOnline` and generates the online/offline event as specified in HTML5, sec. 5.7.7.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebView.setNetworkAvailable",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebView#setNetworkAvailable(boolean)")
-  ])
+  
   bool? networkAvailable;
 
   ///Specifies the style of the scrollbars. The scrollbars can be overlaid or inset.
@@ -916,110 +595,50 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///you can use SCROLLBARS_INSIDE_OVERLAY or SCROLLBARS_INSIDE_INSET. If you want them to appear at the edge of the view, ignoring the padding,
   ///then you can use SCROLLBARS_OUTSIDE_OVERLAY or SCROLLBARS_OUTSIDE_INSET.
   ///The default value is [ScrollBarStyle.SCROLLBARS_INSIDE_OVERLAY].
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebView.setScrollBarStyle",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebView#setScrollBarStyle(int)")
-  ])
+  
   ScrollBarStyle_? scrollBarStyle;
 
   ///Sets the position of the vertical scroll bar.
   ///The default value is [VerticalScrollbarPosition.SCROLLBAR_POSITION_DEFAULT].
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "View.setVerticalScrollbarPosition",
-        apiUrl:
-            "https://developer.android.com/reference/android/view/View#setVerticalScrollbarPosition(int)")
-  ])
+  
   VerticalScrollbarPosition_? verticalScrollbarPosition;
 
   ///Defines the delay in milliseconds that a scrollbar waits before fade out.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "View.setScrollBarDefaultDelayBeforeFade",
-        apiUrl:
-            "https://developer.android.com/reference/android/view/View#setScrollBarDefaultDelayBeforeFade(int)")
-  ])
+  
   int? scrollBarDefaultDelayBeforeFade;
 
   ///Defines whether scrollbars will fade when the view is not scrolling.
   ///The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "View.setScrollbarFadingEnabled",
-        apiUrl:
-            "https://developer.android.com/reference/android/view/View#setScrollbarFadingEnabled(boolean)")
-  ])
+  
   bool? scrollbarFadingEnabled;
 
   ///Defines the scrollbar fade duration in milliseconds.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "View.setScrollBarFadeDuration",
-        apiUrl:
-            "https://developer.android.com/reference/android/view/View#setScrollBarFadeDuration(int)")
-  ])
+  
   int? scrollBarFadeDuration;
 
   ///Sets the renderer priority policy for this WebView.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebView.setRendererPriorityPolicy",
-        apiUrl:
-            "https://developer.android.com/reference/android/webkit/WebView#setRendererPriorityPolicy(int,%20boolean)")
-  ])
+  
   RendererPriorityPolicy_? rendererPriorityPolicy;
 
   ///Sets whether the default Android WebView’s internal error page should be suppressed or displayed for bad navigations.
   ///`true` means suppressed (not shown), `false` means it will be displayed. The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
-    WindowsPlatform(
-        apiName: "ICoreWebView2Settings.put_IsBuiltInErrorPageEnabled",
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-1.0.2849.39#put_isbuiltinerrorpageenabled'),
-  ])
+  
   bool? disableDefaultErrorPage;
 
   ///Sets the vertical scrollbar thumb color.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        available: "29",
-        apiName: "View.setVerticalScrollbarThumbDrawable",
-        apiUrl:
-            "https://developer.android.com/reference/android/view/View#setVerticalScrollbarThumbDrawable(android.graphics.drawable.Drawable)")
-  ])
+  
   Color_? verticalScrollbarThumbColor;
 
   ///Sets the vertical scrollbar track color.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        available: "29",
-        apiName: "View.setVerticalScrollbarTrackDrawable",
-        apiUrl:
-            "https://developer.android.com/reference/android/view/View#setVerticalScrollbarTrackDrawable(android.graphics.drawable.Drawable)")
-  ])
+  
   Color_? verticalScrollbarTrackColor;
 
   ///Sets the horizontal scrollbar thumb color.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        available: "29",
-        apiName: "View.setHorizontalScrollbarThumbDrawable",
-        apiUrl:
-            "https://developer.android.com/reference/android/view/View#setHorizontalScrollbarThumbDrawable(android.graphics.drawable.Drawable)")
-  ])
+  
   Color_? horizontalScrollbarThumbColor;
 
   ///Sets the horizontal scrollbar track color.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        available: "29",
-        apiName: "View.setHorizontalScrollbarTrackDrawable",
-        apiUrl:
-            "https://developer.android.com/reference/android/view/View#setHorizontalScrollbarTrackDrawable(android.graphics.drawable.Drawable)")
-  ])
+  
   Color_? horizontalScrollbarTrackColor;
 
   ///Control whether algorithmic darkening is allowed.
@@ -1033,15 +652,7 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///If the app's theme is dark and it allows algorithmic darkening,
   ///WebView will attempt to darken web content using an algorithm,
   ///if the content doesn't define its own dark styles and doesn't explicitly disable darkening.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        available: "29",
-        apiName: "WebSettingsCompat.setAlgorithmicDarkeningAllowed",
-        apiUrl:
-            "https://developer.android.com/reference/androidx/webkit/WebSettingsCompat#setAlgorithmicDarkeningAllowed(android.webkit.WebSettings,boolean)",
-        note:
-            "available on Android only if [WebViewFeature.ALGORITHMIC_DARKENING] feature is supported.")
-  ])
+  
   bool? algorithmicDarkeningAllowed;
 
   ///Sets whether EnterpriseAuthenticationAppLinkPolicy if set by admin is allowed to have any
@@ -1052,18 +663,14 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///registered as the default handler for the url, that app is launched.
   ///
   ///The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        note:
-            "available on Android only if [WebViewFeature.ENTERPRISE_AUTHENTICATION_APP_LINK_POLICY] feature is supported.")
-  ])
+  
   bool? enterpriseAuthenticationAppLinkPolicyEnabled;
 
   ///When not playing, video elements are represented by a 'poster' image.
   ///The image to use can be specified by the poster attribute of the video tag in HTML.
   ///If the attribute is absent, then a default poster will be used.
   ///This property allows the WebView to provide that default image.
-  @SupportedPlatforms(platforms: [AndroidPlatform()])
+  
   Uint8List? defaultVideoPoster;
 
   ///Set an allow-list of origins to receive the X-Requested-With HTTP header from the WebView owning the passed [InAppWebViewSettings].
@@ -1073,14 +680,7 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///Apps can use this method to restore the legacy behavior for servers that still rely on the deprecated header, but it should not be used to identify the webview to first-party servers under the control of the app developer.
   ///
   ///The format of the strings in the allow-list follows the origin rules of [PlatformInAppWebViewController.addWebMessageListener].
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "WebSettingsCompat.setRequestedWithHeaderOriginAllowList",
-        apiUrl:
-            "https://developer.android.com/reference/androidx/webkit/WebSettingsCompat#setRequestedWithHeaderOriginAllowList(android.webkit.WebSettings,java.util.Set%3Cjava.lang.String%3E)",
-        note:
-            "available on Android only if [WebViewFeature.REQUESTED_WITH_HEADER_ALLOW_LIST] feature is supported.")
-  ])
+  
   Set<String>? requestedWithHeaderOriginAllowList;
 
   ///Set to `true` to disable the bouncing of the WebView when the scrolling has reached an edge of the content. The default value is `false`.
@@ -1137,13 +737,7 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
     MacOSPlatform(
         apiName: "WKWebView.allowsBackForwardNavigationGestures",
         apiUrl:
-            "https://developer.apple.com/documentation/webkit/wkwebview/1414995-allowsbackforwardnavigationgestu"),
-    WindowsPlatform(
-        available: "1.0.992.28",
-        apiName: "ICoreWebView2Settings6.put_IsSwipeNavigationEnabled",
-        apiUrl:
-            "https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings6?view=webview2-1.0.2849.39#put_isswipenavigationenabled"),
-  ])
+            "https://developer.apple.com/documentation/webkit/wkwebview/1414995-allowsbackforwardnavigationgestu")])
   bool? allowsBackForwardNavigationGestures;
 
   ///Set to `true` to allow that pressing on a link displays a preview of the destination for the link. The default value is `true`.
@@ -1645,12 +1239,7 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
         available: "13.3",
         apiName: "WKWebView.isInspectable",
         apiUrl:
-            "https://developer.apple.com/documentation/webkit/wkwebview/4111163-isinspectable"),
-    WindowsPlatform(
-        apiName: "ICoreWebView2Settings.put_AreDevToolsEnabled",
-        apiUrl:
-            "https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-1.0.2210.55#put_aredevtoolsenabled")
-  ])
+            "https://developer.apple.com/documentation/webkit/wkwebview/4111163-isinspectable")])
   bool? isInspectable;
 
   ///A Boolean value that indicates whether to include any background color or graphics when printing content.
@@ -1678,22 +1267,16 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///
   ///The default value is `null` and will allow every origin.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(),
-    WindowsPlatform(),
-  ])
+    MacOSPlatform()])
   Set<String>? javaScriptHandlersOriginAllowList;
 
   ///Set to `true` to allow to execute the JavaScript Handlers only on the main frame.
   ///This will affect also the internal JavaScript Handlers used by the plugin itself.
   ///The default value is `false`.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(),
-    WindowsPlatform(),
-  ])
+    MacOSPlatform()])
   bool? javaScriptHandlersForMainFrameOnly;
 
   ///Set to `false` to disable the JavaScript Bridge completely.
@@ -1705,11 +1288,8 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///
   ///The default value is `true`.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(),
-    WindowsPlatform(),
-  ])
+    MacOSPlatform()])
   bool? javaScriptBridgeEnabled;
 
   ///A [Set] of patterns that will be used to match the allowed origins where
@@ -1731,11 +1311,8 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///
   ///The default value is `null` and will allow every origin.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(),
-    WindowsPlatform(),
-  ])
+    MacOSPlatform()])
   Set<String>? javaScriptBridgeOriginAllowList;
 
   ///Set to `true` to allow the JavaScript Bridge only on the main frame.
@@ -1747,11 +1324,8 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///
   ///The default value is `false`.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(),
-    WindowsPlatform(),
-  ])
+    MacOSPlatform()])
   bool? javaScriptBridgeForMainFrameOnly;
 
   ///A [Set] of patterns that will be used to match the allowed origins
@@ -1770,11 +1344,8 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///
   ///The default value is `null` and will allow every origin.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(),
-    WindowsPlatform(),
-  ])
+    MacOSPlatform()])
   Set<String>? pluginScriptsOriginAllowList;
 
   ///Set to `true` to allow internal plugin [UserScript]s only on the main frame.
@@ -1785,11 +1356,8 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///
   ///The default value is `false`.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(),
-    WindowsPlatform(),
-  ])
+    MacOSPlatform()])
   bool? pluginScriptsForMainFrameOnly;
 
   ///The multiplier applied to the scroll amount for the WebView.
@@ -1798,9 +1366,7 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///A higher value means faster scrolling, while a lower value means slower scrolling.
   ///
   ///The default value is `1`.
-  @SupportedPlatforms(platforms: [
-    WindowsPlatform(),
-  ])
+  
   int? scrollMultiplier;
 
   ///Specifies whether the status bar is displayed.
@@ -1810,12 +1376,7 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///The status bar UI can be altered by web content and should not be considered secure.
   ///
   ///The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    WindowsPlatform(
-        apiName: "ICoreWebView2Settings.put_IsStatusBarEnabled",
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-1.0.2849.39#put_isstatusbarenabled'),
-  ])
+  
   bool? statusBarEnabled;
 
   ///When this setting is set to `false`, it disables all accelerator keys
@@ -1833,13 +1394,7 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///- Ctrl-Z for Undo
   ///
   ///The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    WindowsPlatform(
-        available: '1.0.864.35',
-        apiName: "ICoreWebView2Settings3.put_IsBuiltInErrorPageEnabled",
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings3?view=webview2-1.0.2849.39#put_arebrowseracceleratorkeysenabled'),
-  ])
+  
   bool? browserAcceleratorKeysEnabled;
 
   ///Specifies whether autofill for information like names, street and email addresses, phone numbers, and arbitrary input is enabled.
@@ -1851,13 +1406,7 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///It will take effect immediately after setting.
   ///
   ///The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    WindowsPlatform(
-        available: '1.0.902.49',
-        apiName: "ICoreWebView2Settings4.put_IsGeneralAutofillEnabled",
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings4?view=webview2-1.0.2849.39#put_isgeneralautofillenabled'),
-  ])
+  
   bool? generalAutofillEnabled;
 
   ///Specifies whether autosave for password information is enabled.
@@ -1872,13 +1421,7 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///It will take effect immediately after setting.
   ///
   ///The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    WindowsPlatform(
-        available: '1.0.902.49',
-        apiName: "ICoreWebView2Settings4.put_IsPasswordAutosaveEnabled",
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings4?view=webview2-1.0.2849.39#put_ispasswordautosaveenabled'),
-  ])
+  
   bool? passwordAutosaveEnabled;
 
   ///Pinch-zoom, referred to as "Page Scale" zoom, is performed as a post-rendering step,
@@ -1897,13 +1440,7 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///browser zoom properties or other end user mechanisms for zooming.
   ///
   ///The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    WindowsPlatform(
-        available: '1.0.902.49',
-        apiName: "ICoreWebView2Settings5.put_IsPinchZoomEnabled",
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings5?view=webview2-1.0.2849.39#put_ispinchzoomenabled'),
-  ])
+  
   bool? pinchZoomEnabled;
 
   ///This property is used to customize the PDF toolbar items.
@@ -1911,13 +1448,7 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///By default, it is [PdfToolbarItems.NONE] and so it displays all of the items.
   ///Changes to this property apply to all CoreWebView2s in the same environment and using the same profile.
   ///Changes to this setting apply only after the next navigation.
-  @SupportedPlatforms(platforms: [
-    WindowsPlatform(
-        available: '1.0.1185.39',
-        apiName: "ICoreWebView2Settings7.put_HiddenPdfToolbarItems",
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings7?view=webview2-1.0.2849.39#put_hiddenpdftoolbaritems'),
-  ])
+  
   PdfToolbarItems_? hiddenPdfToolbarItems;
 
   ///[reputationCheckingRequired] is used to control whether SmartScreen enabled or not.
@@ -1937,13 +1468,7 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///Upon re-enabling the Windows setting, the CoreWebview2 will reference the [reputationCheckingRequired] to determine the SmartScreen status.
   ///
   ///The default value is `true`.
-  @SupportedPlatforms(platforms: [
-    WindowsPlatform(
-        available: '1.0.1722.45',
-        apiName: "ICoreWebView2Settings8.put_IsReputationCheckingRequired",
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings8?view=webview2-1.0.2849.39#put_isreputationcheckingrequired'),
-  ])
+  
   bool? reputationCheckingRequired;
 
   ///Enables web pages to use the `app-region` CSS style.
@@ -1960,43 +1485,29 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///The `app-region` CSS style will be ignored on web pages.
   ///
   ///The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    WindowsPlatform(
-        available: '1.0.2420.47',
-        apiName: "ICoreWebView2Settings9.put_IsNonClientRegionSupportEnabled",
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings9?view=webview2-1.0.2849.39#put_isnonclientregionsupportenabled'),
-  ])
+  
   bool? nonClientRegionSupportEnabled;
 
   ///A Boolean value that determines whether user events are ignored and removed from the event queue.
   ///
   ///The default value is `true`.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(
         apiName: "UIView.isUserInteractionEnabled",
         apiUrl:
-            'https://developer.apple.com/documentation/uikit/uiview/1622577-isuserinteractionenabled'),
-  ])
+            'https://developer.apple.com/documentation/uikit/uiview/1622577-isuserinteractionenabled')])
   bool? isUserInteractionEnabled;
 
   ///A Boolean value that determines whether to listen and handle the
   ///[PlatformWebViewCreationParams.onAcceleratorKeyPressed] event.
   ///
   ///The default value is `false`.
-  @SupportedPlatforms(platforms: [
-    WindowsPlatform(),
-  ])
+  
   bool? handleAcceleratorKeyPressed;
 
   ///The view’s alpha value. The value of this property is a floating-point number
   ///in the range 0.0 to 1.0, where 0.0 represents totally transparent and 1.0 represents totally opaque.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(
-        apiName: "View.setAlpha",
-        apiUrl:
-            'https://developer.android.com/reference/android/view/View#setAlpha(float)'),
     IOSPlatform(
         apiName: "UIView.alpha",
         apiUrl:
@@ -2004,8 +1515,7 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
     MacOSPlatform(
         apiName: "NSView.alphaValue",
         apiUrl:
-            'https://developer.apple.com/documentation/appkit/nsview/1483560-alphavalue'),
-  ])
+            'https://developer.apple.com/documentation/appkit/nsview/1483560-alphavalue')])
   double? alpha;
 
   ///Set to `true` to be able to listen at the [PlatformWebViewCreationParams.onShowFileChooser] event.
@@ -2013,90 +1523,40 @@ as it can cause framerate drops on animations in Android 9 and lower (see [Hybri
   ///If the [PlatformWebViewCreationParams.onShowFileChooser] event is implemented and this value is `null`,
   ///it will be automatically inferred as `true`, otherwise, the default value is `false`.
   ///This logic will not be applied for [PlatformInAppBrowser], where you must set the value manually.
-  @SupportedPlatforms(
-      platforms: [AndroidPlatform()])
   bool? useOnShowFileChooser;
 
   ///Specifies a feature policy for the `<iframe>`.
   ///The policy defines what features are available to the `<iframe>` based on the origin of the request
   ///(e.g. access to the microphone, camera, battery, web-share API, etc.).
-  @SupportedPlatforms(platforms: [
-    WebPlatform(
-        requiresSameOrigin: false,
-        apiName: "iframe.allow",
-        apiUrl:
-            "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-allow")
-  ])
+  
   String? iframeAllow;
 
   ///Set to true if the `<iframe>` can activate fullscreen mode by calling the `requestFullscreen()` method.
-  @SupportedPlatforms(platforms: [
-    WebPlatform(
-        requiresSameOrigin: false,
-        apiName: "iframe.allowfullscreen",
-        apiUrl:
-            "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-allowfullscreen")
-  ])
+  
   bool? iframeAllowFullscreen;
 
   ///Applies extra restrictions to the content in the frame.
-  @SupportedPlatforms(platforms: [
-    WebPlatform(
-        requiresSameOrigin: false,
-        apiName: "iframe.sandbox",
-        apiUrl:
-            "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox")
-  ])
+  
   Set<Sandbox_>? iframeSandbox;
 
   ///A string that reflects the `referrerpolicy` HTML attribute indicating which referrer to use when fetching the linked resource.
-  @SupportedPlatforms(platforms: [
-    WebPlatform(
-        requiresSameOrigin: false,
-        apiName: "iframe.referrerpolicy",
-        apiUrl:
-            "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-referrerpolicy")
-  ])
+  
   ReferrerPolicy_? iframeReferrerPolicy;
 
   ///A string that reflects the `name` HTML attribute, containing a name by which to refer to the frame.
-  @SupportedPlatforms(platforms: [
-    WebPlatform(
-        requiresSameOrigin: false,
-        apiName: "iframe.name",
-        apiUrl:
-            "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-name")
-  ])
+  
   String? iframeName;
 
   ///A Content Security Policy enforced for the embedded resource.
-  @SupportedPlatforms(platforms: [
-    WebPlatform(
-        requiresSameOrigin: false,
-        apiName: "iframe.csp",
-        apiUrl:
-            "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-csp")
-  ])
+  
   String? iframeCsp;
 
   ///A string that reflects the `role` HTML attribute, containing a WAI-ARIA role for the element.
-  @SupportedPlatforms(platforms: [
-    WebPlatform(
-        requiresSameOrigin: false,
-        apiName: "iframe.role",
-        apiUrl:
-            "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles")
-  ])
+  
   String? iframeRole;
 
   ///A string that reflects the `aria-hidden` HTML attribute, indicating whether the element is exposed to an accessibility API.
-  @SupportedPlatforms(platforms: [
-    WebPlatform(
-        requiresSameOrigin: false,
-        apiName: "iframe.ariaHidden",
-        apiUrl:
-            "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-hidden")
-  ])
+  
   String? iframeAriaHidden;
 
   @ExchangeableObjectConstructor()

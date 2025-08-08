@@ -28,8 +28,7 @@ class ContentBlockerTriggerLoadContext {
   ///Set of all values of [ContentBlockerTriggerLoadContext].
   static final Set<ContentBlockerTriggerLoadContext> values = [
     ContentBlockerTriggerLoadContext.CHILD_FRAME,
-    ContentBlockerTriggerLoadContext.TOP_FRAME,
-  ].toSet();
+    ContentBlockerTriggerLoadContext.TOP_FRAME].toSet();
 
   ///Gets a possible [ContentBlockerTriggerLoadContext] instance from [String] value.
   static ContentBlockerTriggerLoadContext? fromValue(String? value) {

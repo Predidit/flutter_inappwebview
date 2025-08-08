@@ -41,8 +41,7 @@ class ForceDarkStrategy {
   static final Set<ForceDarkStrategy> values = [
     ForceDarkStrategy.PREFER_WEB_THEME_OVER_USER_AGENT_DARKENING,
     ForceDarkStrategy.USER_AGENT_DARKENING_ONLY,
-    ForceDarkStrategy.WEB_THEME_DARKENING_ONLY,
-  ].toSet();
+    ForceDarkStrategy.WEB_THEME_DARKENING_ONLY].toSet();
 
   ///Gets a possible [ForceDarkStrategy] instance from [int] value.
   static ForceDarkStrategy? fromValue(int? value) {

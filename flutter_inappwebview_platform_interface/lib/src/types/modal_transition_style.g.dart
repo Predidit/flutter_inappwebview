@@ -39,8 +39,7 @@ class ModalTransitionStyle {
     ModalTransitionStyle.COVER_VERTICAL,
     ModalTransitionStyle.CROSS_DISSOLVE,
     ModalTransitionStyle.FLIP_HORIZONTAL,
-    ModalTransitionStyle.PARTIAL_CURL,
-  ].toSet();
+    ModalTransitionStyle.PARTIAL_CURL].toSet();
 
   ///Gets a possible [ModalTransitionStyle] instance from [int] value.
   static ModalTransitionStyle? fromValue(int? value) {
@@ -166,8 +165,7 @@ class IOSUIModalTransitionStyle {
     IOSUIModalTransitionStyle.COVER_VERTICAL,
     IOSUIModalTransitionStyle.CROSS_DISSOLVE,
     IOSUIModalTransitionStyle.FLIP_HORIZONTAL,
-    IOSUIModalTransitionStyle.PARTIAL_CURL,
-  ].toSet();
+    IOSUIModalTransitionStyle.PARTIAL_CURL].toSet();
 
   ///Gets a possible [IOSUIModalTransitionStyle] instance from [int] value.
   static IOSUIModalTransitionStyle? fromValue(int? value) {

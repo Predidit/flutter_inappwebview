@@ -14,11 +14,8 @@ class ScreenshotConfiguration_ {
   ///The default value of this property is `null`, which captures everything in the view’s bounds rectangle.
   ///If you specify a custom rectangle, it must lie within the bounds rectangle of the `WebView` object.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(),
-    WindowsPlatform()
-  ])
+    MacOSPlatform()])
   InAppWebViewRect_? rect;
 
   ///The width of the captured image, in points.
@@ -27,27 +24,21 @@ class ScreenshotConfiguration_ {
   ///
   ///The default value of this property is `null`, which returns an image whose size matches the original size of the captured rectangle.
   @SupportedPlatforms(
-      platforms: [AndroidPlatform(), IOSPlatform(), MacOSPlatform()])
+      platforms: [IOSPlatform(), MacOSPlatform()])
   double? snapshotWidth;
 
   ///The compression format of the captured image.
   ///The default value is [CompressFormat.PNG].
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(),
-    WindowsPlatform()
-  ])
+    MacOSPlatform()])
   CompressFormat_ compressFormat;
 
   ///Hint to the compressor, `0-100`. The value is interpreted differently depending on the [CompressFormat].
   ///[CompressFormat.PNG] is lossless, so this value is ignored.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(),
-    WindowsPlatform()
-  ])
+    MacOSPlatform()])
   int quality;
 
   ///Use [afterScreenUpdates] instead.
@@ -59,8 +50,7 @@ class ScreenshotConfiguration_ {
   ///If you change the value to `false`, the `WebView` takes the snapshot immediately, and before incorporating any new changes.
   @SupportedPlatforms(platforms: [
     IOSPlatform(available: '13.0'),
-    MacOSPlatform(available: '10.15'),
-  ])
+    MacOSPlatform(available: '10.15')])
   bool afterScreenUpdates;
 
   @ExchangeableObjectConstructor()

@@ -26,7 +26,7 @@ class WebHistoryItem_ {
   int? offset;
 
   ///Unique id of the navigation history entry.
-  @SupportedPlatforms(platforms: [WindowsPlatform()])
+  
   int? entryId;
 
   WebHistoryItem_(

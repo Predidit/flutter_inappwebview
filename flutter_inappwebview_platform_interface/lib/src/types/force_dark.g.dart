@@ -29,8 +29,7 @@ class ForceDark {
   static final Set<ForceDark> values = [
     ForceDark.AUTO,
     ForceDark.OFF,
-    ForceDark.ON,
-  ].toSet();
+    ForceDark.ON].toSet();
 
   ///Gets a possible [ForceDark] instance from [int] value.
   static ForceDark? fromValue(int? value) {
@@ -146,8 +145,7 @@ class AndroidForceDark {
   static final Set<AndroidForceDark> values = [
     AndroidForceDark.FORCE_DARK_AUTO,
     AndroidForceDark.FORCE_DARK_OFF,
-    AndroidForceDark.FORCE_DARK_ON,
-  ].toSet();
+    AndroidForceDark.FORCE_DARK_ON].toSet();
 
   ///Gets a possible [AndroidForceDark] instance from [int] value.
   static AndroidForceDark? fromValue(int? value) {

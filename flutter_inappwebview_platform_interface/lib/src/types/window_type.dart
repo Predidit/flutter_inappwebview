@@ -13,16 +13,12 @@ class WindowType_ {
 
   ///Adds the new browser window as a separate new window from the main window.
   @EnumSupportedPlatforms(platforms: [
-    EnumMacOSPlatform(value: 'WINDOW'),
-    EnumWindowsPlatform(value: 'WINDOW')
-  ])
+    EnumMacOSPlatform(value: 'WINDOW')])
   static const WINDOW = const WindowType_._internal('WINDOW');
 
   ///Adds the new browser window as a child window of the main window.
   @EnumSupportedPlatforms(platforms: [
-    EnumMacOSPlatform(value: 'CHILD'),
-    EnumWindowsPlatform(value: 'CHILD')
-  ])
+    EnumMacOSPlatform(value: 'CHILD')])
   static const CHILD = const WindowType_._internal('CHILD');
 
   ///Adds the new browser window as a new tab in a tabbed window of the main window.

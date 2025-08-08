@@ -79,8 +79,7 @@ class PrintJobDisposition {
     PrintJobDisposition.CANCEL,
     PrintJobDisposition.PREVIEW,
     PrintJobDisposition.SAVE,
-    PrintJobDisposition.SPOOL,
-  ].toSet();
+    PrintJobDisposition.SPOOL].toSet();
 
   ///Gets a possible [PrintJobDisposition] instance from [String] value.
   static PrintJobDisposition? fromValue(String? value) {

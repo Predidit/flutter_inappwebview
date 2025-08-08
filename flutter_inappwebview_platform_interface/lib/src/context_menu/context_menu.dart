@@ -10,9 +10,6 @@ part 'context_menu.g.dart';
 
 ///Class that represents the WebView context menu. It used by [PlatformWebViewCreationParams.contextMenu].
 @SupportedPlatforms(platforms: [
-  AndroidPlatform(
-      note:
-          'To make it work properly on Android, JavaScript should be enabled!'),
   IOSPlatform()
 ])
 @ExchangeableObject()

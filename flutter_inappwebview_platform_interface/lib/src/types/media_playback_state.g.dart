@@ -33,8 +33,7 @@ class MediaPlaybackState {
     MediaPlaybackState.NONE,
     MediaPlaybackState.PAUSED,
     MediaPlaybackState.PLAYING,
-    MediaPlaybackState.SUSPENDED,
-  ].toSet();
+    MediaPlaybackState.SUSPENDED].toSet();
 
   ///Gets a possible [MediaPlaybackState] instance from [int] value.
   static MediaPlaybackState? fromValue(int? value) {

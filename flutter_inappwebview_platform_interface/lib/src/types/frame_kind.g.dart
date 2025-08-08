@@ -92,8 +92,7 @@ class FrameKind {
     FrameKind.IFRAME,
     FrameKind.MAIN_FRAME,
     FrameKind.OBJECT,
-    FrameKind.UNKNOWN,
-  ].toSet();
+    FrameKind.UNKNOWN].toSet();
 
   ///Gets a possible [FrameKind] instance from [String] value.
   static FrameKind? fromValue(String? value) {

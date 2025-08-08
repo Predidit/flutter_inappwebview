@@ -68,8 +68,7 @@ class WindowType {
   static final Set<WindowType> values = [
     WindowType.CHILD,
     WindowType.TABBED,
-    WindowType.WINDOW,
-  ].toSet();
+    WindowType.WINDOW].toSet();
 
   ///Gets a possible [WindowType] instance from [String] value.
   static WindowType? fromValue(String? value) {

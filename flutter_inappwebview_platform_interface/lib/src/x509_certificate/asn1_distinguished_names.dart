@@ -18,8 +18,7 @@ class ASN1DistinguishedNames {
     ASN1DistinguishedNames.LOCALITY_NAME,
     ASN1DistinguishedNames.STATE_OR_PROVINCE_NAME,
     ASN1DistinguishedNames.COUNTRY_NAME,
-    ASN1DistinguishedNames.EMAIL,
-  ].toSet();
+    ASN1DistinguishedNames.EMAIL].toSet();
 
   static ASN1DistinguishedNames? fromValue(String? oid) {
     if (oid != null) {

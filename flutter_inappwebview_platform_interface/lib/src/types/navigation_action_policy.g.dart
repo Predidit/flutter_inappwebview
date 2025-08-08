@@ -32,8 +32,7 @@ class NavigationActionPolicy {
   static final Set<NavigationActionPolicy> values = [
     NavigationActionPolicy.ALLOW,
     NavigationActionPolicy.CANCEL,
-    NavigationActionPolicy.DOWNLOAD,
-  ].toSet();
+    NavigationActionPolicy.DOWNLOAD].toSet();
 
   ///Gets a possible [NavigationActionPolicy] instance from [int] value.
   static NavigationActionPolicy? fromValue(int? value) {

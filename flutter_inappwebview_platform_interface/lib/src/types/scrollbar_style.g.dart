@@ -46,8 +46,7 @@ class ScrollBarStyle {
     ScrollBarStyle.SCROLLBARS_INSIDE_INSET,
     ScrollBarStyle.SCROLLBARS_INSIDE_OVERLAY,
     ScrollBarStyle.SCROLLBARS_OUTSIDE_INSET,
-    ScrollBarStyle.SCROLLBARS_OUTSIDE_OVERLAY,
-  ].toSet();
+    ScrollBarStyle.SCROLLBARS_OUTSIDE_OVERLAY].toSet();
 
   ///Gets a possible [ScrollBarStyle] instance from [int] value.
   static ScrollBarStyle? fromValue(int? value) {
@@ -181,8 +180,7 @@ class AndroidScrollBarStyle {
     AndroidScrollBarStyle.SCROLLBARS_INSIDE_INSET,
     AndroidScrollBarStyle.SCROLLBARS_INSIDE_OVERLAY,
     AndroidScrollBarStyle.SCROLLBARS_OUTSIDE_INSET,
-    AndroidScrollBarStyle.SCROLLBARS_OUTSIDE_OVERLAY,
-  ].toSet();
+    AndroidScrollBarStyle.SCROLLBARS_OUTSIDE_OVERLAY].toSet();
 
   ///Gets a possible [AndroidScrollBarStyle] instance from [int] value.
   static AndroidScrollBarStyle? fromValue(int? value) {

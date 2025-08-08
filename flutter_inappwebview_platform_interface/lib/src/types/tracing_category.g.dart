@@ -58,8 +58,7 @@ class TracingCategory {
     TracingCategory.CATEGORIES_JAVASCRIPT_AND_RENDERING,
     TracingCategory.CATEGORIES_NONE,
     TracingCategory.CATEGORIES_RENDERING,
-    TracingCategory.CATEGORIES_WEB_DEVELOPER,
-  ].toSet();
+    TracingCategory.CATEGORIES_WEB_DEVELOPER].toSet();
 
   ///Gets a possible [TracingCategory] instance from [int] value.
   static TracingCategory? fromValue(int? value) {

@@ -113,8 +113,7 @@ class ProcessFailedReason {
     ProcessFailedReason.OUT_OF_MEMORY,
     ProcessFailedReason.TERMINATED,
     ProcessFailedReason.UNEXPECTED,
-    ProcessFailedReason.UNRESPONSIVE,
-  ].toSet();
+    ProcessFailedReason.UNRESPONSIVE].toSet();
 
   ///Gets a possible [ProcessFailedReason] instance from [String] value.
   static ProcessFailedReason? fromValue(String? value) {

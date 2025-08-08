@@ -29,8 +29,7 @@ class PermissionResponseAction {
   static final Set<PermissionResponseAction> values = [
     PermissionResponseAction.DENY,
     PermissionResponseAction.GRANT,
-    PermissionResponseAction.PROMPT,
-  ].toSet();
+    PermissionResponseAction.PROMPT].toSet();
 
   ///Gets a possible [PermissionResponseAction] instance from [int] value.
   static PermissionResponseAction? fromValue(int? value) {
@@ -141,8 +140,7 @@ class PermissionRequestResponseAction {
   ///Set of all values of [PermissionRequestResponseAction].
   static final Set<PermissionRequestResponseAction> values = [
     PermissionRequestResponseAction.DENY,
-    PermissionRequestResponseAction.GRANT,
-  ].toSet();
+    PermissionRequestResponseAction.GRANT].toSet();
 
   ///Gets a possible [PermissionRequestResponseAction] instance from [int] value.
   static PermissionRequestResponseAction? fromValue(int? value) {

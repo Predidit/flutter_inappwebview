@@ -9,7 +9,7 @@ part 'printer.g.dart';
 @ExchangeableObject()
 class Printer_ {
   ///The unique id of the printer.
-  @SupportedPlatforms(platforms: [AndroidPlatform(), IOSPlatform()])
+  @SupportedPlatforms(platforms: [IOSPlatform()])
   String? id;
 
   ///A description of the printer’s make and model.

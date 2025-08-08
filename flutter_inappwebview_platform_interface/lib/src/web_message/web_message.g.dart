@@ -27,8 +27,7 @@ class WebMessageType {
   ///Set of all values of [WebMessageType].
   static final Set<WebMessageType> values = [
     WebMessageType.ARRAY_BUFFER,
-    WebMessageType.STRING,
-  ].toSet();
+    WebMessageType.STRING].toSet();
 
   ///Gets a possible [WebMessageType] instance from [int] value.
   static WebMessageType? fromValue(int? value) {

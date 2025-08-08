@@ -43,8 +43,7 @@ class ContentBlockerTriggerResourceType {
     ContentBlockerTriggerResourceType.RAW,
     ContentBlockerTriggerResourceType.SCRIPT,
     ContentBlockerTriggerResourceType.STYLE_SHEET,
-    ContentBlockerTriggerResourceType.SVG_DOCUMENT,
-  ].toSet();
+    ContentBlockerTriggerResourceType.SVG_DOCUMENT].toSet();
 
   ///Gets a possible [ContentBlockerTriggerResourceType] instance from [String] value.
   static ContentBlockerTriggerResourceType? fromValue(String? value) {

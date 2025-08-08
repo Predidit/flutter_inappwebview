@@ -30,8 +30,7 @@ class TracingMode {
   ///Set of all values of [TracingMode].
   static final Set<TracingMode> values = [
     TracingMode.RECORD_CONTINUOUSLY,
-    TracingMode.RECORD_UNTIL_FULL,
-  ].toSet();
+    TracingMode.RECORD_UNTIL_FULL].toSet();
 
   ///Gets a possible [TracingMode] instance from [int] value.
   static TracingMode? fromValue(int? value) {

@@ -77,8 +77,7 @@ class FocusDirection {
     FocusDirection.DOWN,
     FocusDirection.LEFT,
     FocusDirection.RIGHT,
-    FocusDirection.UP,
-  ].toSet();
+    FocusDirection.UP].toSet();
 
   ///Gets a possible [FocusDirection] instance from [String] value.
   static FocusDirection? fromValue(String? value) {

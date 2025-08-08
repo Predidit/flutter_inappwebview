@@ -43,8 +43,7 @@ class PrintJobOutputType {
     PrintJobOutputType.GENERAL,
     PrintJobOutputType.GRAYSCALE,
     PrintJobOutputType.PHOTO,
-    PrintJobOutputType.PHOTO_GRAYSCALE,
-  ].toSet();
+    PrintJobOutputType.PHOTO_GRAYSCALE].toSet();
 
   ///Gets a possible [PrintJobOutputType] instance from [int] value.
   static PrintJobOutputType? fromValue(int? value) {

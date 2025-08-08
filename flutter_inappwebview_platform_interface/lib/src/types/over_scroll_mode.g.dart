@@ -30,8 +30,7 @@ class OverScrollMode {
   static final Set<OverScrollMode> values = [
     OverScrollMode.ALWAYS,
     OverScrollMode.IF_CONTENT_SCROLLS,
-    OverScrollMode.NEVER,
-  ].toSet();
+    OverScrollMode.NEVER].toSet();
 
   ///Gets a possible [OverScrollMode] instance from [int] value.
   static OverScrollMode? fromValue(int? value) {
@@ -146,8 +145,7 @@ class AndroidOverScrollMode {
   static final Set<AndroidOverScrollMode> values = [
     AndroidOverScrollMode.OVER_SCROLL_ALWAYS,
     AndroidOverScrollMode.OVER_SCROLL_IF_CONTENT_SCROLLS,
-    AndroidOverScrollMode.OVER_SCROLL_NEVER,
-  ].toSet();
+    AndroidOverScrollMode.OVER_SCROLL_NEVER].toSet();
 
   ///Gets a possible [AndroidOverScrollMode] instance from [int] value.
   static AndroidOverScrollMode? fromValue(int? value) {

@@ -17,67 +17,27 @@ class SslErrorType_ {
   const SslErrorType_._internal(this._value);
 
   ///The certificate is not yet valid.
-  @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'SslError.SSL_NOTYETVALID',
-        apiUrl:
-            'https://developer.android.com/reference/android/net/http/SslError#SSL_NOTYETVALID',
-        value: 0)
-  ])
+  
   static const NOT_YET_VALID = SslErrorType_._internal('NOT_YET_VALID');
 
   ///The certificate has expired.
-  @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'SslError.SSL_EXPIRED',
-        apiUrl:
-            'https://developer.android.com/reference/android/net/http/SslError#SSL_EXPIRED',
-        value: 1),
-    EnumWindowsPlatform(
-        apiName: 'COREWEBVIEW2_WEB_ERROR_STATUS_CERTIFICATE_EXPIRED',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2849.39#corewebview2_web_error_status',
-        value: 2)
-  ])
+  
   static const EXPIRED = SslErrorType_._internal('EXPIRED');
 
   ///Hostname mismatch.
-  @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'SslError.SSL_IDMISMATCH',
-        apiUrl:
-            'https://developer.android.com/reference/android/net/http/SslError#SSL_IDMISMATCH',
-        value: 2)
-  ])
+  
   static const IDMISMATCH = SslErrorType_._internal('IDMISMATCH');
 
   ///The certificate authority is not trusted.
-  @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'SslError.SSL_UNTRUSTED',
-        apiUrl:
-            'https://developer.android.com/reference/android/net/http/SslError#SSL_UNTRUSTED',
-        value: 3)
-  ])
+  
   static const UNTRUSTED = SslErrorType_._internal('UNTRUSTED');
 
   ///The date of the certificate is invalid.
-  @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'SslError.DATE_INVALID',
-        apiUrl:
-            'https://developer.android.com/reference/android/net/http/SslError#SSL_DATE_INVALID',
-        value: 4)
-  ])
+  
   static const DATE_INVALID = SslErrorType_._internal('DATE_INVALID');
 
   ///Indicates an invalid setting or result. A generic error occurred.
   @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(
-        apiName: 'SslError.SSL_INVALID',
-        apiUrl:
-            'https://developer.android.com/reference/android/net/http/SslError#SSL_INVALID',
-        value: 5),
     EnumIOSPlatform(
         apiName: 'SecTrustResultType.invalid',
         apiUrl:
@@ -87,13 +47,7 @@ class SslErrorType_ {
         apiName: 'SecTrustResultType.invalid',
         apiUrl:
             'https://developer.apple.com/documentation/security/sectrustresulttype/invalid',
-        value: 0),
-    EnumWindowsPlatform(
-        apiName: 'COREWEBVIEW2_WEB_ERROR_STATUS_CERTIFICATE_IS_INVALID',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2849.39#corewebview2_web_error_status',
-        value: 5)
-  ])
+        value: 0)])
   static const INVALID = SslErrorType_._internal('INVALID');
 
   ///The user specified that the certificate should not be trusted.
@@ -199,36 +153,16 @@ class SslErrorType_ {
         apiName: 'SecTrustResultType.otherError',
         apiUrl:
             'https://developer.apple.com/documentation/security/sectrustresulttype/othererror',
-        value: 7),
-    EnumWindowsPlatform(
-        apiName:
-            'COREWEBVIEW2_WEB_ERROR_STATUS_CLIENT_CERTIFICATE_CONTAINS_ERRORS',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2849.39#corewebview2_web_error_status',
-        value: 3)
-  ])
+        value: 7)])
   static const OTHER_ERROR = SslErrorType_._internal('OTHER_ERROR');
 
   ///Indicates that the SSL certificate common name does not match the web address.
-  @EnumSupportedPlatforms(platforms: [
-    EnumWindowsPlatform(
-        apiName:
-            'COREWEBVIEW2_WEB_ERROR_STATUS_CERTIFICATE_COMMON_NAME_IS_INCORRECT',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2849.39#corewebview2_web_error_status',
-        value: 1)
-  ])
+  
   static const COMMON_NAME_IS_INCORRECT =
       SslErrorType_._internal('COMMON_NAME_IS_INCORRECT');
 
   ///Indicates that the SSL certificate has been revoked.
-  @EnumSupportedPlatforms(platforms: [
-    EnumWindowsPlatform(
-        apiName: 'COREWEBVIEW2_WEB_ERROR_STATUS_CERTIFICATE_REVOKED',
-        apiUrl:
-            'https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2849.39#corewebview2_web_error_status',
-        value: 4)
-  ])
+  
   static const REVOKED = SslErrorType_._internal('REVOKED');
 }
 

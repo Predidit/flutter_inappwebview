@@ -10,9 +10,7 @@ part 'browser_process_infos_changed_detail.g.dart';
 @ExchangeableObject()
 class BrowserProcessInfosChangedDetail_ {
   ///The kind of the process.
-  @SupportedPlatforms(platforms: [
-    WindowsPlatform(),
-  ])
+  
   List<BrowserProcessInfo_> infos;
 
   BrowserProcessInfosChangedDetail_({

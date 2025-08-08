@@ -192,8 +192,7 @@ class WebViewInterface {
     WebViewInterface.ICoreWebView2_6,
     WebViewInterface.ICoreWebView2_7,
     WebViewInterface.ICoreWebView2_8,
-    WebViewInterface.ICoreWebView2_9,
-  ].toSet();
+    WebViewInterface.ICoreWebView2_9].toSet();
 
   ///Gets a possible [WebViewInterface] instance from [String] value.
   static WebViewInterface? fromValue(String? value) {

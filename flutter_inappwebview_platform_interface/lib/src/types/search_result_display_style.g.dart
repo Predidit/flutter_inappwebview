@@ -29,8 +29,7 @@ class SearchResultDisplayStyle {
   static final Set<SearchResultDisplayStyle> values = [
     SearchResultDisplayStyle.CURRENT_AND_TOTAL,
     SearchResultDisplayStyle.NONE,
-    SearchResultDisplayStyle.TOTAL,
-  ].toSet();
+    SearchResultDisplayStyle.TOTAL].toSet();
 
   ///Gets a possible [SearchResultDisplayStyle] instance from [int] value.
   static SearchResultDisplayStyle? fromValue(int? value) {

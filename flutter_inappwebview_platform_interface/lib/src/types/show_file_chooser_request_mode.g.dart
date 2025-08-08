@@ -81,8 +81,7 @@ class ShowFileChooserRequestMode {
     ShowFileChooserRequestMode.OPEN,
     ShowFileChooserRequestMode.OPEN_FOLDER,
     ShowFileChooserRequestMode.OPEN_MULTIPLE,
-    ShowFileChooserRequestMode.SAVE,
-  ].toSet();
+    ShowFileChooserRequestMode.SAVE].toSet();
 
   ///Gets a possible [ShowFileChooserRequestMode] instance from [int] value.
   static ShowFileChooserRequestMode? fromValue(int? value) {

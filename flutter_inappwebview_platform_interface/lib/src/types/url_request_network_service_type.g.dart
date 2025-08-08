@@ -56,8 +56,7 @@ class URLRequestNetworkServiceType {
     URLRequestNetworkServiceType.RESPONSIVE_AV,
     URLRequestNetworkServiceType.RESPONSIVE_DATA,
     URLRequestNetworkServiceType.VIDEO,
-    URLRequestNetworkServiceType.VOICE,
-  ].toSet();
+    URLRequestNetworkServiceType.VOICE].toSet();
 
   ///Gets a possible [URLRequestNetworkServiceType] instance from [int] value.
   static URLRequestNetworkServiceType? fromValue(int? value) {
@@ -212,8 +211,7 @@ class IOSURLRequestNetworkServiceType {
     IOSURLRequestNetworkServiceType.RESPONSIVE_AV,
     IOSURLRequestNetworkServiceType.RESPONSIVE_DATA,
     IOSURLRequestNetworkServiceType.VIDEO,
-    IOSURLRequestNetworkServiceType.VOICE,
-  ].toSet();
+    IOSURLRequestNetworkServiceType.VOICE].toSet();
 
   ///Gets a possible [IOSURLRequestNetworkServiceType] instance from [int] value.
   static IOSURLRequestNetworkServiceType? fromValue(int? value) {

@@ -27,11 +27,8 @@ class UserScript_ {
   ///Specify `true` to inject the script only into the main frame, or false to inject it into all frames.
   ///The default value is `true`.
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(),
-    WindowsPlatform(),
-  ])
+    MacOSPlatform()])
   bool forMainFrameOnly;
 
   ///A set of matching rules for the allowed origins.
@@ -43,11 +40,8 @@ class UserScript_ {
   ///**NOTE for iOS, macOS, Windows**: each origin pattern will be used as a
   ///Regular Expression Pattern that will be used on JavaScript side using [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp).
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(),
-    WindowsPlatform(),
-  ])
+    MacOSPlatform()])
   late Set<String> allowedOriginRules;
 
   ///A scope of execution in which to evaluate the script to prevent conflicts between different scripts.

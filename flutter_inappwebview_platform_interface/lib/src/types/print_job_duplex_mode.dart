@@ -17,7 +17,6 @@ class PrintJobDuplexMode_ {
 
   ///No double-sided (duplex) printing; single-sided printing only.
   @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(value: 1),
     EnumIOSPlatform(value: 0),
     EnumMacOSPlatform(value: 1)
   ])
@@ -26,7 +25,6 @@ class PrintJobDuplexMode_ {
   ///Duplex printing that flips the back page along the long edge of the paper.
   ///Pages are turned sideways along the long edge - like a book.
   @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(value: 2),
     EnumIOSPlatform(value: 1),
     EnumMacOSPlatform(value: 2)
   ])
@@ -35,7 +33,6 @@ class PrintJobDuplexMode_ {
   ///Duplex print that flips the back page along the short edge of the paper.
   ///Pages are turned upwards along the short edge - like a notepad.
   @EnumSupportedPlatforms(platforms: [
-    EnumAndroidPlatform(value: 4),
     EnumIOSPlatform(value: 2),
     EnumMacOSPlatform(value: 3)
   ])

@@ -73,8 +73,7 @@ class PdfToolbarItems {
     PdfToolbarItems.SAVE_AS,
     PdfToolbarItems.SEARCH,
     PdfToolbarItems.ZOOM_IN,
-    PdfToolbarItems.ZOOM_OUT,
-  ].toSet();
+    PdfToolbarItems.ZOOM_OUT].toSet();
 
   ///Gets a possible [PdfToolbarItems] instance from [int] value.
   static PdfToolbarItems? fromValue(int? value) {

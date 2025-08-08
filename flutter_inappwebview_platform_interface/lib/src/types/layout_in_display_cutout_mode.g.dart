@@ -41,8 +41,7 @@ class LayoutInDisplayCutoutMode {
     LayoutInDisplayCutoutMode.ALWAYS,
     LayoutInDisplayCutoutMode.DEFAULT,
     LayoutInDisplayCutoutMode.NEVER,
-    LayoutInDisplayCutoutMode.SHORT_EDGES,
-  ].toSet();
+    LayoutInDisplayCutoutMode.SHORT_EDGES].toSet();
 
   ///Gets a possible [LayoutInDisplayCutoutMode] instance from [int] value.
   static LayoutInDisplayCutoutMode? fromValue(int? value) {
@@ -175,8 +174,7 @@ class AndroidLayoutInDisplayCutoutMode {
     AndroidLayoutInDisplayCutoutMode.ALWAYS,
     AndroidLayoutInDisplayCutoutMode.DEFAULT,
     AndroidLayoutInDisplayCutoutMode.NEVER,
-    AndroidLayoutInDisplayCutoutMode.SHORT_EDGES,
-  ].toSet();
+    AndroidLayoutInDisplayCutoutMode.SHORT_EDGES].toSet();
 
   ///Gets a possible [AndroidLayoutInDisplayCutoutMode] instance from [int] value.
   static AndroidLayoutInDisplayCutoutMode? fromValue(int? value) {

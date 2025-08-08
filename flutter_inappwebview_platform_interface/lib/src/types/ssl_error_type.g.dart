@@ -281,8 +281,7 @@ class SslErrorType {
     SslErrorType.RECOVERABLE_TRUST_FAILURE,
     SslErrorType.REVOKED,
     SslErrorType.UNSPECIFIED,
-    SslErrorType.UNTRUSTED,
-  ].toSet();
+    SslErrorType.UNTRUSTED].toSet();
 
   ///Gets a possible [SslErrorType] instance from [String] value.
   static SslErrorType? fromValue(String? value) {
@@ -428,8 +427,7 @@ class AndroidSslError {
     AndroidSslError.SSL_IDMISMATCH,
     AndroidSslError.SSL_INVALID,
     AndroidSslError.SSL_NOTYETVALID,
-    AndroidSslError.SSL_UNTRUSTED,
-  ].toSet();
+    AndroidSslError.SSL_UNTRUSTED].toSet();
 
   ///Gets a possible [AndroidSslError] instance from [int] value.
   static AndroidSslError? fromValue(int? value) {
@@ -560,8 +558,7 @@ class IOSSslError {
     IOSSslError.INVALID,
     IOSSslError.OTHER_ERROR,
     IOSSslError.RECOVERABLE_TRUST_FAILURE,
-    IOSSslError.UNSPECIFIED,
-  ].toSet();
+    IOSSslError.UNSPECIFIED].toSet();
 
   ///Gets a possible [IOSSslError] instance from [int] value.
   static IOSSslError? fromValue(int? value) {

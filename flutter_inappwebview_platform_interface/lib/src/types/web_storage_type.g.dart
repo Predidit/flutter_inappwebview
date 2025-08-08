@@ -29,8 +29,7 @@ class WebStorageType {
   ///Set of all values of [WebStorageType].
   static final Set<WebStorageType> values = [
     WebStorageType.LOCAL_STORAGE,
-    WebStorageType.SESSION_STORAGE,
-  ].toSet();
+    WebStorageType.SESSION_STORAGE].toSet();
 
   ///Gets a possible [WebStorageType] instance from [String] value.
   static WebStorageType? fromValue(String? value) {

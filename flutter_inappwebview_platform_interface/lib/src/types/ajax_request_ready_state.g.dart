@@ -37,8 +37,7 @@ class AjaxRequestReadyState {
     AjaxRequestReadyState.HEADERS_RECEIVED,
     AjaxRequestReadyState.LOADING,
     AjaxRequestReadyState.OPENED,
-    AjaxRequestReadyState.UNSENT,
-  ].toSet();
+    AjaxRequestReadyState.UNSENT].toSet();
 
   ///Gets a possible [AjaxRequestReadyState] instance from [int] value.
   static AjaxRequestReadyState? fromValue(int? value) {

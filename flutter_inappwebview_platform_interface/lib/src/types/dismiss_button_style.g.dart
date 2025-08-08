@@ -29,8 +29,7 @@ class DismissButtonStyle {
   static final Set<DismissButtonStyle> values = [
     DismissButtonStyle.CANCEL,
     DismissButtonStyle.CLOSE,
-    DismissButtonStyle.DONE,
-  ].toSet();
+    DismissButtonStyle.DONE].toSet();
 
   ///Gets a possible [DismissButtonStyle] instance from [int] value.
   static DismissButtonStyle? fromValue(int? value) {
@@ -147,8 +146,7 @@ class IOSSafariDismissButtonStyle {
   static final Set<IOSSafariDismissButtonStyle> values = [
     IOSSafariDismissButtonStyle.CANCEL,
     IOSSafariDismissButtonStyle.CLOSE,
-    IOSSafariDismissButtonStyle.DONE,
-  ].toSet();
+    IOSSafariDismissButtonStyle.DONE].toSet();
 
   ///Gets a possible [IOSSafariDismissButtonStyle] instance from [int] value.
   static IOSSafariDismissButtonStyle? fromValue(int? value) {

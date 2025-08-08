@@ -129,8 +129,7 @@ class ContentBlockerActionType {
     ContentBlockerActionType.BLOCK_COOKIES,
     ContentBlockerActionType.CSS_DISPLAY_NONE,
     ContentBlockerActionType.IGNORE_PREVIOUS_RULES,
-    ContentBlockerActionType.MAKE_HTTPS,
-  ].toSet();
+    ContentBlockerActionType.MAKE_HTTPS].toSet();
 
   ///Gets a possible [ContentBlockerActionType] instance from [String] value.
   static ContentBlockerActionType? fromValue(String? value) {

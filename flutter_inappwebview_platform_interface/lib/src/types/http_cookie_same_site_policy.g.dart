@@ -37,8 +37,7 @@ class HTTPCookieSameSitePolicy {
   static final Set<HTTPCookieSameSitePolicy> values = [
     HTTPCookieSameSitePolicy.LAX,
     HTTPCookieSameSitePolicy.NONE,
-    HTTPCookieSameSitePolicy.STRICT,
-  ].toSet();
+    HTTPCookieSameSitePolicy.STRICT].toSet();
 
   ///Gets a possible [HTTPCookieSameSitePolicy] instance from [String] value.
   static HTTPCookieSameSitePolicy? fromValue(String? value) {

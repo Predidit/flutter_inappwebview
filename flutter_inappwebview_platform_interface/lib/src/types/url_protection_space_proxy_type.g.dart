@@ -41,8 +41,7 @@ class URLProtectionSpaceProxyType {
     URLProtectionSpaceProxyType.URL_PROTECTION_SPACE_FTP_PROXY,
     URLProtectionSpaceProxyType.URL_PROTECTION_SPACE_HTTPS_PROXY,
     URLProtectionSpaceProxyType.URL_PROTECTION_SPACE_HTTP_PROXY,
-    URLProtectionSpaceProxyType.URL_PROTECTION_SPACE_SOCKS_PROXY,
-  ].toSet();
+    URLProtectionSpaceProxyType.URL_PROTECTION_SPACE_SOCKS_PROXY].toSet();
 
   ///Gets a possible [URLProtectionSpaceProxyType] instance from [String] value.
   static URLProtectionSpaceProxyType? fromValue(String? value) {
@@ -172,8 +171,7 @@ class IOSNSURLProtectionSpaceProxyType {
     IOSNSURLProtectionSpaceProxyType.NSURL_PROTECTION_SPACE_FTP_PROXY,
     IOSNSURLProtectionSpaceProxyType.NSURL_PROTECTION_SPACE_HTTPS_PROXY,
     IOSNSURLProtectionSpaceProxyType.NSURL_PROTECTION_SPACE_SOCKS_PROXY,
-    IOSNSURLProtectionSpaceProxyType.NSUR_PROTECTION_SPACE_HTTP_PROXY,
-  ].toSet();
+    IOSNSURLProtectionSpaceProxyType.NSUR_PROTECTION_SPACE_HTTP_PROXY].toSet();
 
   ///Gets a possible [IOSNSURLProtectionSpaceProxyType] instance from [String] value.
   static IOSNSURLProtectionSpaceProxyType? fromValue(String? value) {

@@ -107,17 +107,13 @@ class ProxySettings_ {
   ///A bypass rule describes URLs that should skip proxy override settings and make a direct connection instead. These can be URLs or IP addresses. Wildcards are accepted.
   ///For instance, the rule "*example.com" would mean that requests to "http://example.com" and "www.example.com" would not be directed to any proxy,
   ///instead, would be made directly to the origin specified by the URL.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
-  ])
+  
   List<String> bypassRules;
 
   ///List of scheme filters.
   ///
   ///URLs that match these scheme filters are connected to directly instead of using a proxy server.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
-  ])
+  
   List<String> directs;
 
   ///List of proxy rules to be used for all URLs. Additional rules have decreasing precedence.
@@ -129,18 +125,14 @@ class ProxySettings_ {
   ///
   ///The correct syntax for hosts is defined by [RFC 3986](https://tools.ietf.org/html/rfc3986#section-3.2.2).
   @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
     IOSPlatform(),
-    MacOSPlatform(),
-  ])
+    MacOSPlatform()])
   List<ProxyRule_> proxyRules;
 
   ///Hostnames without a period in them (and that are not IP literals) will skip proxy settings and be connected to directly instead. Examples: `"abc"`, `"local"`, `"some-domain"`.
   ///
   ///Hostnames with a trailing dot are not considered simple by this definition.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
-  ])
+  
   bool? bypassSimpleHostnames;
 
   ///By default, certain hostnames implicitly bypass the proxy if they are link-local IPs, or localhost addresses.
@@ -152,9 +144,7 @@ class ProxySettings_ {
   ///- 169.254/16
   ///- [FE80::]/10
   ///Set this to `true` to override the default behavior and force localhost and link-local URLs to be sent through the proxy.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
-  ])
+  
   bool? removeImplicitRules;
 
   ///Reverse the bypass list.
@@ -166,9 +156,7 @@ class ProxySettings_ {
   ///Use [bypassRules] to add bypass rules.
   ///
   ///**NOTE**: available only if [WebViewFeature.PROXY_OVERRIDE_REVERSE_BYPASS] feature is supported.
-  @SupportedPlatforms(platforms: [
-    AndroidPlatform(),
-  ])
+  
   bool reverseBypassEnabled;
 
   ProxySettings_(

@@ -317,8 +317,7 @@ class PermissionResourceType {
     PermissionResourceType.OTHER_SENSORS,
     PermissionResourceType.PROTECTED_MEDIA_ID,
     PermissionResourceType.UNKNOWN,
-    PermissionResourceType.WINDOW_MANAGEMENT,
-  ].toSet();
+    PermissionResourceType.WINDOW_MANAGEMENT].toSet();
 
   ///Gets a possible [PermissionResourceType] instance from [String] value.
   static PermissionResourceType? fromValue(String? value) {

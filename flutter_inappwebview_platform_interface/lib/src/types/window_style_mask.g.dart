@@ -187,8 +187,7 @@ class WindowStyleMask {
     WindowStyleMask.NONACTIVATING_PANEL,
     WindowStyleMask.RESIZABLE,
     WindowStyleMask.TITLED,
-    WindowStyleMask.UTILITY_WINDOW,
-  ].toSet();
+    WindowStyleMask.UTILITY_WINDOW].toSet();
 
   ///Gets a possible [WindowStyleMask] instance from [int] value.
   static WindowStyleMask? fromValue(int? value) {

@@ -36,8 +36,7 @@ class MixedContentMode {
   static final Set<MixedContentMode> values = [
     MixedContentMode.MIXED_CONTENT_ALWAYS_ALLOW,
     MixedContentMode.MIXED_CONTENT_COMPATIBILITY_MODE,
-    MixedContentMode.MIXED_CONTENT_NEVER_ALLOW,
-  ].toSet();
+    MixedContentMode.MIXED_CONTENT_NEVER_ALLOW].toSet();
 
   ///Gets a possible [MixedContentMode] instance from [int] value.
   static MixedContentMode? fromValue(int? value) {
@@ -163,8 +162,7 @@ class AndroidMixedContentMode {
   static final Set<AndroidMixedContentMode> values = [
     AndroidMixedContentMode.MIXED_CONTENT_ALWAYS_ALLOW,
     AndroidMixedContentMode.MIXED_CONTENT_COMPATIBILITY_MODE,
-    AndroidMixedContentMode.MIXED_CONTENT_NEVER_ALLOW,
-  ].toSet();
+    AndroidMixedContentMode.MIXED_CONTENT_NEVER_ALLOW].toSet();
 
   ///Gets a possible [AndroidMixedContentMode] instance from [int] value.
   static AndroidMixedContentMode? fromValue(int? value) {

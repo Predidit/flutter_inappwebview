@@ -9,7 +9,6 @@ part 'chrome_safari_browser_menu_item.g.dart';
 
 ///Class that represents a custom menu item for a [PlatformChromeSafariBrowser] instance.
 @SupportedPlatforms(platforms: [
-  AndroidPlatform(note: 'Not available in an Android Trusted Web Activity.'),
   IOSPlatform()
 ])
 @ExchangeableObject()

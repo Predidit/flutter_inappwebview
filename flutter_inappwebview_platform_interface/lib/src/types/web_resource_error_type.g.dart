@@ -1210,8 +1210,7 @@ class WebResourceErrorType {
     WebResourceErrorType.USER_AUTHENTICATION_REQUIRED,
     WebResourceErrorType.USER_CANCELLED_AUTHENTICATION,
     WebResourceErrorType.VALID_PROXY_AUTHENTICATION_REQUIRED,
-    WebResourceErrorType.ZERO_BYTE_RESOURCE,
-  ].toSet();
+    WebResourceErrorType.ZERO_BYTE_RESOURCE].toSet();
 
   ///Gets a possible [WebResourceErrorType] instance from [String] value.
   static WebResourceErrorType? fromValue(String? value) {

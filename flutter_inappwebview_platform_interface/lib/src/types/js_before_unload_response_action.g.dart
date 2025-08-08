@@ -25,8 +25,7 @@ class JsBeforeUnloadResponseAction {
   ///Set of all values of [JsBeforeUnloadResponseAction].
   static final Set<JsBeforeUnloadResponseAction> values = [
     JsBeforeUnloadResponseAction.CANCEL,
-    JsBeforeUnloadResponseAction.CONFIRM,
-  ].toSet();
+    JsBeforeUnloadResponseAction.CONFIRM].toSet();
 
   ///Gets a possible [JsBeforeUnloadResponseAction] instance from [int] value.
   static JsBeforeUnloadResponseAction? fromValue(int? value) {

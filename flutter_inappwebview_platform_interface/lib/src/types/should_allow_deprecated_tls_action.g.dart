@@ -27,8 +27,7 @@ class ShouldAllowDeprecatedTLSAction {
   ///Set of all values of [ShouldAllowDeprecatedTLSAction].
   static final Set<ShouldAllowDeprecatedTLSAction> values = [
     ShouldAllowDeprecatedTLSAction.ALLOW,
-    ShouldAllowDeprecatedTLSAction.CANCEL,
-  ].toSet();
+    ShouldAllowDeprecatedTLSAction.CANCEL].toSet();
 
   ///Gets a possible [ShouldAllowDeprecatedTLSAction] instance from [int] value.
   static ShouldAllowDeprecatedTLSAction? fromValue(int? value) {
@@ -139,8 +138,7 @@ class IOSShouldAllowDeprecatedTLSAction {
   ///Set of all values of [IOSShouldAllowDeprecatedTLSAction].
   static final Set<IOSShouldAllowDeprecatedTLSAction> values = [
     IOSShouldAllowDeprecatedTLSAction.ALLOW,
-    IOSShouldAllowDeprecatedTLSAction.CANCEL,
-  ].toSet();
+    IOSShouldAllowDeprecatedTLSAction.CANCEL].toSet();
 
   ///Gets a possible [IOSShouldAllowDeprecatedTLSAction] instance from [int] value.
   static IOSShouldAllowDeprecatedTLSAction? fromValue(int? value) {
