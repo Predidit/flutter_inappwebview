@@ -393,8 +393,6 @@ class InAppWebViewSettings_ {
 
   ///Sets the path to the Application Caches files. In order for the Application Caches API to be enabled, this option must be set a path to which the application can write.
   ///This option is used one time: repeated calls are ignored.
-  @SupportedPlatforms(
-      platforms: [])
   String? appCachePath;
 
   ///Sets whether the WebView should not load image resources from the network (resources accessed via http and https URI schemes). The default value is `false`.
@@ -562,9 +560,6 @@ class InAppWebViewSettings_ {
 
   ///Set to `false` to disable Flutter Hybrid Composition. The default value is `true`.
   ///Hybrid Composition is supported starting with Flutter v1.20+.
-  @SupportedPlatforms(platforms: [
-    ).""")
-  ])
   bool? useHybridComposition;
 
   ///Set to `true` to be able to listen at the [PlatformWebViewCreationParams.shouldInterceptRequest] event.
@@ -1528,8 +1523,6 @@ class InAppWebViewSettings_ {
   ///If the [PlatformWebViewCreationParams.onShowFileChooser] event is implemented and this value is `null`,
   ///it will be automatically inferred as `true`, otherwise, the default value is `false`.
   ///This logic will not be applied for [PlatformInAppBrowser], where you must set the value manually.
-  @SupportedPlatforms(
-      platforms: [])
   bool? useOnShowFileChooser;
 
   ///Specifies a feature policy for the `<iframe>`.
