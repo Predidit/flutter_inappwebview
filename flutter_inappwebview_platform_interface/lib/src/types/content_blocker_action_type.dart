@@ -15,7 +15,7 @@ class ContentBlockerActionType_ {
 
   ///Stops loading of the resource. If the resource was cached, the cache is ignored.
   @EnumSupportedPlatforms(platforms: [
-    EnumEnumIOSPlatform(value: 'block'),
+    EnumIOSPlatform(value: 'block'),
     EnumMacOSPlatform(value: 'block')
   ])
   static const BLOCK = const ContentBlockerActionType_._internal('block');
@@ -26,7 +26,7 @@ class ContentBlockerActionType_ {
   ///
   ///**NOTE**: on Android, JavaScript must be enabled.
   @EnumSupportedPlatforms(platforms: [
-    EnumEnumIOSPlatform(value: 'css-display-none'),
+    EnumIOSPlatform(value: 'css-display-none'),
     EnumMacOSPlatform(value: 'css-display-none')
   ])
   static const CSS_DISPLAY_NONE =
@@ -35,7 +35,7 @@ class ContentBlockerActionType_ {
   ///Changes a URL from http to https.
   ///URLs with a specified (nondefault) port and links using other protocols are unaffected.
   @EnumSupportedPlatforms(platforms: [
-    EnumEnumIOSPlatform(value: 'make-https'),
+    EnumIOSPlatform(value: 'make-https'),
     EnumMacOSPlatform(value: 'make-https')
   ])
   static const MAKE_HTTPS =

@@ -13,22 +13,18 @@ class FocusDirection_ {
   const FocusDirection_._internal(this._value);
 
   ///Move focus up.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const UP = const FocusDirection_._internal('UP');
 
   ///Move focus down.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const DOWN = const FocusDirection_._internal('DOWN');
 
   ///Move focus to the left.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const LEFT = const FocusDirection_._internal('LEFT');
 
   ///Move focus to the right.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const RIGHT = const FocusDirection_._internal('RIGHT');
 }

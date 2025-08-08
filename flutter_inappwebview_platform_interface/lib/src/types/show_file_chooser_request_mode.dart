@@ -14,24 +14,20 @@ class ShowFileChooserRequestMode_ {
   const ShowFileChooserRequestMode_._internal(this._value);
 
   ///Open single file. Requires that the file exists before allowing the user to pick it.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const OPEN = const ShowFileChooserRequestMode_._internal(0);
 
   ///Like Open but allows multiple files to be selected.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const OPEN_MULTIPLE = const ShowFileChooserRequestMode_._internal(1);
 
   ///Like Open but allows a folder to be selected.
   ///The implementation should enumerate all files selected by this operation.
   ///This feature is not supported at the moment.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const OPEN_FOLDER = const ShowFileChooserRequestMode_._internal(2);
 
   ///Allows picking a nonexistent file and saving it.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const SAVE = const ShowFileChooserRequestMode_._internal(3);
 }

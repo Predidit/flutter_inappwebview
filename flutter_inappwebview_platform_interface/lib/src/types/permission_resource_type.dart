@@ -14,7 +14,7 @@ class PermissionResourceType_ {
 
   ///Resource belongs to audio capture device, like microphone.
   @EnumSupportedPlatforms(platforms: [
-    EnumEnumIOSPlatform(
+    EnumIOSPlatform(
         available: "15.0",
         apiName: 'WKMediaCaptureType.microphone',
         apiUrl:
@@ -31,19 +31,15 @@ class PermissionResourceType_ {
   ///Resource will allow sysex messages to be sent to or received from MIDI devices.
   ///These messages are privileged operations, e.g. modifying sound libraries and sampling data, or even updating the MIDI device's firmware.
   ///Permission may be requested for this resource in API levels 21 and above, if the Android device has been updated to WebView 45 or above.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
   static const MIDI_SYSEX = PermissionResourceType_._internal('MIDI_SYSEX');
 
   ///Resource belongs to protected media identifier. After the user grants this resource, the origin can use EME APIs to generate the license requests.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
   static const PROTECTED_MEDIA_ID =
       PermissionResourceType_._internal('PROTECTED_MEDIA_ID');
 
   ///Resource belongs to video capture device, like camera.
   @EnumSupportedPlatforms(platforms: [
-    EnumEnumIOSPlatform(
+    EnumIOSPlatform(
         available: "15.0",
         apiName: 'WKMediaCaptureType.camera',
         apiUrl:

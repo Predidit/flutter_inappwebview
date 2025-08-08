@@ -17,33 +17,28 @@ class SslErrorType_ {
   const SslErrorType_._internal(this._value);
 
   ///The certificate is not yet valid.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const NOT_YET_VALID = SslErrorType_._internal('NOT_YET_VALID');
 
   ///The certificate has expired.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const EXPIRED = SslErrorType_._internal('EXPIRED');
 
   ///Hostname mismatch.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const IDMISMATCH = SslErrorType_._internal('IDMISMATCH');
 
   ///The certificate authority is not trusted.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const UNTRUSTED = SslErrorType_._internal('UNTRUSTED');
 
   ///The date of the certificate is invalid.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const DATE_INVALID = SslErrorType_._internal('DATE_INVALID');
 
   ///Indicates an invalid setting or result. A generic error occurred.
   @EnumSupportedPlatforms(platforms: [
-    EnumEnumIOSPlatform(
+    EnumIOSPlatform(
         apiName: 'SecTrustResultType.invalid',
         apiUrl:
             'https://developer.apple.com/documentation/security/sectrustresulttype/invalid',

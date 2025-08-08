@@ -13,21 +13,21 @@ class HttpAuthResponseAction_ {
 
   ///Instructs the WebView to cancel the authentication request.
   @EnumSupportedPlatforms(platforms: [
-    EnumEnumIOSPlatform(),
+    EnumIOSPlatform(),
     EnumMacOSPlatform(),
-    Enum])
+  ])
   static const CANCEL = const HttpAuthResponseAction_._internal(0);
 
   ///Instructs the WebView to proceed with the authentication with the given credentials.
   @EnumSupportedPlatforms(platforms: [
-    EnumEnumIOSPlatform(),
+    EnumIOSPlatform(),
     EnumMacOSPlatform(),
-    Enum])
+  ])
   static const PROCEED = const HttpAuthResponseAction_._internal(1);
 
   ///Uses the credentials stored for the current host.
   @EnumSupportedPlatforms(platforms: [
-    EnumEnumIOSPlatform(),
+    EnumIOSPlatform(),
     EnumMacOSPlatform()])
   static const USE_SAVED_HTTP_AUTH_CREDENTIALS =
       const HttpAuthResponseAction_._internal(2);

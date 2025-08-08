@@ -11,7 +11,5 @@ class WebViewRenderProcessAction_ {
   const WebViewRenderProcessAction_._internal(this._value);
 
   ///Cause this renderer to terminate.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
   static const TERMINATE = const WebViewRenderProcessAction_._internal(0);
 }

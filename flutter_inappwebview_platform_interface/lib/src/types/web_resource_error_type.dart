@@ -14,14 +14,13 @@ class WebResourceErrorType_ {
   const WebResourceErrorType_._internal(this._value);
 
   ///User authentication failed on server.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const USER_AUTHENTICATION_FAILED =
       WebResourceErrorType_._internal("USER_AUTHENTICATION_FAILED");
 
   ///A malformed URL prevented a URL request from being initiated.
   @EnumSupportedPlatforms(platforms: [
-    EnumEnumIOSPlatform(
+    EnumIOSPlatform(
         apiName: 'URLError.badURL',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/2293516-badurl',
@@ -36,7 +35,7 @@ class WebResourceErrorType_ {
 
   ///Failed to connect to the server.
   @EnumSupportedPlatforms(platforms: [
-    EnumEnumIOSPlatform(
+    EnumIOSPlatform(
         apiName: 'URLError.cannotConnectToHost',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/code/2883001-cannotconnecttohost',
@@ -50,20 +49,18 @@ class WebResourceErrorType_ {
       WebResourceErrorType_._internal("CANNOT_CONNECT_TO_HOST");
 
   ///Failed to perform SSL handshake.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const FAILED_SSL_HANDSHAKE =
       WebResourceErrorType_._internal("FAILED_SSL_HANDSHAKE");
 
   ///Generic file error.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const GENERIC_FILE_ERROR =
       WebResourceErrorType_._internal("GENERIC_FILE_ERROR");
 
   ///File not found.
   @EnumSupportedPlatforms(platforms: [
-    EnumEnumIOSPlatform(
+    EnumIOSPlatform(
         apiName: 'URLError.fileDoesNotExist',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/code/2883074-filedoesnotexist',
@@ -79,7 +76,7 @@ class WebResourceErrorType_ {
 
   ///Server or proxy hostname lookup failed.
   @EnumSupportedPlatforms(platforms: [
-    EnumEnumIOSPlatform(
+    EnumIOSPlatform(
         apiName: 'URLError.cannotFindHost',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/code/2883157-cannotfindhost',
@@ -92,19 +89,17 @@ class WebResourceErrorType_ {
   static const HOST_LOOKUP = WebResourceErrorType_._internal("HOST_LOOKUP");
 
   ///Failed to read or write to the server.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const IO = WebResourceErrorType_._internal("IO");
 
   ///User authentication failed on proxy.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const PROXY_AUTHENTICATION =
       WebResourceErrorType_._internal("PROXY_AUTHENTICATION");
 
   ///A redirect loop has been detected or the threshold for number of allowable redirects has been exceeded (currently `16` on iOS).
   @EnumSupportedPlatforms(platforms: [
-    EnumEnumIOSPlatform(
+    EnumIOSPlatform(
         apiName: 'URLError.httpTooManyRedirects',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/code/2883099-httptoomanyredirects',
@@ -120,7 +115,7 @@ class WebResourceErrorType_ {
 
   ///Connection timed out.
   @EnumSupportedPlatforms(platforms: [
-    EnumEnumIOSPlatform(
+    EnumIOSPlatform(
         apiName: 'URLError.timedOut',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/code/2883027-timedout',
@@ -133,14 +128,13 @@ class WebResourceErrorType_ {
   static const TIMEOUT = WebResourceErrorType_._internal("TIMEOUT");
 
   ///Too many requests during this load.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const TOO_MANY_REQUESTS =
       WebResourceErrorType_._internal("TOO_MANY_REQUESTS");
 
   ///The URL Loading System encountered an error that it can’t interpret.
   @EnumSupportedPlatforms(platforms: [
-    EnumEnumIOSPlatform(
+    EnumIOSPlatform(
         apiName: 'URLError.unknown',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/2293357-unknown',
@@ -153,21 +147,19 @@ class WebResourceErrorType_ {
   static const UNKNOWN = WebResourceErrorType_._internal("UNKNOWN");
 
   ///Resource load was canceled by Safe Browsing.
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const UNSAFE_RESOURCE =
       WebResourceErrorType_._internal("UNSAFE_RESOURCE");
 
   ///Unsupported authentication scheme (not basic or digest).
-  @EnumSupportedPlatforms(platforms: [
-    Enum])
+  
   static const UNSUPPORTED_AUTH_SCHEME =
       WebResourceErrorType_._internal("UNSUPPORTED_AUTH_SCHEME");
 
   ///Unsupported URI scheme.
   ///Typically this occurs when there is no available protocol handler for the URL.
   @EnumSupportedPlatforms(platforms: [
-    EnumEnumIOSPlatform(
+    EnumIOSPlatform(
         apiName: 'URLError.unsupportedURL',
         apiUrl:
             'https://developer.apple.com/documentation/foundation/urlerror/code/2883043-unsupportedurl',
