@@ -2185,11 +2185,7 @@ final public class InAppWebView extends InputAwareWebView implements InAppWebVie
       WebViewCompat.setWebViewRenderProcessClient(this, null);
     }
     setWebChromeClient(new WebChromeClient());
-    setWebViewClient(new WebViewClient() {
-      public void onPageFinished(WebView view, String url) {
-        destroy();
-      }
-    });
+    setWebViewClient(new WebViewClient());
     interceptOnlyAsyncAjaxRequestsPluginScript = null;
     userContentController.dispose();
     if (findInteractionController != null) {
@@ -2236,7 +2232,9 @@ final public class InAppWebView extends InputAwareWebView implements InAppWebVie
       javaScriptBridgeInterface = null;
     }
     plugin = null;
-    loadUrl("about:blank");
+    
+    stopLoading();
+    destroy();
   }
 
   @Override
